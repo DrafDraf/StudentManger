@@ -38,7 +38,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.bntDangNhap = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pbLogo = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // bunifuMetroTextbox1
@@ -169,13 +169,13 @@
             this.bntDangNhap.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bntDangNhap.Click += new System.EventHandler(this.bntDangNhap_Click);
             // 
-            // panel1
+            // pbLogo
             // 
-            this.panel1.BackgroundImage = global::QLHS.Properties.Resources.open_book;
-            this.panel1.Location = new System.Drawing.Point(81, 41);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(51, 48);
-            this.panel1.TabIndex = 6;
+            this.pbLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbLogo.BackgroundImage")));
+            this.pbLogo.Location = new System.Drawing.Point(81, 41);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(51, 48);
+            this.pbLogo.TabIndex = 6;
             // 
             // Form1
             // 
@@ -188,7 +188,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.bntDangNhap);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pbLogo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -212,7 +212,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pbLogo;
         private Bunifu.Framework.UI.BunifuFlatButton bntDangNhap;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label4;

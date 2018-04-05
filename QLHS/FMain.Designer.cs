@@ -31,117 +31,169 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
             this.pnTop = new System.Windows.Forms.Panel();
+            this.pbMiniSize = new System.Windows.Forms.PictureBox();
+            this.pbClose = new System.Windows.Forms.PictureBox();
             this.lbNameSoftWare = new System.Windows.Forms.Label();
-            this.pbBoard = new System.Windows.Forms.Panel();
-            this.lb_2 = new System.Windows.Forms.Label();
-            this.lb_1 = new System.Windows.Forms.Label();
+            this.pnBoard = new System.Windows.Forms.Panel();
             this.pnRight = new System.Windows.Forms.Panel();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnUser = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
             this.pnUser = new System.Windows.Forms.Panel();
-            this.timerUser = new System.Windows.Forms.Timer(this.components);
             this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btHome = new System.Windows.Forms.Button();
-            this.pbDelete = new System.Windows.Forms.PictureBox();
-            this.pbEdit = new System.Windows.Forms.PictureBox();
-            this.pbAdd = new System.Windows.Forms.PictureBox();
-            this.pbUser = new System.Windows.Forms.PictureBox();
-            this.btBaoCao = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btNhapBangDiem = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btTraCuu = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btLapDS = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btThemHocSinh = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btQuyDinh = new Bunifu.Framework.UI.BunifuTileButton();
-            this.pbHident = new System.Windows.Forms.PictureBox();
-            this.pbClose = new System.Windows.Forms.PictureBox();
+            this.timerUser = new System.Windows.Forms.Timer(this.components);
+            this.pnMenu = new System.Windows.Forms.Panel();
+            this.btnCoSoDuLieu = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnGiaoVien = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnQuanlyMonHoc = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnQuanLyLop = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnTimKiem = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnLapBaoCao = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnQuyDinh = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnTop.SuspendLayout();
-            this.pbBoard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMiniSize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
             this.pnRight.SuspendLayout();
             this.pnUser.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbDelete)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbEdit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAdd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbHident)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
+            this.pnMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnTop
             // 
             this.pnTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(161)))), ((int)(((byte)(220)))));
-            this.pnTop.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnTop.Controls.Add(this.lbNameSoftWare);
-            this.pnTop.Controls.Add(this.pbHident);
+            this.pnTop.Controls.Add(this.pbMiniSize);
             this.pnTop.Controls.Add(this.pbClose);
+            this.pnTop.Controls.Add(this.lbNameSoftWare);
             this.pnTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnTop.Location = new System.Drawing.Point(0, 0);
             this.pnTop.Name = "pnTop";
-            this.pnTop.Size = new System.Drawing.Size(1082, 32);
+            this.pnTop.Size = new System.Drawing.Size(1144, 32);
             this.pnTop.TabIndex = 0;
+            // 
+            // pbMiniSize
+            // 
+            this.pbMiniSize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbMiniSize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbMiniSize.BackgroundImage")));
+            this.pbMiniSize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbMiniSize.Location = new System.Drawing.Point(1072, 0);
+            this.pbMiniSize.Name = "pbMiniSize";
+            this.pbMiniSize.Size = new System.Drawing.Size(35, 32);
+            this.pbMiniSize.TabIndex = 9;
+            this.pbMiniSize.TabStop = false;
+            // 
+            // pbClose
+            // 
+            this.pbClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbClose.BackgroundImage")));
+            this.pbClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbClose.InitialImage = null;
+            this.pbClose.Location = new System.Drawing.Point(1109, 0);
+            this.pbClose.Name = "pbClose";
+            this.pbClose.Size = new System.Drawing.Size(35, 32);
+            this.pbClose.TabIndex = 8;
+            this.pbClose.TabStop = false;
+            this.pbClose.Click += new System.EventHandler(this.pbClose_Click_1);
             // 
             // lbNameSoftWare
             // 
-            this.lbNameSoftWare.AutoSize = true;
+            this.lbNameSoftWare.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbNameSoftWare.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNameSoftWare.ForeColor = System.Drawing.Color.White;
-            this.lbNameSoftWare.Location = new System.Drawing.Point(410, 3);
+            this.lbNameSoftWare.Location = new System.Drawing.Point(0, 0);
             this.lbNameSoftWare.Name = "lbNameSoftWare";
-            this.lbNameSoftWare.Size = new System.Drawing.Size(236, 20);
+            this.lbNameSoftWare.Size = new System.Drawing.Size(1144, 32);
             this.lbNameSoftWare.TabIndex = 7;
             this.lbNameSoftWare.Text = "Phần mềm quản lí học sinh";
+            this.lbNameSoftWare.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pbBoard
+            // pnBoard
             // 
-            this.pbBoard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(213)))), ((int)(((byte)(246)))));
-            this.pbBoard.Controls.Add(this.lb_2);
-            this.pbBoard.Controls.Add(this.btBaoCao);
-            this.pbBoard.Controls.Add(this.btNhapBangDiem);
-            this.pbBoard.Controls.Add(this.btTraCuu);
-            this.pbBoard.Controls.Add(this.btLapDS);
-            this.pbBoard.Controls.Add(this.btThemHocSinh);
-            this.pbBoard.Controls.Add(this.lb_1);
-            this.pbBoard.Controls.Add(this.btQuyDinh);
-            this.pbBoard.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pbBoard.Location = new System.Drawing.Point(0, 32);
-            this.pbBoard.Name = "pbBoard";
-            this.pbBoard.Size = new System.Drawing.Size(1032, 539);
-            this.pbBoard.TabIndex = 1;
-            // 
-            // lb_2
-            // 
-            this.lb_2.AutoSize = true;
-            this.lb_2.Location = new System.Drawing.Point(211, 432);
-            this.lb_2.Name = "lb_2";
-            this.lb_2.Size = new System.Drawing.Size(613, 13);
-            this.lb_2.TabIndex = 7;
-            this.lb_2.Text = "_________________________________________________________________________________" +
-    "____________________";
-            // 
-            // lb_1
-            // 
-            this.lb_1.AutoSize = true;
-            this.lb_1.Location = new System.Drawing.Point(220, 266);
-            this.lb_1.Name = "lb_1";
-            this.lb_1.Size = new System.Drawing.Size(613, 13);
-            this.lb_1.TabIndex = 1;
-            this.lb_1.Text = "_________________________________________________________________________________" +
-    "____________________";
+            this.pnBoard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnBoard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(213)))), ((int)(((byte)(246)))));
+            this.pnBoard.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnBoard.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pnBoard.Location = new System.Drawing.Point(0, 84);
+            this.pnBoard.Name = "pnBoard";
+            this.pnBoard.Size = new System.Drawing.Size(1094, 505);
+            this.pnBoard.TabIndex = 1;
             // 
             // pnRight
             // 
             this.pnRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(161)))), ((int)(((byte)(220)))));
-            this.pnRight.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnRight.Controls.Add(this.btHome);
-            this.pnRight.Controls.Add(this.pbDelete);
-            this.pnRight.Controls.Add(this.pbEdit);
-            this.pnRight.Controls.Add(this.pbAdd);
-            this.pnRight.Controls.Add(this.pbUser);
+            this.pnRight.Controls.Add(this.btnAdd);
+            this.pnRight.Controls.Add(this.btnDelete);
+            this.pnRight.Controls.Add(this.btnEdit);
+            this.pnRight.Controls.Add(this.btnUser);
+            this.pnRight.Controls.Add(this.btnHome);
             this.pnRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnRight.Location = new System.Drawing.Point(1032, 32);
+            this.pnRight.Location = new System.Drawing.Point(1094, 32);
             this.pnRight.Name = "pnRight";
-            this.pnRight.Size = new System.Drawing.Size(50, 539);
+            this.pnRight.Size = new System.Drawing.Size(50, 557);
             this.pnRight.TabIndex = 2;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
+            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdd.Location = new System.Drawing.Point(-1, 217);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(51, 52);
+            this.btnAdd.TabIndex = 13;
+            this.btnAdd.UseVisualStyleBackColor = false;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.BackgroundImage")));
+            this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDelete.Location = new System.Drawing.Point(-1, 369);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(51, 52);
+            this.btnDelete.TabIndex = 12;
+            this.btnDelete.UseVisualStyleBackColor = false;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEdit.BackgroundImage")));
+            this.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEdit.Location = new System.Drawing.Point(-1, 293);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(51, 52);
+            this.btnEdit.TabIndex = 11;
+            this.btnEdit.UseVisualStyleBackColor = false;
+            // 
+            // btnUser
+            // 
+            this.btnUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnUser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUser.BackgroundImage")));
+            this.btnUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnUser.Location = new System.Drawing.Point(-1, 139);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.Size = new System.Drawing.Size(51, 52);
+            this.btnUser.TabIndex = 10;
+            this.btnUser.UseVisualStyleBackColor = false;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
+            // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnHome.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHome.BackgroundImage")));
+            this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnHome.Location = new System.Drawing.Point(-1, 0);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(51, 52);
+            this.btnHome.TabIndex = 9;
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // pnUser
             // 
@@ -151,16 +203,11 @@
             this.pnUser.Controls.Add(this.bunifuFlatButton1);
             this.pnUser.Controls.Add(this.bunifuTileButton1);
             this.pnUser.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnUser.Location = new System.Drawing.Point(834, 32);
+            this.pnUser.Location = new System.Drawing.Point(1094, 32);
             this.pnUser.Name = "pnUser";
-            this.pnUser.Size = new System.Drawing.Size(198, 539);
+            this.pnUser.Size = new System.Drawing.Size(0, 557);
             this.pnUser.TabIndex = 3;
             this.pnUser.MouseLeave += new System.EventHandler(this.pnUser_MouseLeave);
-            // 
-            // timerUser
-            // 
-            this.timerUser.Interval = 10;
-            this.timerUser.Tick += new System.EventHandler(this.timerUser_Tick);
             // 
             // bunifuFlatButton3
             // 
@@ -184,7 +231,7 @@
             this.bunifuFlatButton3.IconVisible = true;
             this.bunifuFlatButton3.IconZoom = 80D;
             this.bunifuFlatButton3.IsTab = false;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(1, 326);
+            this.bunifuFlatButton3.Location = new System.Drawing.Point(1, 371);
             this.bunifuFlatButton3.Name = "bunifuFlatButton3";
             this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -219,7 +266,7 @@
             this.bunifuFlatButton2.IconVisible = true;
             this.bunifuFlatButton2.IconZoom = 80D;
             this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(0, 276);
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(0, 321);
             this.bunifuFlatButton2.Name = "bunifuFlatButton2";
             this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -254,7 +301,7 @@
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 80D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 226);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 271);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -280,240 +327,297 @@
             this.bunifuTileButton1.ImagePosition = 20;
             this.bunifuTileButton1.ImageZoom = 50;
             this.bunifuTileButton1.LabelPosition = 41;
-            this.bunifuTileButton1.LabelText = "Hồng Phúc";
-            this.bunifuTileButton1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuTileButton1.LabelText = "NameUser";
+            this.bunifuTileButton1.Location = new System.Drawing.Point(0, 52);
             this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(6);
             this.bunifuTileButton1.Name = "bunifuTileButton1";
             this.bunifuTileButton1.Size = new System.Drawing.Size(198, 164);
             this.bunifuTileButton1.TabIndex = 0;
             // 
-            // btHome
+            // timerUser
             // 
-            this.btHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(199)))));
-            this.btHome.BackgroundImage = global::QLHS.Properties.Resources.home;
-            this.btHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btHome.Location = new System.Drawing.Point(-1, 17);
-            this.btHome.Name = "btHome";
-            this.btHome.Size = new System.Drawing.Size(48, 50);
-            this.btHome.TabIndex = 8;
-            this.btHome.UseVisualStyleBackColor = false;
+            this.timerUser.Interval = 10;
+            this.timerUser.Tick += new System.EventHandler(this.timerUser_Tick);
             // 
-            // pbDelete
+            // pnMenu
             // 
-            this.pbDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(199)))));
-            this.pbDelete.BackgroundImage = global::QLHS.Properties.Resources.delete;
-            this.pbDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbDelete.Location = new System.Drawing.Point(0, 343);
-            this.pbDelete.Name = "pbDelete";
-            this.pbDelete.Size = new System.Drawing.Size(50, 50);
-            this.pbDelete.TabIndex = 3;
-            this.pbDelete.TabStop = false;
+            this.pnMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.pnMenu.Controls.Add(this.btnCoSoDuLieu);
+            this.pnMenu.Controls.Add(this.btnGiaoVien);
+            this.pnMenu.Controls.Add(this.btnQuanlyMonHoc);
+            this.pnMenu.Controls.Add(this.btnQuanLyLop);
+            this.pnMenu.Controls.Add(this.btnTimKiem);
+            this.pnMenu.Controls.Add(this.btnLapBaoCao);
+            this.pnMenu.Controls.Add(this.btnQuyDinh);
+            this.pnMenu.Location = new System.Drawing.Point(0, 32);
+            this.pnMenu.Name = "pnMenu";
+            this.pnMenu.Size = new System.Drawing.Size(1094, 52);
+            this.pnMenu.TabIndex = 8;
             // 
-            // pbEdit
+            // btnCoSoDuLieu
             // 
-            this.pbEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(199)))));
-            this.pbEdit.BackgroundImage = global::QLHS.Properties.Resources.edit;
-            this.pbEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbEdit.Location = new System.Drawing.Point(0, 260);
-            this.pbEdit.Name = "pbEdit";
-            this.pbEdit.Size = new System.Drawing.Size(47, 48);
-            this.pbEdit.TabIndex = 1;
-            this.pbEdit.TabStop = false;
+            this.btnCoSoDuLieu.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(128)))));
+            this.btnCoSoDuLieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnCoSoDuLieu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCoSoDuLieu.BorderRadius = 0;
+            this.btnCoSoDuLieu.ButtonText = "Cơ sở dữ liệu";
+            this.btnCoSoDuLieu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCoSoDuLieu.DisabledColor = System.Drawing.Color.Gray;
+            this.btnCoSoDuLieu.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnCoSoDuLieu.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnCoSoDuLieu.Iconimage")));
+            this.btnCoSoDuLieu.Iconimage_right = null;
+            this.btnCoSoDuLieu.Iconimage_right_Selected = null;
+            this.btnCoSoDuLieu.Iconimage_Selected = null;
+            this.btnCoSoDuLieu.IconMarginLeft = 0;
+            this.btnCoSoDuLieu.IconMarginRight = 0;
+            this.btnCoSoDuLieu.IconRightVisible = true;
+            this.btnCoSoDuLieu.IconRightZoom = 0D;
+            this.btnCoSoDuLieu.IconVisible = true;
+            this.btnCoSoDuLieu.IconZoom = 90D;
+            this.btnCoSoDuLieu.IsTab = false;
+            this.btnCoSoDuLieu.Location = new System.Drawing.Point(0, 1);
+            this.btnCoSoDuLieu.Name = "btnCoSoDuLieu";
+            this.btnCoSoDuLieu.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnCoSoDuLieu.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnCoSoDuLieu.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnCoSoDuLieu.selected = false;
+            this.btnCoSoDuLieu.Size = new System.Drawing.Size(159, 51);
+            this.btnCoSoDuLieu.TabIndex = 6;
+            this.btnCoSoDuLieu.Text = "Cơ sở dữ liệu";
+            this.btnCoSoDuLieu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnCoSoDuLieu.Textcolor = System.Drawing.Color.Black;
+            this.btnCoSoDuLieu.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // pbAdd
+            // btnGiaoVien
             // 
-            this.pbAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(199)))));
-            this.pbAdd.BackgroundImage = global::QLHS.Properties.Resources.add;
-            this.pbAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbAdd.Location = new System.Drawing.Point(0, 181);
-            this.pbAdd.Name = "pbAdd";
-            this.pbAdd.Size = new System.Drawing.Size(47, 46);
-            this.pbAdd.TabIndex = 0;
-            this.pbAdd.TabStop = false;
+            this.btnGiaoVien.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(128)))));
+            this.btnGiaoVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnGiaoVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGiaoVien.BorderRadius = 0;
+            this.btnGiaoVien.ButtonText = "Giáo viên";
+            this.btnGiaoVien.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGiaoVien.DisabledColor = System.Drawing.Color.Gray;
+            this.btnGiaoVien.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnGiaoVien.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnGiaoVien.Iconimage")));
+            this.btnGiaoVien.Iconimage_right = null;
+            this.btnGiaoVien.Iconimage_right_Selected = null;
+            this.btnGiaoVien.Iconimage_Selected = null;
+            this.btnGiaoVien.IconMarginLeft = 0;
+            this.btnGiaoVien.IconMarginRight = 0;
+            this.btnGiaoVien.IconRightVisible = true;
+            this.btnGiaoVien.IconRightZoom = 0D;
+            this.btnGiaoVien.IconVisible = true;
+            this.btnGiaoVien.IconZoom = 90D;
+            this.btnGiaoVien.IsTab = false;
+            this.btnGiaoVien.Location = new System.Drawing.Point(161, 1);
+            this.btnGiaoVien.Name = "btnGiaoVien";
+            this.btnGiaoVien.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnGiaoVien.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnGiaoVien.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnGiaoVien.selected = false;
+            this.btnGiaoVien.Size = new System.Drawing.Size(146, 51);
+            this.btnGiaoVien.TabIndex = 5;
+            this.btnGiaoVien.Text = "Giáo viên";
+            this.btnGiaoVien.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnGiaoVien.Textcolor = System.Drawing.Color.Black;
+            this.btnGiaoVien.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // pbUser
+            // btnQuanlyMonHoc
             // 
-            this.pbUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(199)))));
-            this.pbUser.BackgroundImage = global::QLHS.Properties.Resources.User;
-            this.pbUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbUser.Location = new System.Drawing.Point(0, 96);
-            this.pbUser.Name = "pbUser";
-            this.pbUser.Size = new System.Drawing.Size(47, 47);
-            this.pbUser.TabIndex = 2;
-            this.pbUser.TabStop = false;
-            this.pbUser.MouseHover += new System.EventHandler(this.pictureBox5_MouseHover);
+            this.btnQuanlyMonHoc.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(128)))));
+            this.btnQuanlyMonHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnQuanlyMonHoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnQuanlyMonHoc.BorderRadius = 0;
+            this.btnQuanlyMonHoc.ButtonText = "Quản lý      môn học";
+            this.btnQuanlyMonHoc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQuanlyMonHoc.DisabledColor = System.Drawing.Color.Gray;
+            this.btnQuanlyMonHoc.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnQuanlyMonHoc.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnQuanlyMonHoc.Iconimage")));
+            this.btnQuanlyMonHoc.Iconimage_right = null;
+            this.btnQuanlyMonHoc.Iconimage_right_Selected = null;
+            this.btnQuanlyMonHoc.Iconimage_Selected = null;
+            this.btnQuanlyMonHoc.IconMarginLeft = 0;
+            this.btnQuanlyMonHoc.IconMarginRight = 0;
+            this.btnQuanlyMonHoc.IconRightVisible = true;
+            this.btnQuanlyMonHoc.IconRightZoom = 0D;
+            this.btnQuanlyMonHoc.IconVisible = true;
+            this.btnQuanlyMonHoc.IconZoom = 90D;
+            this.btnQuanlyMonHoc.IsTab = false;
+            this.btnQuanlyMonHoc.Location = new System.Drawing.Point(311, 1);
+            this.btnQuanlyMonHoc.Name = "btnQuanlyMonHoc";
+            this.btnQuanlyMonHoc.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnQuanlyMonHoc.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnQuanlyMonHoc.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnQuanlyMonHoc.selected = false;
+            this.btnQuanlyMonHoc.Size = new System.Drawing.Size(146, 51);
+            this.btnQuanlyMonHoc.TabIndex = 4;
+            this.btnQuanlyMonHoc.Text = "Quản lý      môn học";
+            this.btnQuanlyMonHoc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnQuanlyMonHoc.Textcolor = System.Drawing.Color.Black;
+            this.btnQuanlyMonHoc.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // btBaoCao
+            // btnQuanLyLop
             // 
-            this.btBaoCao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(6)))), ((int)(((byte)(47)))));
-            this.btBaoCao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btBaoCao.color = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(6)))), ((int)(((byte)(47)))));
-            this.btBaoCao.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btBaoCao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btBaoCao.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btBaoCao.ForeColor = System.Drawing.Color.White;
-            this.btBaoCao.Image = ((System.Drawing.Image)(resources.GetObject("btBaoCao.Image")));
-            this.btBaoCao.ImagePosition = 18;
-            this.btBaoCao.ImageZoom = 30;
-            this.btBaoCao.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
-            this.btBaoCao.LabelPosition = 39;
-            this.btBaoCao.LabelText = "Lập báo cáo tổng kết";
-            this.btBaoCao.Location = new System.Drawing.Point(657, 294);
-            this.btBaoCao.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btBaoCao.Name = "btBaoCao";
-            this.btBaoCao.Size = new System.Drawing.Size(210, 117);
-            this.btBaoCao.TabIndex = 6;
+            this.btnQuanLyLop.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(128)))));
+            this.btnQuanLyLop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnQuanLyLop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnQuanLyLop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnQuanLyLop.BorderRadius = 0;
+            this.btnQuanLyLop.ButtonText = "Quản lý lớp học";
+            this.btnQuanLyLop.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQuanLyLop.DisabledColor = System.Drawing.Color.Gray;
+            this.btnQuanLyLop.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnQuanLyLop.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnQuanLyLop.Iconimage")));
+            this.btnQuanLyLop.Iconimage_right = null;
+            this.btnQuanLyLop.Iconimage_right_Selected = null;
+            this.btnQuanLyLop.Iconimage_Selected = null;
+            this.btnQuanLyLop.IconMarginLeft = 0;
+            this.btnQuanLyLop.IconMarginRight = 0;
+            this.btnQuanLyLop.IconRightVisible = true;
+            this.btnQuanLyLop.IconRightZoom = 0D;
+            this.btnQuanLyLop.IconVisible = true;
+            this.btnQuanLyLop.IconZoom = 90D;
+            this.btnQuanLyLop.IsTab = false;
+            this.btnQuanLyLop.Location = new System.Drawing.Point(618, 1);
+            this.btnQuanLyLop.Name = "btnQuanLyLop";
+            this.btnQuanLyLop.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnQuanLyLop.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnQuanLyLop.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnQuanLyLop.selected = false;
+            this.btnQuanLyLop.Size = new System.Drawing.Size(147, 51);
+            this.btnQuanLyLop.TabIndex = 3;
+            this.btnQuanLyLop.Text = "Quản lý lớp học";
+            this.btnQuanLyLop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnQuanLyLop.Textcolor = System.Drawing.Color.Black;
+            this.btnQuanLyLop.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // btNhapBangDiem
+            // btnTimKiem
             // 
-            this.btNhapBangDiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(6)))), ((int)(((byte)(47)))));
-            this.btNhapBangDiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btNhapBangDiem.color = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(6)))), ((int)(((byte)(47)))));
-            this.btNhapBangDiem.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btNhapBangDiem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btNhapBangDiem.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btNhapBangDiem.ForeColor = System.Drawing.Color.White;
-            this.btNhapBangDiem.Image = ((System.Drawing.Image)(resources.GetObject("btNhapBangDiem.Image")));
-            this.btNhapBangDiem.ImagePosition = 18;
-            this.btNhapBangDiem.ImageZoom = 30;
-            this.btNhapBangDiem.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
-            this.btNhapBangDiem.LabelPosition = 39;
-            this.btNhapBangDiem.LabelText = "Nhận bảng điểm môn";
-            this.btNhapBangDiem.Location = new System.Drawing.Point(416, 294);
-            this.btNhapBangDiem.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btNhapBangDiem.Name = "btNhapBangDiem";
-            this.btNhapBangDiem.Size = new System.Drawing.Size(211, 117);
-            this.btNhapBangDiem.TabIndex = 5;
+            this.btnTimKiem.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(128)))));
+            this.btnTimKiem.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTimKiem.BorderRadius = 0;
+            this.btnTimKiem.ButtonText = "Tìm kiếm";
+            this.btnTimKiem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTimKiem.DisabledColor = System.Drawing.Color.Gray;
+            this.btnTimKiem.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnTimKiem.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Iconimage")));
+            this.btnTimKiem.Iconimage_right = null;
+            this.btnTimKiem.Iconimage_right_Selected = null;
+            this.btnTimKiem.Iconimage_Selected = null;
+            this.btnTimKiem.IconMarginLeft = 0;
+            this.btnTimKiem.IconMarginRight = 0;
+            this.btnTimKiem.IconRightVisible = true;
+            this.btnTimKiem.IconRightZoom = 0D;
+            this.btnTimKiem.IconVisible = true;
+            this.btnTimKiem.IconZoom = 90D;
+            this.btnTimKiem.IsTab = false;
+            this.btnTimKiem.Location = new System.Drawing.Point(467, 1);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnTimKiem.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnTimKiem.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnTimKiem.selected = false;
+            this.btnTimKiem.Size = new System.Drawing.Size(137, 51);
+            this.btnTimKiem.TabIndex = 2;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnTimKiem.Textcolor = System.Drawing.Color.Black;
+            this.btnTimKiem.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // btTraCuu
+            // btnLapBaoCao
             // 
-            this.btTraCuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(6)))), ((int)(((byte)(47)))));
-            this.btTraCuu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btTraCuu.color = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(6)))), ((int)(((byte)(47)))));
-            this.btTraCuu.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btTraCuu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btTraCuu.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btTraCuu.ForeColor = System.Drawing.Color.White;
-            this.btTraCuu.Image = ((System.Drawing.Image)(resources.GetObject("btTraCuu.Image")));
-            this.btTraCuu.ImagePosition = 18;
-            this.btTraCuu.ImageZoom = 30;
-            this.btTraCuu.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
-            this.btTraCuu.LabelPosition = 39;
-            this.btTraCuu.LabelText = "Tra cứu học sinh";
-            this.btTraCuu.Location = new System.Drawing.Point(657, 134);
-            this.btTraCuu.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btTraCuu.Name = "btTraCuu";
-            this.btTraCuu.Size = new System.Drawing.Size(210, 119);
-            this.btTraCuu.TabIndex = 4;
+            this.btnLapBaoCao.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(128)))));
+            this.btnLapBaoCao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLapBaoCao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnLapBaoCao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLapBaoCao.BorderRadius = 0;
+            this.btnLapBaoCao.ButtonText = "Lập báo cáo tổng kết";
+            this.btnLapBaoCao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLapBaoCao.DisabledColor = System.Drawing.Color.Gray;
+            this.btnLapBaoCao.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnLapBaoCao.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLapBaoCao.Iconimage")));
+            this.btnLapBaoCao.Iconimage_right = null;
+            this.btnLapBaoCao.Iconimage_right_Selected = null;
+            this.btnLapBaoCao.Iconimage_Selected = null;
+            this.btnLapBaoCao.IconMarginLeft = 0;
+            this.btnLapBaoCao.IconMarginRight = 0;
+            this.btnLapBaoCao.IconRightVisible = true;
+            this.btnLapBaoCao.IconRightZoom = 0D;
+            this.btnLapBaoCao.IconVisible = true;
+            this.btnLapBaoCao.IconZoom = 90D;
+            this.btnLapBaoCao.IsTab = false;
+            this.btnLapBaoCao.Location = new System.Drawing.Point(774, 1);
+            this.btnLapBaoCao.Name = "btnLapBaoCao";
+            this.btnLapBaoCao.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnLapBaoCao.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnLapBaoCao.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnLapBaoCao.selected = false;
+            this.btnLapBaoCao.Size = new System.Drawing.Size(159, 51);
+            this.btnLapBaoCao.TabIndex = 1;
+            this.btnLapBaoCao.Text = "Lập báo cáo tổng kết";
+            this.btnLapBaoCao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLapBaoCao.Textcolor = System.Drawing.Color.Black;
+            this.btnLapBaoCao.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // btLapDS
+            // btnQuyDinh
             // 
-            this.btLapDS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(6)))), ((int)(((byte)(47)))));
-            this.btLapDS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btLapDS.color = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(6)))), ((int)(((byte)(47)))));
-            this.btLapDS.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btLapDS.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btLapDS.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLapDS.ForeColor = System.Drawing.Color.White;
-            this.btLapDS.Image = ((System.Drawing.Image)(resources.GetObject("btLapDS.Image")));
-            this.btLapDS.ImagePosition = 18;
-            this.btLapDS.ImageZoom = 30;
-            this.btLapDS.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
-            this.btLapDS.LabelPosition = 39;
-            this.btLapDS.LabelText = "Lập Danh Sách Lớp";
-            this.btLapDS.Location = new System.Drawing.Point(182, 294);
-            this.btLapDS.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btLapDS.Name = "btLapDS";
-            this.btLapDS.Size = new System.Drawing.Size(213, 117);
-            this.btLapDS.TabIndex = 3;
-            // 
-            // btThemHocSinh
-            // 
-            this.btThemHocSinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(6)))), ((int)(((byte)(47)))));
-            this.btThemHocSinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btThemHocSinh.color = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(6)))), ((int)(((byte)(47)))));
-            this.btThemHocSinh.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btThemHocSinh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btThemHocSinh.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThemHocSinh.ForeColor = System.Drawing.Color.White;
-            this.btThemHocSinh.Image = ((System.Drawing.Image)(resources.GetObject("btThemHocSinh.Image")));
-            this.btThemHocSinh.ImagePosition = 18;
-            this.btThemHocSinh.ImageZoom = 30;
-            this.btThemHocSinh.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
-            this.btThemHocSinh.LabelPosition = 39;
-            this.btThemHocSinh.LabelText = "Tiếp Nhận Học Sinh";
-            this.btThemHocSinh.Location = new System.Drawing.Point(416, 134);
-            this.btThemHocSinh.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btThemHocSinh.Name = "btThemHocSinh";
-            this.btThemHocSinh.Size = new System.Drawing.Size(211, 119);
-            this.btThemHocSinh.TabIndex = 2;
-            // 
-            // btQuyDinh
-            // 
-            this.btQuyDinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(6)))), ((int)(((byte)(47)))));
-            this.btQuyDinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btQuyDinh.color = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(6)))), ((int)(((byte)(47)))));
-            this.btQuyDinh.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btQuyDinh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btQuyDinh.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btQuyDinh.ForeColor = System.Drawing.Color.White;
-            this.btQuyDinh.Image = global::QLHS.Properties.Resources.setting;
-            this.btQuyDinh.ImagePosition = 18;
-            this.btQuyDinh.ImageZoom = 30;
-            this.btQuyDinh.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
-            this.btQuyDinh.LabelPosition = 39;
-            this.btQuyDinh.LabelText = "Quy Định Năm Học";
-            this.btQuyDinh.Location = new System.Drawing.Point(182, 134);
-            this.btQuyDinh.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btQuyDinh.Name = "btQuyDinh";
-            this.btQuyDinh.Size = new System.Drawing.Size(220, 119);
-            this.btQuyDinh.TabIndex = 0;
-            // 
-            // pbHident
-            // 
-            this.pbHident.BackgroundImage = global::QLHS.Properties.Resources._;
-            this.pbHident.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbHident.Location = new System.Drawing.Point(982, 0);
-            this.pbHident.Name = "pbHident";
-            this.pbHident.Size = new System.Drawing.Size(28, 25);
-            this.pbHident.TabIndex = 1;
-            this.pbHident.TabStop = false;
-            // 
-            // pbClose
-            // 
-            this.pbClose.BackgroundImage = global::QLHS.Properties.Resources.plus;
-            this.pbClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbClose.Location = new System.Drawing.Point(1036, 0);
-            this.pbClose.Name = "pbClose";
-            this.pbClose.Size = new System.Drawing.Size(32, 25);
-            this.pbClose.TabIndex = 0;
-            this.pbClose.TabStop = false;
+            this.btnQuyDinh.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(128)))));
+            this.btnQuyDinh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnQuyDinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnQuyDinh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnQuyDinh.BorderRadius = 0;
+            this.btnQuyDinh.ButtonText = "Thay đổi   quy định";
+            this.btnQuyDinh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQuyDinh.DisabledColor = System.Drawing.Color.Gray;
+            this.btnQuyDinh.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnQuyDinh.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnQuyDinh.Iconimage")));
+            this.btnQuyDinh.Iconimage_right = null;
+            this.btnQuyDinh.Iconimage_right_Selected = null;
+            this.btnQuyDinh.Iconimage_Selected = null;
+            this.btnQuyDinh.IconMarginLeft = 0;
+            this.btnQuyDinh.IconMarginRight = 0;
+            this.btnQuyDinh.IconRightVisible = true;
+            this.btnQuyDinh.IconRightZoom = 0D;
+            this.btnQuyDinh.IconVisible = true;
+            this.btnQuyDinh.IconZoom = 90D;
+            this.btnQuyDinh.IsTab = false;
+            this.btnQuyDinh.Location = new System.Drawing.Point(939, 1);
+            this.btnQuyDinh.Name = "btnQuyDinh";
+            this.btnQuyDinh.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnQuyDinh.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnQuyDinh.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnQuyDinh.selected = false;
+            this.btnQuyDinh.Size = new System.Drawing.Size(155, 51);
+            this.btnQuyDinh.TabIndex = 0;
+            this.btnQuyDinh.Text = "Thay đổi   quy định";
+            this.btnQuyDinh.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnQuyDinh.Textcolor = System.Drawing.Color.Black;
+            this.btnQuyDinh.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // FMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1082, 571);
+            this.ClientSize = new System.Drawing.Size(1144, 589);
             this.ControlBox = false;
+            this.Controls.Add(this.pnMenu);
             this.Controls.Add(this.pnUser);
             this.Controls.Add(this.pnRight);
-            this.Controls.Add(this.pbBoard);
+            this.Controls.Add(this.pnBoard);
             this.Controls.Add(this.pnTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.pnTop.ResumeLayout(false);
-            this.pnTop.PerformLayout();
-            this.pbBoard.ResumeLayout(false);
-            this.pbBoard.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMiniSize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
             this.pnRight.ResumeLayout(false);
             this.pnUser.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbDelete)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbEdit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAdd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbHident)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
+            this.pnMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -521,29 +625,29 @@
         #endregion
 
         private System.Windows.Forms.Panel pnTop;
-        private System.Windows.Forms.Panel pbBoard;
-        private System.Windows.Forms.PictureBox pbHident;
-        private System.Windows.Forms.PictureBox pbClose;
+        private System.Windows.Forms.Panel pnBoard;
         private System.Windows.Forms.Panel pnRight;
         private System.Windows.Forms.Panel pnUser;
-        private System.Windows.Forms.PictureBox pbEdit;
-        private System.Windows.Forms.PictureBox pbAdd;
-        private System.Windows.Forms.PictureBox pbUser;
-        private System.Windows.Forms.PictureBox pbDelete;
         private System.Windows.Forms.Timer timerUser;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton1;
-        private System.Windows.Forms.Label lb_1;
-        private Bunifu.Framework.UI.BunifuTileButton btQuyDinh;
-        private Bunifu.Framework.UI.BunifuTileButton btBaoCao;
-        private Bunifu.Framework.UI.BunifuTileButton btNhapBangDiem;
-        private Bunifu.Framework.UI.BunifuTileButton btTraCuu;
-        private Bunifu.Framework.UI.BunifuTileButton btLapDS;
-        private Bunifu.Framework.UI.BunifuTileButton btThemHocSinh;
         private System.Windows.Forms.Label lbNameSoftWare;
-        private System.Windows.Forms.Label lb_2;
-        private System.Windows.Forms.Button btHome;
+        private System.Windows.Forms.Panel pnMenu;
+        private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.Button btnUser;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnEdit;
+        private Bunifu.Framework.UI.BunifuFlatButton btnQuyDinh;
+        private Bunifu.Framework.UI.BunifuFlatButton btnCoSoDuLieu;
+        private Bunifu.Framework.UI.BunifuFlatButton btnGiaoVien;
+        private Bunifu.Framework.UI.BunifuFlatButton btnQuanlyMonHoc;
+        private Bunifu.Framework.UI.BunifuFlatButton btnQuanLyLop;
+        private Bunifu.Framework.UI.BunifuFlatButton btnTimKiem;
+        private Bunifu.Framework.UI.BunifuFlatButton btnLapBaoCao;
+        private System.Windows.Forms.PictureBox pbClose;
+        private System.Windows.Forms.PictureBox pbMiniSize;
     }
 }

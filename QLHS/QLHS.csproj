@@ -60,6 +60,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormChinh\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChinh\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FMain.resx">
@@ -67,6 +73,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChinh\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -92,13 +101,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Source\_.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Source\open_book.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Source\plus.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Source\User.png" />
@@ -117,6 +120,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Source\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FormBoSung\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\home_.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

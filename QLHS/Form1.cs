@@ -24,7 +24,7 @@ namespace QLHS
             FMain f = new FMain();
             this.Hide();
             f.ShowDialog();
-            this.ShowDialog();
+            // this.ShowDialog();
         }
     }
 }

@@ -12,8 +12,10 @@ namespace QLHS
 {
     public partial class FMain : Form
     {
-        int Width_pandUser = 198;
+        int Width_pandUser = 193;
         bool Hident = true;
+
+        public FormWindowState Minimized { get; private set; }
 
         public FMain()
         {
@@ -22,7 +24,7 @@ namespace QLHS
 
         private void pictureBox5_MouseHover(object sender, EventArgs e)
         {
-            timerUser.Start();
+            //timerUser.Start();
         }
 
         private void timerUser_Tick(object sender, EventArgs e)
@@ -52,7 +54,42 @@ namespace QLHS
 
         private void pnUser_MouseLeave(object sender, EventArgs e)
         {
+            //timerUser.Start();
+        }
+
+        private void pbClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pbHident_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void pbUser_Click(object sender, EventArgs e)
+        {
             timerUser.Start();
         }
+
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            FormChinh.Home h = new FormChinh.Home() { Dock = DockStyle.Fill, TopLevel = false };
+            pnBoard.Controls.Add(h);
+            h.Show();
+        }
+
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            timerUser.Start();
+        }
+
+        private void pbClose_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+       
     }
 }
