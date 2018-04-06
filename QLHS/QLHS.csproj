@@ -66,6 +66,12 @@
     <Compile Include="FormChinh\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormChinh\Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChinh\Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FMain.resx">
@@ -76,6 +82,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormChinh\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChinh\Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

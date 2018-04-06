@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLHS.FormChinh;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -76,6 +77,7 @@ namespace QLHS
         private void btnHome_Click(object sender, EventArgs e)
         {
             FormChinh.Home h = new FormChinh.Home() { Dock = DockStyle.Fill, TopLevel = false };
+            pnBoard.Controls.Clear();
             pnBoard.Controls.Add(h);
             h.Show();
         }
@@ -90,6 +92,12 @@ namespace QLHS
             this.Close();
         }
 
-       
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            Search s = new Search() { Dock = DockStyle.Fill, TopLevel = false };
+            pnBoard.Controls.Clear();
+            pnBoard.Controls.Add(s);
+            s.Show();
+        }
     }
 }

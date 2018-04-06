@@ -143,7 +143,7 @@
             this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
             this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAdd.Location = new System.Drawing.Point(-1, 217);
+            this.btnAdd.Location = new System.Drawing.Point(-1, 245);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(51, 52);
             this.btnAdd.TabIndex = 13;
@@ -154,7 +154,7 @@
             this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.btnDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.BackgroundImage")));
             this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDelete.Location = new System.Drawing.Point(-1, 369);
+            this.btnDelete.Location = new System.Drawing.Point(-1, 397);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(51, 52);
             this.btnDelete.TabIndex = 12;
@@ -165,7 +165,7 @@
             this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.btnEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEdit.BackgroundImage")));
             this.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEdit.Location = new System.Drawing.Point(-1, 293);
+            this.btnEdit.Location = new System.Drawing.Point(-1, 321);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(51, 52);
             this.btnEdit.TabIndex = 11;
@@ -176,7 +176,7 @@
             this.btnUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.btnUser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUser.BackgroundImage")));
             this.btnUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnUser.Location = new System.Drawing.Point(-1, 139);
+            this.btnUser.Location = new System.Drawing.Point(-1, 169);
             this.btnUser.Name = "btnUser";
             this.btnUser.Size = new System.Drawing.Size(51, 52);
             this.btnUser.TabIndex = 10;
@@ -527,6 +527,7 @@
             this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnTimKiem.Textcolor = System.Drawing.Color.Black;
             this.btnTimKiem.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // btnLapBaoCao
             // 
