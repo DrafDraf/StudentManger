@@ -60,17 +60,41 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormChinh\CSDL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChinh\CSDL.Designer.cs">
+      <DependentUpon>CSDL.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormChinh\Home.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormChinh\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormChinh\NhapBangDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChinh\NhapBangDiem.Designer.cs">
+      <DependentUpon>NhapBangDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChinh\QuiDinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChinh\QuiDinh.Designer.cs">
+      <DependentUpon>QuiDinh.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormChinh\Search.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormChinh\Search.Designer.cs">
       <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChinh\TongKetMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChinh\TongKetMon.Designer.cs">
+      <DependentUpon>TongKetMon.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,11 +104,23 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormChinh\CSDL.resx">
+      <DependentUpon>CSDL.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormChinh\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormChinh\NhapBangDiem.resx">
+      <DependentUpon>NhapBangDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChinh\QuiDinh.resx">
+      <DependentUpon>QuiDinh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormChinh\Search.resx">
       <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChinh\TongKetMon.resx">
+      <DependentUpon>TongKetMon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -135,6 +171,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Source\home_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{a87fc3ce-44ec-456c-b28a-448cc10fd7ba}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{9ea9629a-382a-484b-bcbe-f72158a048a6}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

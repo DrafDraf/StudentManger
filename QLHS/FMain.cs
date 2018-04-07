@@ -92,12 +92,59 @@ namespace QLHS
             this.Close();
         }
 
-        private void btnTimKiem_Click(object sender, EventArgs e)
+        public void LoadFormTimKiem()
         {
             Search s = new Search() { Dock = DockStyle.Fill, TopLevel = false };
             pnBoard.Controls.Clear();
             pnBoard.Controls.Add(s);
             s.Show();
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            LoadFormTimKiem();
+        }
+
+         public  void LoadFormQuyDinh()
+        {
+            QuiDinh q = new QuiDinh() { Dock = DockStyle.Fill, TopLevel = false};
+            pnBoard.Controls.Clear();
+            pnBoard.Controls.Add(q);
+            q.Show();
+        }
+        private void btnQuyDinh_Click(object sender, EventArgs e)
+        {
+            LoadFormQuyDinh();
+        }
+
+        void LoadBangDiem()
+        {
+            NhapBangDiem bd = new NhapBangDiem() { Dock = DockStyle.Fill, TopLevel = false };
+            pnBoard.Controls.Clear();
+            pnBoard.Controls.Add(bd);
+            bd.Show();
+        }
+        private void btnQuanlyMonHoc_Click(object sender, EventArgs e)
+        {
+            LoadBangDiem();
+        }
+
+        void LoadBaoCaoMon()
+        {
+            TongKetMon tk = new TongKetMon() { Dock = DockStyle.Fill, TopLevel = false };
+            pnBoard.Controls.Clear();
+            pnBoard.Controls.Add(tk);
+            tk.Show();
+        }
+        private void btnLapBaoCao_Click(object sender, EventArgs e)
+        {
+            LoadBaoCaoMon();
+        }
+
+        private void btnCoSoDuLieu_Click(object sender, EventArgs e)
+        {
+            CSDL csdl = new CSDL();
+            csdl.ShowDialog();
         }
     }
 }

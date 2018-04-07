@@ -31,21 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
             this.pnTop = new System.Windows.Forms.Panel();
-            this.pbMiniSize = new System.Windows.Forms.PictureBox();
-            this.pbClose = new System.Windows.Forms.PictureBox();
             this.lbNameSoftWare = new System.Windows.Forms.Label();
             this.pnBoard = new System.Windows.Forms.Panel();
             this.pnRight = new System.Windows.Forms.Panel();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.btnUser = new System.Windows.Forms.Button();
-            this.btnHome = new System.Windows.Forms.Button();
             this.pnUser = new System.Windows.Forms.Panel();
-            this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
             this.timerUser = new System.Windows.Forms.Timer(this.components);
             this.pnMenu = new System.Windows.Forms.Panel();
             this.btnCoSoDuLieu = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -55,18 +44,26 @@
             this.btnTimKiem = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnLapBaoCao = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnQuyDinh = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnUser = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
+            this.pbClose = new System.Windows.Forms.PictureBox();
             this.pnTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMiniSize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
             this.pnRight.SuspendLayout();
             this.pnUser.SuspendLayout();
             this.pnMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
             this.SuspendLayout();
             // 
             // pnTop
             // 
             this.pnTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(161)))), ((int)(((byte)(220)))));
-            this.pnTop.Controls.Add(this.pbMiniSize);
             this.pnTop.Controls.Add(this.pbClose);
             this.pnTop.Controls.Add(this.lbNameSoftWare);
             this.pnTop.Dock = System.Windows.Forms.DockStyle.Top;
@@ -74,30 +71,6 @@
             this.pnTop.Name = "pnTop";
             this.pnTop.Size = new System.Drawing.Size(1144, 32);
             this.pnTop.TabIndex = 0;
-            // 
-            // pbMiniSize
-            // 
-            this.pbMiniSize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMiniSize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbMiniSize.BackgroundImage")));
-            this.pbMiniSize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbMiniSize.Location = new System.Drawing.Point(1072, 0);
-            this.pbMiniSize.Name = "pbMiniSize";
-            this.pbMiniSize.Size = new System.Drawing.Size(35, 32);
-            this.pbMiniSize.TabIndex = 9;
-            this.pbMiniSize.TabStop = false;
-            // 
-            // pbClose
-            // 
-            this.pbClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbClose.BackgroundImage")));
-            this.pbClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbClose.InitialImage = null;
-            this.pbClose.Location = new System.Drawing.Point(1109, 0);
-            this.pbClose.Name = "pbClose";
-            this.pbClose.Size = new System.Drawing.Size(35, 32);
-            this.pbClose.TabIndex = 8;
-            this.pbClose.TabStop = false;
-            this.pbClose.Click += new System.EventHandler(this.pbClose_Click_1);
             // 
             // lbNameSoftWare
             // 
@@ -113,9 +86,6 @@
             // 
             // pnBoard
             // 
-            this.pnBoard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnBoard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(213)))), ((int)(((byte)(246)))));
             this.pnBoard.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnBoard.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -138,63 +108,6 @@
             this.pnRight.Size = new System.Drawing.Size(50, 557);
             this.pnRight.TabIndex = 2;
             // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
-            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAdd.Location = new System.Drawing.Point(-1, 245);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(51, 52);
-            this.btnAdd.TabIndex = 13;
-            this.btnAdd.UseVisualStyleBackColor = false;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btnDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.BackgroundImage")));
-            this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDelete.Location = new System.Drawing.Point(-1, 397);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(51, 52);
-            this.btnDelete.TabIndex = 12;
-            this.btnDelete.UseVisualStyleBackColor = false;
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btnEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEdit.BackgroundImage")));
-            this.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEdit.Location = new System.Drawing.Point(-1, 321);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(51, 52);
-            this.btnEdit.TabIndex = 11;
-            this.btnEdit.UseVisualStyleBackColor = false;
-            // 
-            // btnUser
-            // 
-            this.btnUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btnUser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUser.BackgroundImage")));
-            this.btnUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnUser.Location = new System.Drawing.Point(-1, 169);
-            this.btnUser.Name = "btnUser";
-            this.btnUser.Size = new System.Drawing.Size(51, 52);
-            this.btnUser.TabIndex = 10;
-            this.btnUser.UseVisualStyleBackColor = false;
-            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
-            // 
-            // btnHome
-            // 
-            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btnHome.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHome.BackgroundImage")));
-            this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnHome.Location = new System.Drawing.Point(-1, 0);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(51, 52);
-            this.btnHome.TabIndex = 9;
-            this.btnHome.UseVisualStyleBackColor = false;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
             // pnUser
             // 
             this.pnUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(161)))), ((int)(((byte)(220)))));
@@ -208,6 +121,275 @@
             this.pnUser.Size = new System.Drawing.Size(0, 557);
             this.pnUser.TabIndex = 3;
             this.pnUser.MouseLeave += new System.EventHandler(this.pnUser_MouseLeave);
+            // 
+            // timerUser
+            // 
+            this.timerUser.Interval = 10;
+            this.timerUser.Tick += new System.EventHandler(this.timerUser_Tick);
+            // 
+            // pnMenu
+            // 
+            this.pnMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.pnMenu.Controls.Add(this.btnCoSoDuLieu);
+            this.pnMenu.Controls.Add(this.btnGiaoVien);
+            this.pnMenu.Controls.Add(this.btnQuanlyMonHoc);
+            this.pnMenu.Controls.Add(this.btnQuanLyLop);
+            this.pnMenu.Controls.Add(this.btnTimKiem);
+            this.pnMenu.Controls.Add(this.btnLapBaoCao);
+            this.pnMenu.Controls.Add(this.btnQuyDinh);
+            this.pnMenu.Location = new System.Drawing.Point(0, 32);
+            this.pnMenu.Name = "pnMenu";
+            this.pnMenu.Size = new System.Drawing.Size(1094, 52);
+            this.pnMenu.TabIndex = 8;
+            // 
+            // btnCoSoDuLieu
+            // 
+            this.btnCoSoDuLieu.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(128)))));
+            this.btnCoSoDuLieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnCoSoDuLieu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCoSoDuLieu.BorderRadius = 0;
+            this.btnCoSoDuLieu.ButtonText = "Cơ sở dữ liệu";
+            this.btnCoSoDuLieu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCoSoDuLieu.DisabledColor = System.Drawing.Color.Gray;
+            this.btnCoSoDuLieu.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnCoSoDuLieu.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnCoSoDuLieu.Iconimage")));
+            this.btnCoSoDuLieu.Iconimage_right = null;
+            this.btnCoSoDuLieu.Iconimage_right_Selected = null;
+            this.btnCoSoDuLieu.Iconimage_Selected = null;
+            this.btnCoSoDuLieu.IconMarginLeft = 0;
+            this.btnCoSoDuLieu.IconMarginRight = 0;
+            this.btnCoSoDuLieu.IconRightVisible = true;
+            this.btnCoSoDuLieu.IconRightZoom = 0D;
+            this.btnCoSoDuLieu.IconVisible = true;
+            this.btnCoSoDuLieu.IconZoom = 90D;
+            this.btnCoSoDuLieu.IsTab = false;
+            this.btnCoSoDuLieu.Location = new System.Drawing.Point(0, 1);
+            this.btnCoSoDuLieu.Name = "btnCoSoDuLieu";
+            this.btnCoSoDuLieu.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnCoSoDuLieu.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnCoSoDuLieu.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnCoSoDuLieu.selected = false;
+            this.btnCoSoDuLieu.Size = new System.Drawing.Size(159, 51);
+            this.btnCoSoDuLieu.TabIndex = 6;
+            this.btnCoSoDuLieu.Text = "Cơ sở dữ liệu";
+            this.btnCoSoDuLieu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnCoSoDuLieu.Textcolor = System.Drawing.Color.Black;
+            this.btnCoSoDuLieu.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCoSoDuLieu.Click += new System.EventHandler(this.btnCoSoDuLieu_Click);
+            // 
+            // btnGiaoVien
+            // 
+            this.btnGiaoVien.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(128)))));
+            this.btnGiaoVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnGiaoVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGiaoVien.BorderRadius = 0;
+            this.btnGiaoVien.ButtonText = "Giáo viên";
+            this.btnGiaoVien.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGiaoVien.DisabledColor = System.Drawing.Color.Gray;
+            this.btnGiaoVien.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnGiaoVien.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnGiaoVien.Iconimage")));
+            this.btnGiaoVien.Iconimage_right = null;
+            this.btnGiaoVien.Iconimage_right_Selected = null;
+            this.btnGiaoVien.Iconimage_Selected = null;
+            this.btnGiaoVien.IconMarginLeft = 0;
+            this.btnGiaoVien.IconMarginRight = 0;
+            this.btnGiaoVien.IconRightVisible = true;
+            this.btnGiaoVien.IconRightZoom = 0D;
+            this.btnGiaoVien.IconVisible = true;
+            this.btnGiaoVien.IconZoom = 90D;
+            this.btnGiaoVien.IsTab = false;
+            this.btnGiaoVien.Location = new System.Drawing.Point(161, 1);
+            this.btnGiaoVien.Name = "btnGiaoVien";
+            this.btnGiaoVien.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnGiaoVien.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnGiaoVien.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnGiaoVien.selected = false;
+            this.btnGiaoVien.Size = new System.Drawing.Size(146, 51);
+            this.btnGiaoVien.TabIndex = 5;
+            this.btnGiaoVien.Text = "Giáo viên";
+            this.btnGiaoVien.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnGiaoVien.Textcolor = System.Drawing.Color.Black;
+            this.btnGiaoVien.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btnQuanlyMonHoc
+            // 
+            this.btnQuanlyMonHoc.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(128)))));
+            this.btnQuanlyMonHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnQuanlyMonHoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnQuanlyMonHoc.BorderRadius = 0;
+            this.btnQuanlyMonHoc.ButtonText = "Quản lý      môn học";
+            this.btnQuanlyMonHoc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQuanlyMonHoc.DisabledColor = System.Drawing.Color.Gray;
+            this.btnQuanlyMonHoc.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnQuanlyMonHoc.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnQuanlyMonHoc.Iconimage")));
+            this.btnQuanlyMonHoc.Iconimage_right = null;
+            this.btnQuanlyMonHoc.Iconimage_right_Selected = null;
+            this.btnQuanlyMonHoc.Iconimage_Selected = null;
+            this.btnQuanlyMonHoc.IconMarginLeft = 0;
+            this.btnQuanlyMonHoc.IconMarginRight = 0;
+            this.btnQuanlyMonHoc.IconRightVisible = true;
+            this.btnQuanlyMonHoc.IconRightZoom = 0D;
+            this.btnQuanlyMonHoc.IconVisible = true;
+            this.btnQuanlyMonHoc.IconZoom = 90D;
+            this.btnQuanlyMonHoc.IsTab = false;
+            this.btnQuanlyMonHoc.Location = new System.Drawing.Point(311, 1);
+            this.btnQuanlyMonHoc.Name = "btnQuanlyMonHoc";
+            this.btnQuanlyMonHoc.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnQuanlyMonHoc.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnQuanlyMonHoc.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnQuanlyMonHoc.selected = false;
+            this.btnQuanlyMonHoc.Size = new System.Drawing.Size(146, 51);
+            this.btnQuanlyMonHoc.TabIndex = 4;
+            this.btnQuanlyMonHoc.Text = "Quản lý      môn học";
+            this.btnQuanlyMonHoc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnQuanlyMonHoc.Textcolor = System.Drawing.Color.Black;
+            this.btnQuanlyMonHoc.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanlyMonHoc.Click += new System.EventHandler(this.btnQuanlyMonHoc_Click);
+            // 
+            // btnQuanLyLop
+            // 
+            this.btnQuanLyLop.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(128)))));
+            this.btnQuanLyLop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnQuanLyLop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnQuanLyLop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnQuanLyLop.BorderRadius = 0;
+            this.btnQuanLyLop.ButtonText = "Quản lý lớp học";
+            this.btnQuanLyLop.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQuanLyLop.DisabledColor = System.Drawing.Color.Gray;
+            this.btnQuanLyLop.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnQuanLyLop.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnQuanLyLop.Iconimage")));
+            this.btnQuanLyLop.Iconimage_right = null;
+            this.btnQuanLyLop.Iconimage_right_Selected = null;
+            this.btnQuanLyLop.Iconimage_Selected = null;
+            this.btnQuanLyLop.IconMarginLeft = 0;
+            this.btnQuanLyLop.IconMarginRight = 0;
+            this.btnQuanLyLop.IconRightVisible = true;
+            this.btnQuanLyLop.IconRightZoom = 0D;
+            this.btnQuanLyLop.IconVisible = true;
+            this.btnQuanLyLop.IconZoom = 90D;
+            this.btnQuanLyLop.IsTab = false;
+            this.btnQuanLyLop.Location = new System.Drawing.Point(618, 1);
+            this.btnQuanLyLop.Name = "btnQuanLyLop";
+            this.btnQuanLyLop.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnQuanLyLop.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnQuanLyLop.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnQuanLyLop.selected = false;
+            this.btnQuanLyLop.Size = new System.Drawing.Size(147, 51);
+            this.btnQuanLyLop.TabIndex = 3;
+            this.btnQuanLyLop.Text = "Quản lý lớp học";
+            this.btnQuanLyLop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnQuanLyLop.Textcolor = System.Drawing.Color.Black;
+            this.btnQuanLyLop.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(128)))));
+            this.btnTimKiem.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTimKiem.BorderRadius = 0;
+            this.btnTimKiem.ButtonText = "Tìm kiếm";
+            this.btnTimKiem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTimKiem.DisabledColor = System.Drawing.Color.Gray;
+            this.btnTimKiem.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnTimKiem.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Iconimage")));
+            this.btnTimKiem.Iconimage_right = null;
+            this.btnTimKiem.Iconimage_right_Selected = null;
+            this.btnTimKiem.Iconimage_Selected = null;
+            this.btnTimKiem.IconMarginLeft = 0;
+            this.btnTimKiem.IconMarginRight = 0;
+            this.btnTimKiem.IconRightVisible = true;
+            this.btnTimKiem.IconRightZoom = 0D;
+            this.btnTimKiem.IconVisible = true;
+            this.btnTimKiem.IconZoom = 90D;
+            this.btnTimKiem.IsTab = false;
+            this.btnTimKiem.Location = new System.Drawing.Point(463, 1);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnTimKiem.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnTimKiem.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnTimKiem.selected = false;
+            this.btnTimKiem.Size = new System.Drawing.Size(137, 51);
+            this.btnTimKiem.TabIndex = 2;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnTimKiem.Textcolor = System.Drawing.Color.Black;
+            this.btnTimKiem.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
+            // btnLapBaoCao
+            // 
+            this.btnLapBaoCao.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(128)))));
+            this.btnLapBaoCao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLapBaoCao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnLapBaoCao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLapBaoCao.BorderRadius = 0;
+            this.btnLapBaoCao.ButtonText = "Lập báo cáo tổng kết";
+            this.btnLapBaoCao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLapBaoCao.DisabledColor = System.Drawing.Color.Gray;
+            this.btnLapBaoCao.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnLapBaoCao.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLapBaoCao.Iconimage")));
+            this.btnLapBaoCao.Iconimage_right = null;
+            this.btnLapBaoCao.Iconimage_right_Selected = null;
+            this.btnLapBaoCao.Iconimage_Selected = null;
+            this.btnLapBaoCao.IconMarginLeft = 0;
+            this.btnLapBaoCao.IconMarginRight = 0;
+            this.btnLapBaoCao.IconRightVisible = true;
+            this.btnLapBaoCao.IconRightZoom = 0D;
+            this.btnLapBaoCao.IconVisible = true;
+            this.btnLapBaoCao.IconZoom = 90D;
+            this.btnLapBaoCao.IsTab = false;
+            this.btnLapBaoCao.Location = new System.Drawing.Point(774, 1);
+            this.btnLapBaoCao.Name = "btnLapBaoCao";
+            this.btnLapBaoCao.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnLapBaoCao.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnLapBaoCao.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnLapBaoCao.selected = false;
+            this.btnLapBaoCao.Size = new System.Drawing.Size(159, 51);
+            this.btnLapBaoCao.TabIndex = 1;
+            this.btnLapBaoCao.Text = "Lập báo cáo tổng kết";
+            this.btnLapBaoCao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLapBaoCao.Textcolor = System.Drawing.Color.Black;
+            this.btnLapBaoCao.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLapBaoCao.Click += new System.EventHandler(this.btnLapBaoCao_Click);
+            // 
+            // btnQuyDinh
+            // 
+            this.btnQuyDinh.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(128)))));
+            this.btnQuyDinh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnQuyDinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnQuyDinh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnQuyDinh.BorderRadius = 0;
+            this.btnQuyDinh.ButtonText = "Thay đổi   quy định";
+            this.btnQuyDinh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQuyDinh.DisabledColor = System.Drawing.Color.Gray;
+            this.btnQuyDinh.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnQuyDinh.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnQuyDinh.Iconimage")));
+            this.btnQuyDinh.Iconimage_right = null;
+            this.btnQuyDinh.Iconimage_right_Selected = null;
+            this.btnQuyDinh.Iconimage_Selected = null;
+            this.btnQuyDinh.IconMarginLeft = 0;
+            this.btnQuyDinh.IconMarginRight = 0;
+            this.btnQuyDinh.IconRightVisible = true;
+            this.btnQuyDinh.IconRightZoom = 0D;
+            this.btnQuyDinh.IconVisible = true;
+            this.btnQuyDinh.IconZoom = 90D;
+            this.btnQuyDinh.IsTab = false;
+            this.btnQuyDinh.Location = new System.Drawing.Point(939, 1);
+            this.btnQuyDinh.Name = "btnQuyDinh";
+            this.btnQuyDinh.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
+            this.btnQuyDinh.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnQuyDinh.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnQuyDinh.selected = false;
+            this.btnQuyDinh.Size = new System.Drawing.Size(155, 51);
+            this.btnQuyDinh.TabIndex = 0;
+            this.btnQuyDinh.Text = "Thay đổi   quy định";
+            this.btnQuyDinh.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnQuyDinh.Textcolor = System.Drawing.Color.Black;
+            this.btnQuyDinh.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuyDinh.Click += new System.EventHandler(this.btnQuyDinh_Click);
             // 
             // bunifuFlatButton3
             // 
@@ -334,270 +516,76 @@
             this.bunifuTileButton1.Size = new System.Drawing.Size(198, 164);
             this.bunifuTileButton1.TabIndex = 0;
             // 
-            // timerUser
+            // btnAdd
             // 
-            this.timerUser.Interval = 10;
-            this.timerUser.Tick += new System.EventHandler(this.timerUser_Tick);
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
+            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdd.Location = new System.Drawing.Point(-1, 242);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(51, 52);
+            this.btnAdd.TabIndex = 13;
+            this.btnAdd.UseVisualStyleBackColor = false;
             // 
-            // pnMenu
+            // btnDelete
             // 
-            this.pnMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
-            this.pnMenu.Controls.Add(this.btnCoSoDuLieu);
-            this.pnMenu.Controls.Add(this.btnGiaoVien);
-            this.pnMenu.Controls.Add(this.btnQuanlyMonHoc);
-            this.pnMenu.Controls.Add(this.btnQuanLyLop);
-            this.pnMenu.Controls.Add(this.btnTimKiem);
-            this.pnMenu.Controls.Add(this.btnLapBaoCao);
-            this.pnMenu.Controls.Add(this.btnQuyDinh);
-            this.pnMenu.Location = new System.Drawing.Point(0, 32);
-            this.pnMenu.Name = "pnMenu";
-            this.pnMenu.Size = new System.Drawing.Size(1094, 52);
-            this.pnMenu.TabIndex = 8;
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.BackgroundImage")));
+            this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDelete.Location = new System.Drawing.Point(-1, 394);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(51, 52);
+            this.btnDelete.TabIndex = 12;
+            this.btnDelete.UseVisualStyleBackColor = false;
             // 
-            // btnCoSoDuLieu
+            // btnEdit
             // 
-            this.btnCoSoDuLieu.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(128)))));
-            this.btnCoSoDuLieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
-            this.btnCoSoDuLieu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCoSoDuLieu.BorderRadius = 0;
-            this.btnCoSoDuLieu.ButtonText = "Cơ sở dữ liệu";
-            this.btnCoSoDuLieu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCoSoDuLieu.DisabledColor = System.Drawing.Color.Gray;
-            this.btnCoSoDuLieu.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnCoSoDuLieu.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnCoSoDuLieu.Iconimage")));
-            this.btnCoSoDuLieu.Iconimage_right = null;
-            this.btnCoSoDuLieu.Iconimage_right_Selected = null;
-            this.btnCoSoDuLieu.Iconimage_Selected = null;
-            this.btnCoSoDuLieu.IconMarginLeft = 0;
-            this.btnCoSoDuLieu.IconMarginRight = 0;
-            this.btnCoSoDuLieu.IconRightVisible = true;
-            this.btnCoSoDuLieu.IconRightZoom = 0D;
-            this.btnCoSoDuLieu.IconVisible = true;
-            this.btnCoSoDuLieu.IconZoom = 90D;
-            this.btnCoSoDuLieu.IsTab = false;
-            this.btnCoSoDuLieu.Location = new System.Drawing.Point(0, 1);
-            this.btnCoSoDuLieu.Name = "btnCoSoDuLieu";
-            this.btnCoSoDuLieu.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
-            this.btnCoSoDuLieu.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnCoSoDuLieu.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnCoSoDuLieu.selected = false;
-            this.btnCoSoDuLieu.Size = new System.Drawing.Size(159, 51);
-            this.btnCoSoDuLieu.TabIndex = 6;
-            this.btnCoSoDuLieu.Text = "Cơ sở dữ liệu";
-            this.btnCoSoDuLieu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnCoSoDuLieu.Textcolor = System.Drawing.Color.Black;
-            this.btnCoSoDuLieu.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEdit.BackgroundImage")));
+            this.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEdit.Location = new System.Drawing.Point(-1, 318);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(51, 52);
+            this.btnEdit.TabIndex = 11;
+            this.btnEdit.UseVisualStyleBackColor = false;
             // 
-            // btnGiaoVien
+            // btnUser
             // 
-            this.btnGiaoVien.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(128)))));
-            this.btnGiaoVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
-            this.btnGiaoVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGiaoVien.BorderRadius = 0;
-            this.btnGiaoVien.ButtonText = "Giáo viên";
-            this.btnGiaoVien.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGiaoVien.DisabledColor = System.Drawing.Color.Gray;
-            this.btnGiaoVien.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnGiaoVien.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnGiaoVien.Iconimage")));
-            this.btnGiaoVien.Iconimage_right = null;
-            this.btnGiaoVien.Iconimage_right_Selected = null;
-            this.btnGiaoVien.Iconimage_Selected = null;
-            this.btnGiaoVien.IconMarginLeft = 0;
-            this.btnGiaoVien.IconMarginRight = 0;
-            this.btnGiaoVien.IconRightVisible = true;
-            this.btnGiaoVien.IconRightZoom = 0D;
-            this.btnGiaoVien.IconVisible = true;
-            this.btnGiaoVien.IconZoom = 90D;
-            this.btnGiaoVien.IsTab = false;
-            this.btnGiaoVien.Location = new System.Drawing.Point(161, 1);
-            this.btnGiaoVien.Name = "btnGiaoVien";
-            this.btnGiaoVien.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
-            this.btnGiaoVien.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnGiaoVien.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnGiaoVien.selected = false;
-            this.btnGiaoVien.Size = new System.Drawing.Size(146, 51);
-            this.btnGiaoVien.TabIndex = 5;
-            this.btnGiaoVien.Text = "Giáo viên";
-            this.btnGiaoVien.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnGiaoVien.Textcolor = System.Drawing.Color.Black;
-            this.btnGiaoVien.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnUser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUser.BackgroundImage")));
+            this.btnUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnUser.Location = new System.Drawing.Point(-1, 166);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.Size = new System.Drawing.Size(51, 52);
+            this.btnUser.TabIndex = 10;
+            this.btnUser.UseVisualStyleBackColor = false;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
-            // btnQuanlyMonHoc
+            // btnHome
             // 
-            this.btnQuanlyMonHoc.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(128)))));
-            this.btnQuanlyMonHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
-            this.btnQuanlyMonHoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnQuanlyMonHoc.BorderRadius = 0;
-            this.btnQuanlyMonHoc.ButtonText = "Quản lý      môn học";
-            this.btnQuanlyMonHoc.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnQuanlyMonHoc.DisabledColor = System.Drawing.Color.Gray;
-            this.btnQuanlyMonHoc.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnQuanlyMonHoc.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnQuanlyMonHoc.Iconimage")));
-            this.btnQuanlyMonHoc.Iconimage_right = null;
-            this.btnQuanlyMonHoc.Iconimage_right_Selected = null;
-            this.btnQuanlyMonHoc.Iconimage_Selected = null;
-            this.btnQuanlyMonHoc.IconMarginLeft = 0;
-            this.btnQuanlyMonHoc.IconMarginRight = 0;
-            this.btnQuanlyMonHoc.IconRightVisible = true;
-            this.btnQuanlyMonHoc.IconRightZoom = 0D;
-            this.btnQuanlyMonHoc.IconVisible = true;
-            this.btnQuanlyMonHoc.IconZoom = 90D;
-            this.btnQuanlyMonHoc.IsTab = false;
-            this.btnQuanlyMonHoc.Location = new System.Drawing.Point(311, 1);
-            this.btnQuanlyMonHoc.Name = "btnQuanlyMonHoc";
-            this.btnQuanlyMonHoc.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
-            this.btnQuanlyMonHoc.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnQuanlyMonHoc.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnQuanlyMonHoc.selected = false;
-            this.btnQuanlyMonHoc.Size = new System.Drawing.Size(146, 51);
-            this.btnQuanlyMonHoc.TabIndex = 4;
-            this.btnQuanlyMonHoc.Text = "Quản lý      môn học";
-            this.btnQuanlyMonHoc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnQuanlyMonHoc.Textcolor = System.Drawing.Color.Black;
-            this.btnQuanlyMonHoc.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnHome.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHome.BackgroundImage")));
+            this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnHome.Location = new System.Drawing.Point(-1, 0);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(51, 52);
+            this.btnHome.TabIndex = 9;
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // btnQuanLyLop
+            // pbClose
             // 
-            this.btnQuanLyLop.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(128)))));
-            this.btnQuanLyLop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnQuanLyLop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
-            this.btnQuanLyLop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnQuanLyLop.BorderRadius = 0;
-            this.btnQuanLyLop.ButtonText = "Quản lý lớp học";
-            this.btnQuanLyLop.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnQuanLyLop.DisabledColor = System.Drawing.Color.Gray;
-            this.btnQuanLyLop.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnQuanLyLop.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnQuanLyLop.Iconimage")));
-            this.btnQuanLyLop.Iconimage_right = null;
-            this.btnQuanLyLop.Iconimage_right_Selected = null;
-            this.btnQuanLyLop.Iconimage_Selected = null;
-            this.btnQuanLyLop.IconMarginLeft = 0;
-            this.btnQuanLyLop.IconMarginRight = 0;
-            this.btnQuanLyLop.IconRightVisible = true;
-            this.btnQuanLyLop.IconRightZoom = 0D;
-            this.btnQuanLyLop.IconVisible = true;
-            this.btnQuanLyLop.IconZoom = 90D;
-            this.btnQuanLyLop.IsTab = false;
-            this.btnQuanLyLop.Location = new System.Drawing.Point(618, 1);
-            this.btnQuanLyLop.Name = "btnQuanLyLop";
-            this.btnQuanLyLop.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
-            this.btnQuanLyLop.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnQuanLyLop.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnQuanLyLop.selected = false;
-            this.btnQuanLyLop.Size = new System.Drawing.Size(147, 51);
-            this.btnQuanLyLop.TabIndex = 3;
-            this.btnQuanLyLop.Text = "Quản lý lớp học";
-            this.btnQuanLyLop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnQuanLyLop.Textcolor = System.Drawing.Color.Black;
-            this.btnQuanLyLop.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btnTimKiem
-            // 
-            this.btnTimKiem.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(128)))));
-            this.btnTimKiem.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
-            this.btnTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTimKiem.BorderRadius = 0;
-            this.btnTimKiem.ButtonText = "Tìm kiếm";
-            this.btnTimKiem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTimKiem.DisabledColor = System.Drawing.Color.Gray;
-            this.btnTimKiem.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnTimKiem.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Iconimage")));
-            this.btnTimKiem.Iconimage_right = null;
-            this.btnTimKiem.Iconimage_right_Selected = null;
-            this.btnTimKiem.Iconimage_Selected = null;
-            this.btnTimKiem.IconMarginLeft = 0;
-            this.btnTimKiem.IconMarginRight = 0;
-            this.btnTimKiem.IconRightVisible = true;
-            this.btnTimKiem.IconRightZoom = 0D;
-            this.btnTimKiem.IconVisible = true;
-            this.btnTimKiem.IconZoom = 90D;
-            this.btnTimKiem.IsTab = false;
-            this.btnTimKiem.Location = new System.Drawing.Point(467, 1);
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
-            this.btnTimKiem.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnTimKiem.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnTimKiem.selected = false;
-            this.btnTimKiem.Size = new System.Drawing.Size(137, 51);
-            this.btnTimKiem.TabIndex = 2;
-            this.btnTimKiem.Text = "Tìm kiếm";
-            this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnTimKiem.Textcolor = System.Drawing.Color.Black;
-            this.btnTimKiem.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
-            // 
-            // btnLapBaoCao
-            // 
-            this.btnLapBaoCao.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(128)))));
-            this.btnLapBaoCao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLapBaoCao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
-            this.btnLapBaoCao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLapBaoCao.BorderRadius = 0;
-            this.btnLapBaoCao.ButtonText = "Lập báo cáo tổng kết";
-            this.btnLapBaoCao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLapBaoCao.DisabledColor = System.Drawing.Color.Gray;
-            this.btnLapBaoCao.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnLapBaoCao.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLapBaoCao.Iconimage")));
-            this.btnLapBaoCao.Iconimage_right = null;
-            this.btnLapBaoCao.Iconimage_right_Selected = null;
-            this.btnLapBaoCao.Iconimage_Selected = null;
-            this.btnLapBaoCao.IconMarginLeft = 0;
-            this.btnLapBaoCao.IconMarginRight = 0;
-            this.btnLapBaoCao.IconRightVisible = true;
-            this.btnLapBaoCao.IconRightZoom = 0D;
-            this.btnLapBaoCao.IconVisible = true;
-            this.btnLapBaoCao.IconZoom = 90D;
-            this.btnLapBaoCao.IsTab = false;
-            this.btnLapBaoCao.Location = new System.Drawing.Point(774, 1);
-            this.btnLapBaoCao.Name = "btnLapBaoCao";
-            this.btnLapBaoCao.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
-            this.btnLapBaoCao.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnLapBaoCao.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnLapBaoCao.selected = false;
-            this.btnLapBaoCao.Size = new System.Drawing.Size(159, 51);
-            this.btnLapBaoCao.TabIndex = 1;
-            this.btnLapBaoCao.Text = "Lập báo cáo tổng kết";
-            this.btnLapBaoCao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnLapBaoCao.Textcolor = System.Drawing.Color.Black;
-            this.btnLapBaoCao.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btnQuyDinh
-            // 
-            this.btnQuyDinh.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(49)))), ((int)(((byte)(128)))));
-            this.btnQuyDinh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnQuyDinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
-            this.btnQuyDinh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnQuyDinh.BorderRadius = 0;
-            this.btnQuyDinh.ButtonText = "Thay đổi   quy định";
-            this.btnQuyDinh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnQuyDinh.DisabledColor = System.Drawing.Color.Gray;
-            this.btnQuyDinh.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnQuyDinh.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnQuyDinh.Iconimage")));
-            this.btnQuyDinh.Iconimage_right = null;
-            this.btnQuyDinh.Iconimage_right_Selected = null;
-            this.btnQuyDinh.Iconimage_Selected = null;
-            this.btnQuyDinh.IconMarginLeft = 0;
-            this.btnQuyDinh.IconMarginRight = 0;
-            this.btnQuyDinh.IconRightVisible = true;
-            this.btnQuyDinh.IconRightZoom = 0D;
-            this.btnQuyDinh.IconVisible = true;
-            this.btnQuyDinh.IconZoom = 90D;
-            this.btnQuyDinh.IsTab = false;
-            this.btnQuyDinh.Location = new System.Drawing.Point(939, 1);
-            this.btnQuyDinh.Name = "btnQuyDinh";
-            this.btnQuyDinh.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
-            this.btnQuyDinh.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnQuyDinh.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnQuyDinh.selected = false;
-            this.btnQuyDinh.Size = new System.Drawing.Size(155, 51);
-            this.btnQuyDinh.TabIndex = 0;
-            this.btnQuyDinh.Text = "Thay đổi   quy định";
-            this.btnQuyDinh.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnQuyDinh.Textcolor = System.Drawing.Color.Black;
-            this.btnQuyDinh.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pbClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbClose.BackgroundImage")));
+            this.pbClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbClose.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pbClose.InitialImage = null;
+            this.pbClose.Location = new System.Drawing.Point(1118, 3);
+            this.pbClose.Name = "pbClose";
+            this.pbClose.Size = new System.Drawing.Size(23, 23);
+            this.pbClose.TabIndex = 8;
+            this.pbClose.TabStop = false;
+            this.pbClose.Click += new System.EventHandler(this.pbClose_Click_1);
             // 
             // FMain
             // 
@@ -614,11 +602,10 @@
             this.Name = "FMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.pnTop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbMiniSize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
             this.pnRight.ResumeLayout(false);
             this.pnUser.ResumeLayout(false);
             this.pnMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -649,6 +636,5 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnTimKiem;
         private Bunifu.Framework.UI.BunifuFlatButton btnLapBaoCao;
         private System.Windows.Forms.PictureBox pbClose;
-        private System.Windows.Forms.PictureBox pbMiniSize;
     }
 }

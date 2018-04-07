@@ -116,6 +116,7 @@
             this.btTraCuu.Name = "btTraCuu";
             this.btTraCuu.Size = new System.Drawing.Size(210, 119);
             this.btTraCuu.TabIndex = 12;
+            this.btTraCuu.Click += new System.EventHandler(this.btTraCuu_Click);
             // 
             // btLapDS
             // 
@@ -194,6 +195,7 @@
             this.btQuyDinh.Name = "btQuyDinh";
             this.btQuyDinh.Size = new System.Drawing.Size(220, 119);
             this.btQuyDinh.TabIndex = 8;
+            this.btQuyDinh.Click += new System.EventHandler(this.btQuyDinh_Click);
             // 
             // Home
             // 
@@ -209,7 +211,7 @@
             this.Controls.Add(this.btThemHocSinh);
             this.Controls.Add(this.lb_1);
             this.Controls.Add(this.btQuyDinh);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
             this.Text = "Home";
             this.ResumeLayout(false);
