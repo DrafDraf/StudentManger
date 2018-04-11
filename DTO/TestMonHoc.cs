@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BLL
+namespace DTO
 {
-    public class Class1
+    public class TestMonHoc
     {
+        public string MaMH { get; set; }
+        public string TenMH { get; set; }
     }
 }

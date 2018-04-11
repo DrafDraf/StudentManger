@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListView lvListSearch;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Search));
+            this.listViewResult = new System.Windows.Forms.ListView();
             this.STT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.HoTen = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Lop = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.TB1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.TB2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.tbKeySearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.cbListSearch = new System.Windows.Forms.ComboBox();
             this.pnListSearch = new System.Windows.Forms.Panel();
             this.gbListSearch = new System.Windows.Forms.GroupBox();
@@ -59,7 +59,6 @@
             this.lbTen = new System.Windows.Forms.Label();
             this.pbGuideSearch = new System.Windows.Forms.PictureBox();
             this.btnSearch = new Bunifu.Framework.UI.BunifuFlatButton();
-            lvListSearch = new System.Windows.Forms.ListView();
             this.pnListSearch.SuspendLayout();
             this.gbListSearch.SuspendLayout();
             this.pnDetailSearch.SuspendLayout();
@@ -67,27 +66,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbGuideSearch)).BeginInit();
             this.SuspendLayout();
             // 
-            // lvListSearch
+            // listViewResult
             // 
-            lvListSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            lvListSearch.AutoArrange = false;
-            lvListSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            lvListSearch.CheckBoxes = true;
-            lvListSearch.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listViewResult.AutoArrange = false;
+            this.listViewResult.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listViewResult.CheckBoxes = true;
+            this.listViewResult.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.STT,
             this.HoTen,
             this.Lop,
             this.TB1,
             this.TB2});
-            lvListSearch.FullRowSelect = true;
-            lvListSearch.GridLines = true;
-            lvListSearch.Location = new System.Drawing.Point(15, 50);
-            lvListSearch.Name = "lvListSearch";
-            lvListSearch.Size = new System.Drawing.Size(602, 226);
-            lvListSearch.TabIndex = 0;
-            lvListSearch.UseCompatibleStateImageBehavior = false;
-            lvListSearch.View = System.Windows.Forms.View.Details;
+            this.listViewResult.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listViewResult.FullRowSelect = true;
+            this.listViewResult.GridLines = true;
+            this.listViewResult.Location = new System.Drawing.Point(3, 25);
+            this.listViewResult.Name = "listViewResult";
+            this.listViewResult.Size = new System.Drawing.Size(617, 290);
+            this.listViewResult.TabIndex = 0;
+            this.listViewResult.UseCompatibleStateImageBehavior = false;
+            this.listViewResult.View = System.Windows.Forms.View.Details;
             // 
             // STT
             // 
@@ -114,26 +112,26 @@
             this.TB2.Text = "TB Học kỳ 2";
             this.TB2.Width = 120;
             // 
-            // bunifuMaterialTextbox1
+            // tbKeySearch
             // 
-            this.bunifuMaterialTextbox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineThickness = 4;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(365, 35);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(339, 38);
-            this.bunifuMaterialTextbox1.TabIndex = 2;
-            this.bunifuMaterialTextbox1.Text = "Nhập từ khóa cần tìm";
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tbKeySearch.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tbKeySearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbKeySearch.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbKeySearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbKeySearch.HintForeColor = System.Drawing.Color.Empty;
+            this.tbKeySearch.HintText = "";
+            this.tbKeySearch.isPassword = false;
+            this.tbKeySearch.LineFocusedColor = System.Drawing.Color.Blue;
+            this.tbKeySearch.LineIdleColor = System.Drawing.Color.Gray;
+            this.tbKeySearch.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.tbKeySearch.LineThickness = 4;
+            this.tbKeySearch.Location = new System.Drawing.Point(365, 35);
+            this.tbKeySearch.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbKeySearch.Name = "tbKeySearch";
+            this.tbKeySearch.Size = new System.Drawing.Size(339, 38);
+            this.tbKeySearch.TabIndex = 2;
+            this.tbKeySearch.Text = "Nhập từ khóa cần tìm";
+            this.tbKeySearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // cbListSearch
             // 
@@ -163,7 +161,7 @@
             // 
             this.gbListSearch.AutoSize = true;
             this.gbListSearch.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.gbListSearch.Controls.Add(lvListSearch);
+            this.gbListSearch.Controls.Add(this.listViewResult);
             this.gbListSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gbListSearch.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbListSearch.Location = new System.Drawing.Point(0, 0);
@@ -421,6 +419,7 @@
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSearch.Textcolor = System.Drawing.Color.White;
             this.btnSearch.TextFont = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // Search
             // 
@@ -433,7 +432,7 @@
             this.Controls.Add(this.pbGuideSearch);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.cbListSearch);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
+            this.Controls.Add(this.tbKeySearch);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Search";
             this.Text = "Search";
@@ -450,7 +449,7 @@
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox tbKeySearch;
         private System.Windows.Forms.ComboBox cbListSearch;
         private Bunifu.Framework.UI.BunifuFlatButton btnSearch;
         private System.Windows.Forms.PictureBox pbGuideSearch;
@@ -479,5 +478,6 @@
         private System.Windows.Forms.ColumnHeader Lop;
         private System.Windows.Forms.ColumnHeader TB1;
         private System.Windows.Forms.ColumnHeader TB2;
+        private System.Windows.Forms.ListView listViewResult;
     }
 }

@@ -41,7 +41,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnHuyBo = new System.Windows.Forms.Button();
             this.cboKieuXacThuc = new System.Windows.Forms.ComboBox();
-            this.cboDatabase = new System.Windows.Forms.ComboBox();
             this.txtTenServer = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,6 +48,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tbdatabeseName = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,22 +64,23 @@
             this.btnLuuThongTin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnLuuThongTin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuuThongTin.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btnLuuThongTin.Location = new System.Drawing.Point(266, 12);
+            this.btnLuuThongTin.Location = new System.Drawing.Point(101, 12);
             this.btnLuuThongTin.Name = "btnLuuThongTin";
             this.btnLuuThongTin.Size = new System.Drawing.Size(107, 37);
             this.btnLuuThongTin.TabIndex = 2;
-            this.btnLuuThongTin.Text = "Lưu thông tin";
+            this.btnLuuThongTin.Text = "Lưu ";
             this.btnLuuThongTin.UseVisualStyleBackColor = false;
+            this.btnLuuThongTin.Click += new System.EventHandler(this.btnLuuThongTin_Click);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(140, 364);
+            this.label9.Location = new System.Drawing.Point(159, 177);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(299, 13);
+            this.label9.Size = new System.Drawing.Size(296, 13);
             this.label9.TabIndex = 42;
-            this.label9.Text = "Vui lòng chọn đúng database để không gây ra lỗi khi sử dụng";
+            this.label9.Text = "Vui lòng điền đúng database để không gây ra lỗi khi sử dụng";
             // 
             // label8
             // 
@@ -100,27 +101,29 @@
             this.btnKiemTra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnKiemTra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKiemTra.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btnKiemTra.Location = new System.Drawing.Point(356, 283);
+            this.btnKiemTra.Location = new System.Drawing.Point(325, 352);
             this.btnKiemTra.Name = "btnKiemTra";
-            this.btnKiemTra.Size = new System.Drawing.Size(100, 35);
+            this.btnKiemTra.Size = new System.Drawing.Size(131, 35);
             this.btnKiemTra.TabIndex = 4;
-            this.btnKiemTra.Text = "Kết nối";
+            this.btnKiemTra.Text = "Kiểm tra kết nối";
             this.btnKiemTra.UseVisualStyleBackColor = false;
+            this.btnKiemTra.Click += new System.EventHandler(this.btnKiemTra_Click);
             // 
             // txtMatKhau
             // 
             this.txtMatKhau.Enabled = false;
             this.txtMatKhau.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtMatKhau.Location = new System.Drawing.Point(235, 242);
+            this.txtMatKhau.Location = new System.Drawing.Point(235, 311);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(220, 25);
             this.txtMatKhau.TabIndex = 30;
+            this.txtMatKhau.Text = "A221198a";
             this.txtMatKhau.UseSystemPasswordChar = true;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(140, 247);
+            this.label6.Location = new System.Drawing.Point(140, 316);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(55, 13);
             this.label6.TabIndex = 31;
@@ -130,15 +133,16 @@
             // 
             this.txtTenDangNhap.Enabled = false;
             this.txtTenDangNhap.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtTenDangNhap.Location = new System.Drawing.Point(235, 197);
+            this.txtTenDangNhap.Location = new System.Drawing.Point(235, 266);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Size = new System.Drawing.Size(220, 25);
             this.txtTenDangNhap.TabIndex = 28;
+            this.txtTenDangNhap.Text = "sa";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(140, 202);
+            this.label5.Location = new System.Drawing.Point(140, 271);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 13);
             this.label5.TabIndex = 29;
@@ -147,7 +151,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(34, 341);
+            this.label7.Location = new System.Drawing.Point(34, 151);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 13);
             this.label7.TabIndex = 25;
@@ -173,8 +177,8 @@
             this.btnHuyBo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnHuyBo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnHuyBo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHuyBo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnHuyBo.Location = new System.Drawing.Point(379, 12);
+            this.btnHuyBo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuyBo.Location = new System.Drawing.Point(294, 12);
             this.btnHuyBo.Name = "btnHuyBo";
             this.btnHuyBo.Size = new System.Drawing.Size(107, 37);
             this.btnHuyBo.TabIndex = 3;
@@ -187,21 +191,11 @@
             this.cboKieuXacThuc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboKieuXacThuc.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cboKieuXacThuc.FormattingEnabled = true;
-            this.cboKieuXacThuc.Location = new System.Drawing.Point(144, 154);
+            this.cboKieuXacThuc.Location = new System.Drawing.Point(144, 223);
             this.cboKieuXacThuc.Name = "cboKieuXacThuc";
             this.cboKieuXacThuc.Size = new System.Drawing.Size(311, 25);
             this.cboKieuXacThuc.TabIndex = 23;
             this.cboKieuXacThuc.SelectedIndexChanged += new System.EventHandler(this.cboKieuXacThuc_SelectedIndexChanged);
-            // 
-            // cboDatabase
-            // 
-            this.cboDatabase.Enabled = false;
-            this.cboDatabase.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cboDatabase.FormattingEnabled = true;
-            this.cboDatabase.Location = new System.Drawing.Point(144, 336);
-            this.cboDatabase.Name = "cboDatabase";
-            this.cboDatabase.Size = new System.Drawing.Size(311, 25);
-            this.cboDatabase.TabIndex = 21;
             // 
             // txtTenServer
             // 
@@ -210,6 +204,7 @@
             this.txtTenServer.Name = "txtTenServer";
             this.txtTenServer.Size = new System.Drawing.Size(311, 25);
             this.txtTenServer.TabIndex = 20;
+            this.txtTenServer.Text = "NGUYEN-HONG-PHU\\SQLSERVER";
             // 
             // label4
             // 
@@ -244,7 +239,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(34, 154);
+            this.label3.Location = new System.Drawing.Point(34, 223);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 13);
             this.label3.TabIndex = 22;
@@ -253,17 +248,17 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(213)))), ((int)(((byte)(246)))));
+            this.panel2.Controls.Add(this.tbdatabeseName);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.btnKiemTra);
             this.panel2.Controls.Add(this.txtMatKhau);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.txtTenDangNhap);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.cboKieuXacThuc);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.cboDatabase);
             this.panel2.Controls.Add(this.txtTenServer);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.pictureBox1);
@@ -285,6 +280,15 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
+            // 
+            // tbdatabeseName
+            // 
+            this.tbdatabeseName.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tbdatabeseName.Location = new System.Drawing.Point(145, 145);
+            this.tbdatabeseName.Name = "tbdatabeseName";
+            this.tbdatabeseName.Size = new System.Drawing.Size(311, 25);
+            this.tbdatabeseName.TabIndex = 43;
+            this.tbdatabeseName.Text = "PhucDepTrai";
             // 
             // CSDL
             // 
@@ -319,7 +323,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnHuyBo;
         private System.Windows.Forms.ComboBox cboKieuXacThuc;
-        private System.Windows.Forms.ComboBox cboDatabase;
         private System.Windows.Forms.TextBox txtTenServer;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -327,5 +330,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox tbdatabeseName;
     }
 }
