@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class TestMonHoc
+    class Class1
     {
-        public string MaMH { get; set; }
-        public string TenMH { get; set; }
     }
 }

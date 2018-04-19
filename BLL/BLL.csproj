@@ -42,7 +42,6 @@
   <ItemGroup>
     <Compile Include="DatabaseBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestCSDL_BLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

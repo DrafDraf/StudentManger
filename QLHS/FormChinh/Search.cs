@@ -17,6 +17,7 @@ namespace QLHS.FormChinh
         public Search()
         {
             InitializeComponent();
+
         }
 
         private void pbGuideSearch_Click(object sender, EventArgs e)
@@ -26,17 +27,6 @@ namespace QLHS.FormChinh
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            TestCSDL_BLL t = new TestCSDL_BLL();
-            List<TestMonHoc> li = new List<TestMonHoc>();
-            li = t.GetListMonHoc();
-            listViewResult.Items.Clear();
-
-            foreach (TestMonHoc temp in li)
-            {
-                ListViewItem lvi = new ListViewItem(temp.MaMH);
-                lvi.SubItems.Add(temp.TenMH);
-                listViewResult.Items.Add(lvi);
-            }
         }
     }
 }
