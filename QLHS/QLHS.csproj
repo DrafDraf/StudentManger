@@ -72,11 +72,11 @@
     <Compile Include="FormChinh\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormChinh\NhapBangDiem.cs">
+    <Compile Include="FormChinh\QuanLyMonHoc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormChinh\NhapBangDiem.Designer.cs">
-      <DependentUpon>NhapBangDiem.cs</DependentUpon>
+    <Compile Include="FormChinh\QuanLyMonHoc.Designer.cs">
+      <DependentUpon>QuanLyMonHoc.cs</DependentUpon>
     </Compile>
     <Compile Include="FormChinh\QuiDinh.cs">
       <SubType>Form</SubType>
@@ -110,8 +110,8 @@
     <EmbeddedResource Include="FormChinh\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormChinh\NhapBangDiem.resx">
-      <DependentUpon>NhapBangDiem.cs</DependentUpon>
+    <EmbeddedResource Include="FormChinh\QuanLyMonHoc.resx">
+      <DependentUpon>QuanLyMonHoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormChinh\QuiDinh.resx">
       <DependentUpon>QuiDinh.cs</DependentUpon>

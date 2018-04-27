@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QLHS.FormChinh
 {
-    public partial class NhapBangDiem : Form
+    public partial class QuanLyMonHoc : Form
     {
-        public NhapBangDiem()
+        public QuanLyMonHoc()
         {
             InitializeComponent();
         }

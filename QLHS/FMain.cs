@@ -117,16 +117,16 @@ namespace QLHS
             LoadFormQuyDinh();
         }
 
-        void LoadBangDiem()
+        void LoadQuanLyMonHoc()
         {
-            NhapBangDiem bd = new NhapBangDiem() { Dock = DockStyle.Fill, TopLevel = false };
+            QuanLyMonHoc bd = new QuanLyMonHoc() { Dock = DockStyle.Fill, TopLevel = false };
             pnBoard.Controls.Clear();
             pnBoard.Controls.Add(bd);
             bd.Show();
         }
         private void btnQuanlyMonHoc_Click(object sender, EventArgs e)
         {
-            LoadBangDiem();
+            LoadQuanLyMonHoc();
         }
 
         void LoadBaoCaoMon()
