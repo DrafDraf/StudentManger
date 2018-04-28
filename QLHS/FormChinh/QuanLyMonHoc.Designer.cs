@@ -67,7 +67,7 @@
             this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton6 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.listView2 = new System.Windows.Forms.ListView();
+            this.lvHinhThucKT = new System.Windows.Forms.ListView();
             this.clSoTT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clMaHTKT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clenHTKT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -81,7 +81,7 @@
             this.lvCTDT = new System.Windows.Forms.ListView();
             this.clSTT_CTDT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clMaCTDT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.clTenCTDT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clMaMH = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clHeSoCTDT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -577,7 +577,7 @@
             this.tbHinhThucKiemTra.Controls.Add(this.bunifuFlatButton4);
             this.tbHinhThucKiemTra.Controls.Add(this.bunifuFlatButton5);
             this.tbHinhThucKiemTra.Controls.Add(this.bunifuFlatButton6);
-            this.tbHinhThucKiemTra.Controls.Add(this.listView2);
+            this.tbHinhThucKiemTra.Controls.Add(this.lvHinhThucKT);
             this.tbHinhThucKiemTra.Controls.Add(this.pictureBox2);
             this.tbHinhThucKiemTra.Controls.Add(this.label5);
             this.tbHinhThucKiemTra.Location = new System.Drawing.Point(4, 22);
@@ -691,22 +691,22 @@
             this.bunifuFlatButton6.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton6.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // listView2
+            // lvHinhThucKT
             // 
-            this.listView2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lvHinhThucKT.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lvHinhThucKT.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.clSoTT,
             this.clMaHTKT,
             this.clenHTKT,
             this.clHeSo});
-            this.listView2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView2.GridLines = true;
-            this.listView2.Location = new System.Drawing.Point(211, 97);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(674, 298);
-            this.listView2.TabIndex = 9;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.View = System.Windows.Forms.View.Details;
+            this.lvHinhThucKT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvHinhThucKT.GridLines = true;
+            this.lvHinhThucKT.Location = new System.Drawing.Point(211, 97);
+            this.lvHinhThucKT.Name = "lvHinhThucKT";
+            this.lvHinhThucKT.Size = new System.Drawing.Size(674, 298);
+            this.lvHinhThucKT.TabIndex = 9;
+            this.lvHinhThucKT.UseCompatibleStateImageBehavior = false;
+            this.lvHinhThucKT.View = System.Windows.Forms.View.Details;
             // 
             // clSoTT
             // 
@@ -879,7 +879,7 @@
             this.lvCTDT.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.clSTT_CTDT,
             this.clMaCTDT,
-            this.clTenCTDT,
+            this.clMaMH,
             this.clHeSoCTDT});
             this.lvCTDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvCTDT.GridLines = true;
@@ -900,11 +900,11 @@
             this.clMaCTDT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.clMaCTDT.Width = 200;
             // 
-            // clTenCTDT
+            // clMaMH
             // 
-            this.clTenCTDT.Text = "Tên chương trình đào tạo";
-            this.clTenCTDT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.clTenCTDT.Width = 300;
+            this.clMaMH.Text = "Mã môn học";
+            this.clMaMH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.clMaMH.Width = 300;
             // 
             // clHeSoCTDT
             // 
@@ -1006,7 +1006,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton4;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton5;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton6;
-        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ListView lvHinhThucKT;
         private System.Windows.Forms.ColumnHeader clSoTT;
         private System.Windows.Forms.ColumnHeader clMaHTKT;
         private System.Windows.Forms.ColumnHeader clenHTKT;
@@ -1019,7 +1019,7 @@
         private System.Windows.Forms.ListView lvCTDT;
         private System.Windows.Forms.ColumnHeader clSTT_CTDT;
         private System.Windows.Forms.ColumnHeader clMaCTDT;
-        private System.Windows.Forms.ColumnHeader clTenCTDT;
+        private System.Windows.Forms.ColumnHeader clMaMH;
         private System.Windows.Forms.ColumnHeader clHeSoCTDT;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label6;

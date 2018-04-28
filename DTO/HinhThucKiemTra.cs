@@ -8,9 +8,9 @@ namespace DTO
 {
     public class HinhThucKiemTra
     {
-        string MaHTKT;
-        string TenHTKT ;
-		int  HeSo ;
+        public string MaHTKT;
+        public string TenHTKT ;
+	    public	int  HeSo ;
 
         public HinhThucKiemTra(string ma,string ten,int hs)
         {
