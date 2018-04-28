@@ -8,8 +8,8 @@ namespace DTO
 {
     public class MonHoc
     {
-        string MaMonHoc ;
-        string TenMonHoc ;
+       public  string MaMonHoc ;
+       public string TenMonHoc ;
 
         public MonHoc(string ma,string ten)
         {
