@@ -31,12 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyMonHoc));
             this.tcQuanLyMonHoc = new System.Windows.Forms.TabControl();
             this.tbDanhSachMonHoc = new System.Windows.Forms.TabPage();
+            this.btnXoaMonHoc = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btSuaMH = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btThemMH = new Bunifu.Framework.UI.BunifuFlatButton();
             this.lvDanhSachMonHoc = new System.Windows.Forms.ListView();
             this.clSoThuTu = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clMaMonHoc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clTenMonHoc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.clHeSoMonHoc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pnTop = new System.Windows.Forms.Panel();
+            this.pbGuideNhapDiem = new System.Windows.Forms.PictureBox();
             this.lbDanhSachMon = new System.Windows.Forms.Label();
             this.tbBangDiemMon = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -47,8 +50,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cbDSLop = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnSuaDiem = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnThemDiem = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.listView1 = new System.Windows.Forms.ListView();
             this.clSTT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -57,47 +63,44 @@
             this.clDiem1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clDiemTb = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tbHinhThucKiemTra = new System.Windows.Forms.TabPage();
+            this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuFlatButton6 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.lvHinhThucKT = new System.Windows.Forms.ListView();
             this.clSoTT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clMaHTKT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clenHTKT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clHeSo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tbChuongTrinhDaoTao = new System.Windows.Forms.TabPage();
+            this.btnXoaCTDT = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnSuaCTDT = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btbThemCTDT = new Bunifu.Framework.UI.BunifuFlatButton();
             this.lvCTDT = new System.Windows.Forms.ListView();
             this.clSTT_CTDT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clMaKL = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clMaMH = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clHeSoCTDT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label6 = new System.Windows.Forms.Label();
-            this.btnXoaMonHoc = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btSuaMH = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btThemMH = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.pbGuideNhapDiem = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnSuaDiem = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnThemDiem = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton6 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnXoaCTDT = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnSuaCTDT = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btbThemCTDT = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.tbMaMH = new System.Windows.Forms.TextBox();
+            this.lbMaMH = new System.Windows.Forms.Label();
+            this.tbTenMH = new System.Windows.Forms.TextBox();
+            this.lbTenMH = new System.Windows.Forms.Label();
             this.tcQuanLyMonHoc.SuspendLayout();
             this.tbDanhSachMonHoc.SuspendLayout();
             this.pnTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbGuideNhapDiem)).BeginInit();
             this.tbBangDiemMon.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tbHinhThucKiemTra.SuspendLayout();
-            this.tbChuongTrinhDaoTao.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbGuideNhapDiem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.tbChuongTrinhDaoTao.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,6 +121,10 @@
             // tbDanhSachMonHoc
             // 
             this.tbDanhSachMonHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(213)))), ((int)(((byte)(246)))));
+            this.tbDanhSachMonHoc.Controls.Add(this.tbMaMH);
+            this.tbDanhSachMonHoc.Controls.Add(this.lbMaMH);
+            this.tbDanhSachMonHoc.Controls.Add(this.tbTenMH);
+            this.tbDanhSachMonHoc.Controls.Add(this.lbTenMH);
             this.tbDanhSachMonHoc.Controls.Add(this.btnXoaMonHoc);
             this.tbDanhSachMonHoc.Controls.Add(this.btSuaMH);
             this.tbDanhSachMonHoc.Controls.Add(this.btThemMH);
@@ -130,23 +137,132 @@
             this.tbDanhSachMonHoc.TabIndex = 0;
             this.tbDanhSachMonHoc.Text = "Danh sách môn học";
             // 
+            // btnXoaMonHoc
+            // 
+            this.btnXoaMonHoc.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnXoaMonHoc.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnXoaMonHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(244)))));
+            this.btnXoaMonHoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnXoaMonHoc.BorderRadius = 0;
+            this.btnXoaMonHoc.ButtonText = "Xóa ";
+            this.btnXoaMonHoc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnXoaMonHoc.DisabledColor = System.Drawing.Color.Gray;
+            this.btnXoaMonHoc.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnXoaMonHoc.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnXoaMonHoc.Iconimage")));
+            this.btnXoaMonHoc.Iconimage_right = null;
+            this.btnXoaMonHoc.Iconimage_right_Selected = null;
+            this.btnXoaMonHoc.Iconimage_Selected = null;
+            this.btnXoaMonHoc.IconMarginLeft = 0;
+            this.btnXoaMonHoc.IconMarginRight = 0;
+            this.btnXoaMonHoc.IconRightVisible = false;
+            this.btnXoaMonHoc.IconRightZoom = 0D;
+            this.btnXoaMonHoc.IconVisible = true;
+            this.btnXoaMonHoc.IconZoom = 70D;
+            this.btnXoaMonHoc.IsTab = true;
+            this.btnXoaMonHoc.Location = new System.Drawing.Point(951, 204);
+            this.btnXoaMonHoc.Name = "btnXoaMonHoc";
+            this.btnXoaMonHoc.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(244)))));
+            this.btnXoaMonHoc.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(26)))), ((int)(((byte)(95)))));
+            this.btnXoaMonHoc.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnXoaMonHoc.selected = false;
+            this.btnXoaMonHoc.Size = new System.Drawing.Size(107, 36);
+            this.btnXoaMonHoc.TabIndex = 8;
+            this.btnXoaMonHoc.Text = "Xóa ";
+            this.btnXoaMonHoc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnXoaMonHoc.Textcolor = System.Drawing.Color.White;
+            this.btnXoaMonHoc.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaMonHoc.Click += new System.EventHandler(this.btnXoaMonHoc_Click);
+            // 
+            // btSuaMH
+            // 
+            this.btSuaMH.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btSuaMH.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btSuaMH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(244)))));
+            this.btSuaMH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btSuaMH.BorderRadius = 0;
+            this.btSuaMH.ButtonText = "Sửa ";
+            this.btSuaMH.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btSuaMH.DisabledColor = System.Drawing.Color.Gray;
+            this.btSuaMH.Iconcolor = System.Drawing.Color.Transparent;
+            this.btSuaMH.Iconimage = ((System.Drawing.Image)(resources.GetObject("btSuaMH.Iconimage")));
+            this.btSuaMH.Iconimage_right = null;
+            this.btSuaMH.Iconimage_right_Selected = null;
+            this.btSuaMH.Iconimage_Selected = null;
+            this.btSuaMH.IconMarginLeft = 0;
+            this.btSuaMH.IconMarginRight = 0;
+            this.btSuaMH.IconRightVisible = false;
+            this.btSuaMH.IconRightZoom = 0D;
+            this.btSuaMH.IconVisible = true;
+            this.btSuaMH.IconZoom = 70D;
+            this.btSuaMH.IsTab = true;
+            this.btSuaMH.Location = new System.Drawing.Point(833, 204);
+            this.btSuaMH.Name = "btSuaMH";
+            this.btSuaMH.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(244)))));
+            this.btSuaMH.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(26)))), ((int)(((byte)(95)))));
+            this.btSuaMH.OnHoverTextColor = System.Drawing.Color.White;
+            this.btSuaMH.selected = false;
+            this.btSuaMH.Size = new System.Drawing.Size(107, 36);
+            this.btSuaMH.TabIndex = 7;
+            this.btSuaMH.Text = "Sửa ";
+            this.btSuaMH.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btSuaMH.Textcolor = System.Drawing.Color.White;
+            this.btSuaMH.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSuaMH.Click += new System.EventHandler(this.btSuaMH_Click);
+            // 
+            // btThemMH
+            // 
+            this.btThemMH.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btThemMH.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btThemMH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(244)))));
+            this.btThemMH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btThemMH.BorderRadius = 0;
+            this.btThemMH.ButtonText = "Thêm ";
+            this.btThemMH.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btThemMH.DisabledColor = System.Drawing.Color.Gray;
+            this.btThemMH.Iconcolor = System.Drawing.Color.Transparent;
+            this.btThemMH.Iconimage = ((System.Drawing.Image)(resources.GetObject("btThemMH.Iconimage")));
+            this.btThemMH.Iconimage_right = null;
+            this.btThemMH.Iconimage_right_Selected = null;
+            this.btThemMH.Iconimage_Selected = null;
+            this.btThemMH.IconMarginLeft = 0;
+            this.btThemMH.IconMarginRight = 0;
+            this.btThemMH.IconRightVisible = false;
+            this.btThemMH.IconRightZoom = 0D;
+            this.btThemMH.IconVisible = true;
+            this.btThemMH.IconZoom = 70D;
+            this.btThemMH.IsTab = true;
+            this.btThemMH.Location = new System.Drawing.Point(715, 204);
+            this.btThemMH.Name = "btThemMH";
+            this.btThemMH.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(244)))));
+            this.btThemMH.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(26)))), ((int)(((byte)(95)))));
+            this.btThemMH.OnHoverTextColor = System.Drawing.Color.White;
+            this.btThemMH.selected = false;
+            this.btThemMH.Size = new System.Drawing.Size(107, 36);
+            this.btThemMH.TabIndex = 6;
+            this.btThemMH.Text = "Thêm ";
+            this.btThemMH.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btThemMH.Textcolor = System.Drawing.Color.White;
+            this.btThemMH.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThemMH.Click += new System.EventHandler(this.btThemMH_Click);
+            // 
             // lvDanhSachMonHoc
             // 
+            this.lvDanhSachMonHoc.Alignment = System.Windows.Forms.ListViewAlignment.Left;
             this.lvDanhSachMonHoc.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lvDanhSachMonHoc.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.clSoThuTu,
             this.clMaMonHoc,
-            this.clTenMonHoc,
-            this.clHeSoMonHoc});
+            this.clTenMonHoc});
             this.lvDanhSachMonHoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvDanhSachMonHoc.FullRowSelect = true;
             this.lvDanhSachMonHoc.GridLines = true;
-            this.lvDanhSachMonHoc.Location = new System.Drawing.Point(215, 62);
+            this.lvDanhSachMonHoc.Location = new System.Drawing.Point(32, 91);
             this.lvDanhSachMonHoc.Name = "lvDanhSachMonHoc";
-            this.lvDanhSachMonHoc.Size = new System.Drawing.Size(674, 298);
+            this.lvDanhSachMonHoc.Size = new System.Drawing.Size(665, 359);
             this.lvDanhSachMonHoc.TabIndex = 5;
             this.lvDanhSachMonHoc.UseCompatibleStateImageBehavior = false;
             this.lvDanhSachMonHoc.View = System.Windows.Forms.View.Details;
+            this.lvDanhSachMonHoc.SelectedIndexChanged += new System.EventHandler(this.lvDanhSachMonHoc_SelectedIndexChanged);
             // 
             // clSoThuTu
             // 
@@ -160,13 +276,7 @@
             // clTenMonHoc
             // 
             this.clTenMonHoc.Text = "                       Tên môn học";
-            this.clTenMonHoc.Width = 300;
-            // 
-            // clHeSoMonHoc
-            // 
-            this.clHeSoMonHoc.Text = "Hệ số";
-            this.clHeSoMonHoc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.clHeSoMonHoc.Width = 110;
+            this.clTenMonHoc.Width = 400;
             // 
             // pnTop
             // 
@@ -178,6 +288,17 @@
             this.pnTop.Name = "pnTop";
             this.pnTop.Size = new System.Drawing.Size(1078, 52);
             this.pnTop.TabIndex = 4;
+            // 
+            // pbGuideNhapDiem
+            // 
+            this.pbGuideNhapDiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbGuideNhapDiem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbGuideNhapDiem.BackgroundImage")));
+            this.pbGuideNhapDiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbGuideNhapDiem.Location = new System.Drawing.Point(1018, 16);
+            this.pbGuideNhapDiem.Name = "pbGuideNhapDiem";
+            this.pbGuideNhapDiem.Size = new System.Drawing.Size(34, 33);
+            this.pbGuideNhapDiem.TabIndex = 6;
+            this.pbGuideNhapDiem.TabStop = false;
             // 
             // lbDanhSachMon
             // 
@@ -292,6 +413,17 @@
             this.panel3.Size = new System.Drawing.Size(1078, 52);
             this.panel3.TabIndex = 4;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(919, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(34, 33);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // label4
             // 
             this.label4.Dock = System.Windows.Forms.DockStyle.Top;
@@ -316,6 +448,76 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1078, 377);
             this.panel4.TabIndex = 6;
+            // 
+            // btnSuaDiem
+            // 
+            this.btnSuaDiem.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnSuaDiem.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnSuaDiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(244)))));
+            this.btnSuaDiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSuaDiem.BorderRadius = 0;
+            this.btnSuaDiem.ButtonText = "Sửa điểm";
+            this.btnSuaDiem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSuaDiem.DisabledColor = System.Drawing.Color.Gray;
+            this.btnSuaDiem.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnSuaDiem.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnSuaDiem.Iconimage")));
+            this.btnSuaDiem.Iconimage_right = null;
+            this.btnSuaDiem.Iconimage_right_Selected = null;
+            this.btnSuaDiem.Iconimage_Selected = null;
+            this.btnSuaDiem.IconMarginLeft = 0;
+            this.btnSuaDiem.IconMarginRight = 0;
+            this.btnSuaDiem.IconRightVisible = false;
+            this.btnSuaDiem.IconRightZoom = 0D;
+            this.btnSuaDiem.IconVisible = false;
+            this.btnSuaDiem.IconZoom = 70D;
+            this.btnSuaDiem.IsTab = true;
+            this.btnSuaDiem.Location = new System.Drawing.Point(550, 277);
+            this.btnSuaDiem.Name = "btnSuaDiem";
+            this.btnSuaDiem.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(244)))));
+            this.btnSuaDiem.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(26)))), ((int)(((byte)(95)))));
+            this.btnSuaDiem.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnSuaDiem.selected = false;
+            this.btnSuaDiem.Size = new System.Drawing.Size(143, 36);
+            this.btnSuaDiem.TabIndex = 2;
+            this.btnSuaDiem.Text = "Sửa điểm";
+            this.btnSuaDiem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSuaDiem.Textcolor = System.Drawing.Color.White;
+            this.btnSuaDiem.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btnThemDiem
+            // 
+            this.btnThemDiem.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnThemDiem.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnThemDiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(244)))));
+            this.btnThemDiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnThemDiem.BorderRadius = 0;
+            this.btnThemDiem.ButtonText = "Thêm điểm";
+            this.btnThemDiem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThemDiem.DisabledColor = System.Drawing.Color.Gray;
+            this.btnThemDiem.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnThemDiem.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnThemDiem.Iconimage")));
+            this.btnThemDiem.Iconimage_right = null;
+            this.btnThemDiem.Iconimage_right_Selected = null;
+            this.btnThemDiem.Iconimage_Selected = null;
+            this.btnThemDiem.IconMarginLeft = 0;
+            this.btnThemDiem.IconMarginRight = 0;
+            this.btnThemDiem.IconRightVisible = false;
+            this.btnThemDiem.IconRightZoom = 0D;
+            this.btnThemDiem.IconVisible = false;
+            this.btnThemDiem.IconZoom = 70D;
+            this.btnThemDiem.IsTab = true;
+            this.btnThemDiem.Location = new System.Drawing.Point(383, 277);
+            this.btnThemDiem.Name = "btnThemDiem";
+            this.btnThemDiem.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(244)))));
+            this.btnThemDiem.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(26)))), ((int)(((byte)(95)))));
+            this.btnThemDiem.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnThemDiem.selected = false;
+            this.btnThemDiem.Size = new System.Drawing.Size(143, 36);
+            this.btnThemDiem.TabIndex = 1;
+            this.btnThemDiem.Text = "Thêm điểm";
+            this.btnThemDiem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnThemDiem.Textcolor = System.Drawing.Color.White;
+            this.btnThemDiem.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // panel1
             // 
@@ -388,323 +590,6 @@
             this.tbHinhThucKiemTra.Size = new System.Drawing.Size(1084, 475);
             this.tbHinhThucKiemTra.TabIndex = 2;
             this.tbHinhThucKiemTra.Text = "Hình thức kiểm tra";
-            // 
-            // lvHinhThucKT
-            // 
-            this.lvHinhThucKT.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lvHinhThucKT.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.clSoTT,
-            this.clMaHTKT,
-            this.clenHTKT,
-            this.clHeSo});
-            this.lvHinhThucKT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lvHinhThucKT.FullRowSelect = true;
-            this.lvHinhThucKT.GridLines = true;
-            this.lvHinhThucKT.Location = new System.Drawing.Point(211, 64);
-            this.lvHinhThucKT.Name = "lvHinhThucKT";
-            this.lvHinhThucKT.Size = new System.Drawing.Size(674, 272);
-            this.lvHinhThucKT.TabIndex = 9;
-            this.lvHinhThucKT.UseCompatibleStateImageBehavior = false;
-            this.lvHinhThucKT.View = System.Windows.Forms.View.Details;
-            // 
-            // clSoTT
-            // 
-            this.clSoTT.Text = "STT";
-            // 
-            // clMaHTKT
-            // 
-            this.clMaHTKT.Text = "     Mã hình thức kiểm tra";
-            this.clMaHTKT.Width = 200;
-            // 
-            // clenHTKT
-            // 
-            this.clenHTKT.Text = "                  Tên hình thức kiểm tra";
-            this.clenHTKT.Width = 300;
-            // 
-            // clHeSo
-            // 
-            this.clHeSo.Text = "Hệ số";
-            this.clHeSo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.clHeSo.Width = 110;
-            // 
-            // label5
-            // 
-            this.label5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(0, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(1084, 52);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Hình thức kiểm tra";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tbChuongTrinhDaoTao
-            // 
-            this.tbChuongTrinhDaoTao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(213)))), ((int)(((byte)(246)))));
-            this.tbChuongTrinhDaoTao.Controls.Add(this.btnXoaCTDT);
-            this.tbChuongTrinhDaoTao.Controls.Add(this.btnSuaCTDT);
-            this.tbChuongTrinhDaoTao.Controls.Add(this.btbThemCTDT);
-            this.tbChuongTrinhDaoTao.Controls.Add(this.lvCTDT);
-            this.tbChuongTrinhDaoTao.Controls.Add(this.label6);
-            this.tbChuongTrinhDaoTao.Controls.Add(this.pictureBox3);
-            this.tbChuongTrinhDaoTao.Location = new System.Drawing.Point(4, 22);
-            this.tbChuongTrinhDaoTao.Name = "tbChuongTrinhDaoTao";
-            this.tbChuongTrinhDaoTao.Size = new System.Drawing.Size(1084, 475);
-            this.tbChuongTrinhDaoTao.TabIndex = 3;
-            this.tbChuongTrinhDaoTao.Text = "Chương trình đào tạo";
-            // 
-            // lvCTDT
-            // 
-            this.lvCTDT.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lvCTDT.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.clSTT_CTDT,
-            this.clMaKL,
-            this.clMaMH,
-            this.clHeSoCTDT});
-            this.lvCTDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lvCTDT.FullRowSelect = true;
-            this.lvCTDT.GridLines = true;
-            this.lvCTDT.Location = new System.Drawing.Point(210, 73);
-            this.lvCTDT.Name = "lvCTDT";
-            this.lvCTDT.Size = new System.Drawing.Size(674, 266);
-            this.lvCTDT.TabIndex = 13;
-            this.lvCTDT.UseCompatibleStateImageBehavior = false;
-            this.lvCTDT.View = System.Windows.Forms.View.Details;
-            // 
-            // clSTT_CTDT
-            // 
-            this.clSTT_CTDT.Text = "STT";
-            // 
-            // clMaKL
-            // 
-            this.clMaKL.Text = "Mã khối lớp";
-            this.clMaKL.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.clMaKL.Width = 200;
-            // 
-            // clMaMH
-            // 
-            this.clMaMH.Text = "Mã môn học";
-            this.clMaMH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.clMaMH.Width = 300;
-            // 
-            // clHeSoCTDT
-            // 
-            this.clHeSoCTDT.Text = "Hệ số";
-            this.clHeSoCTDT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.clHeSoCTDT.Width = 110;
-            // 
-            // label6
-            // 
-            this.label6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(0, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(1084, 52);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Chương trình đào tạo";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnXoaMonHoc
-            // 
-            this.btnXoaMonHoc.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnXoaMonHoc.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnXoaMonHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(244)))));
-            this.btnXoaMonHoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnXoaMonHoc.BorderRadius = 0;
-            this.btnXoaMonHoc.ButtonText = "Xóa môn học";
-            this.btnXoaMonHoc.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXoaMonHoc.DisabledColor = System.Drawing.Color.Gray;
-            this.btnXoaMonHoc.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnXoaMonHoc.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnXoaMonHoc.Iconimage")));
-            this.btnXoaMonHoc.Iconimage_right = null;
-            this.btnXoaMonHoc.Iconimage_right_Selected = null;
-            this.btnXoaMonHoc.Iconimage_Selected = null;
-            this.btnXoaMonHoc.IconMarginLeft = 0;
-            this.btnXoaMonHoc.IconMarginRight = 0;
-            this.btnXoaMonHoc.IconRightVisible = false;
-            this.btnXoaMonHoc.IconRightZoom = 0D;
-            this.btnXoaMonHoc.IconVisible = false;
-            this.btnXoaMonHoc.IconZoom = 70D;
-            this.btnXoaMonHoc.IsTab = true;
-            this.btnXoaMonHoc.Location = new System.Drawing.Point(639, 366);
-            this.btnXoaMonHoc.Name = "btnXoaMonHoc";
-            this.btnXoaMonHoc.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(244)))));
-            this.btnXoaMonHoc.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(26)))), ((int)(((byte)(95)))));
-            this.btnXoaMonHoc.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnXoaMonHoc.selected = false;
-            this.btnXoaMonHoc.Size = new System.Drawing.Size(158, 36);
-            this.btnXoaMonHoc.TabIndex = 8;
-            this.btnXoaMonHoc.Text = "Xóa môn học";
-            this.btnXoaMonHoc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnXoaMonHoc.Textcolor = System.Drawing.Color.White;
-            this.btnXoaMonHoc.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoaMonHoc.Click += new System.EventHandler(this.btnXoaMonHoc_Click);
-            // 
-            // btSuaMH
-            // 
-            this.btSuaMH.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btSuaMH.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btSuaMH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(244)))));
-            this.btSuaMH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btSuaMH.BorderRadius = 0;
-            this.btSuaMH.ButtonText = "Sửa môn học";
-            this.btSuaMH.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btSuaMH.DisabledColor = System.Drawing.Color.Gray;
-            this.btSuaMH.Iconcolor = System.Drawing.Color.Transparent;
-            this.btSuaMH.Iconimage = ((System.Drawing.Image)(resources.GetObject("btSuaMH.Iconimage")));
-            this.btSuaMH.Iconimage_right = null;
-            this.btSuaMH.Iconimage_right_Selected = null;
-            this.btSuaMH.Iconimage_Selected = null;
-            this.btSuaMH.IconMarginLeft = 0;
-            this.btSuaMH.IconMarginRight = 0;
-            this.btSuaMH.IconRightVisible = false;
-            this.btSuaMH.IconRightZoom = 0D;
-            this.btSuaMH.IconVisible = false;
-            this.btSuaMH.IconZoom = 70D;
-            this.btSuaMH.IsTab = true;
-            this.btSuaMH.Location = new System.Drawing.Point(473, 366);
-            this.btSuaMH.Name = "btSuaMH";
-            this.btSuaMH.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(244)))));
-            this.btSuaMH.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(26)))), ((int)(((byte)(95)))));
-            this.btSuaMH.OnHoverTextColor = System.Drawing.Color.White;
-            this.btSuaMH.selected = false;
-            this.btSuaMH.Size = new System.Drawing.Size(158, 36);
-            this.btSuaMH.TabIndex = 7;
-            this.btSuaMH.Text = "Sửa môn học";
-            this.btSuaMH.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btSuaMH.Textcolor = System.Drawing.Color.White;
-            this.btSuaMH.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSuaMH.Click += new System.EventHandler(this.btSuaMH_Click);
-            // 
-            // btThemMH
-            // 
-            this.btThemMH.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btThemMH.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btThemMH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(244)))));
-            this.btThemMH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btThemMH.BorderRadius = 0;
-            this.btThemMH.ButtonText = "Thêm môn học";
-            this.btThemMH.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btThemMH.DisabledColor = System.Drawing.Color.Gray;
-            this.btThemMH.Iconcolor = System.Drawing.Color.Transparent;
-            this.btThemMH.Iconimage = ((System.Drawing.Image)(resources.GetObject("btThemMH.Iconimage")));
-            this.btThemMH.Iconimage_right = null;
-            this.btThemMH.Iconimage_right_Selected = null;
-            this.btThemMH.Iconimage_Selected = null;
-            this.btThemMH.IconMarginLeft = 0;
-            this.btThemMH.IconMarginRight = 0;
-            this.btThemMH.IconRightVisible = false;
-            this.btThemMH.IconRightZoom = 0D;
-            this.btThemMH.IconVisible = false;
-            this.btThemMH.IconZoom = 70D;
-            this.btThemMH.IsTab = true;
-            this.btThemMH.Location = new System.Drawing.Point(307, 366);
-            this.btThemMH.Name = "btThemMH";
-            this.btThemMH.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(244)))));
-            this.btThemMH.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(26)))), ((int)(((byte)(95)))));
-            this.btThemMH.OnHoverTextColor = System.Drawing.Color.White;
-            this.btThemMH.selected = false;
-            this.btThemMH.Size = new System.Drawing.Size(158, 36);
-            this.btThemMH.TabIndex = 6;
-            this.btThemMH.Text = "Thêm môn học";
-            this.btThemMH.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btThemMH.Textcolor = System.Drawing.Color.White;
-            this.btThemMH.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThemMH.Click += new System.EventHandler(this.btThemMH_Click);
-            // 
-            // pbGuideNhapDiem
-            // 
-            this.pbGuideNhapDiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbGuideNhapDiem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbGuideNhapDiem.BackgroundImage")));
-            this.pbGuideNhapDiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbGuideNhapDiem.Location = new System.Drawing.Point(919, 12);
-            this.pbGuideNhapDiem.Name = "pbGuideNhapDiem";
-            this.pbGuideNhapDiem.Size = new System.Drawing.Size(34, 33);
-            this.pbGuideNhapDiem.TabIndex = 6;
-            this.pbGuideNhapDiem.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(919, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(34, 33);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnSuaDiem
-            // 
-            this.btnSuaDiem.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnSuaDiem.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnSuaDiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(244)))));
-            this.btnSuaDiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSuaDiem.BorderRadius = 0;
-            this.btnSuaDiem.ButtonText = "Sửa điểm";
-            this.btnSuaDiem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSuaDiem.DisabledColor = System.Drawing.Color.Gray;
-            this.btnSuaDiem.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnSuaDiem.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnSuaDiem.Iconimage")));
-            this.btnSuaDiem.Iconimage_right = null;
-            this.btnSuaDiem.Iconimage_right_Selected = null;
-            this.btnSuaDiem.Iconimage_Selected = null;
-            this.btnSuaDiem.IconMarginLeft = 0;
-            this.btnSuaDiem.IconMarginRight = 0;
-            this.btnSuaDiem.IconRightVisible = false;
-            this.btnSuaDiem.IconRightZoom = 0D;
-            this.btnSuaDiem.IconVisible = false;
-            this.btnSuaDiem.IconZoom = 70D;
-            this.btnSuaDiem.IsTab = true;
-            this.btnSuaDiem.Location = new System.Drawing.Point(550, 277);
-            this.btnSuaDiem.Name = "btnSuaDiem";
-            this.btnSuaDiem.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(244)))));
-            this.btnSuaDiem.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(26)))), ((int)(((byte)(95)))));
-            this.btnSuaDiem.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnSuaDiem.selected = false;
-            this.btnSuaDiem.Size = new System.Drawing.Size(143, 36);
-            this.btnSuaDiem.TabIndex = 2;
-            this.btnSuaDiem.Text = "Sửa điểm";
-            this.btnSuaDiem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSuaDiem.Textcolor = System.Drawing.Color.White;
-            this.btnSuaDiem.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btnThemDiem
-            // 
-            this.btnThemDiem.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnThemDiem.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnThemDiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(244)))));
-            this.btnThemDiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnThemDiem.BorderRadius = 0;
-            this.btnThemDiem.ButtonText = "Thêm điểm";
-            this.btnThemDiem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThemDiem.DisabledColor = System.Drawing.Color.Gray;
-            this.btnThemDiem.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnThemDiem.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnThemDiem.Iconimage")));
-            this.btnThemDiem.Iconimage_right = null;
-            this.btnThemDiem.Iconimage_right_Selected = null;
-            this.btnThemDiem.Iconimage_Selected = null;
-            this.btnThemDiem.IconMarginLeft = 0;
-            this.btnThemDiem.IconMarginRight = 0;
-            this.btnThemDiem.IconRightVisible = false;
-            this.btnThemDiem.IconRightZoom = 0D;
-            this.btnThemDiem.IconVisible = false;
-            this.btnThemDiem.IconZoom = 70D;
-            this.btnThemDiem.IsTab = true;
-            this.btnThemDiem.Location = new System.Drawing.Point(383, 277);
-            this.btnThemDiem.Name = "btnThemDiem";
-            this.btnThemDiem.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(66)))), ((int)(((byte)(244)))));
-            this.btnThemDiem.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(26)))), ((int)(((byte)(95)))));
-            this.btnThemDiem.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnThemDiem.selected = false;
-            this.btnThemDiem.Size = new System.Drawing.Size(143, 36);
-            this.btnThemDiem.TabIndex = 1;
-            this.btnThemDiem.Text = "Thêm điểm";
-            this.btnThemDiem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnThemDiem.Textcolor = System.Drawing.Color.White;
-            this.btnThemDiem.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // bunifuFlatButton4
             // 
@@ -811,6 +696,56 @@
             this.bunifuFlatButton6.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton6.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
+            // lvHinhThucKT
+            // 
+            this.lvHinhThucKT.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lvHinhThucKT.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.clSoTT,
+            this.clMaHTKT,
+            this.clenHTKT,
+            this.clHeSo});
+            this.lvHinhThucKT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvHinhThucKT.FullRowSelect = true;
+            this.lvHinhThucKT.GridLines = true;
+            this.lvHinhThucKT.Location = new System.Drawing.Point(211, 64);
+            this.lvHinhThucKT.Name = "lvHinhThucKT";
+            this.lvHinhThucKT.Size = new System.Drawing.Size(674, 272);
+            this.lvHinhThucKT.TabIndex = 9;
+            this.lvHinhThucKT.UseCompatibleStateImageBehavior = false;
+            this.lvHinhThucKT.View = System.Windows.Forms.View.Details;
+            // 
+            // clSoTT
+            // 
+            this.clSoTT.Text = "STT";
+            // 
+            // clMaHTKT
+            // 
+            this.clMaHTKT.Text = "     Mã hình thức kiểm tra";
+            this.clMaHTKT.Width = 200;
+            // 
+            // clenHTKT
+            // 
+            this.clenHTKT.Text = "                  Tên hình thức kiểm tra";
+            this.clenHTKT.Width = 300;
+            // 
+            // clHeSo
+            // 
+            this.clHeSo.Text = "Hệ số";
+            this.clHeSo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.clHeSo.Width = 110;
+            // 
+            // label5
+            // 
+            this.label5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.Location = new System.Drawing.Point(0, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(1084, 52);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Hình thức kiểm tra";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -821,6 +756,21 @@
             this.pictureBox2.Size = new System.Drawing.Size(34, 33);
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
+            // 
+            // tbChuongTrinhDaoTao
+            // 
+            this.tbChuongTrinhDaoTao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(213)))), ((int)(((byte)(246)))));
+            this.tbChuongTrinhDaoTao.Controls.Add(this.btnXoaCTDT);
+            this.tbChuongTrinhDaoTao.Controls.Add(this.btnSuaCTDT);
+            this.tbChuongTrinhDaoTao.Controls.Add(this.btbThemCTDT);
+            this.tbChuongTrinhDaoTao.Controls.Add(this.lvCTDT);
+            this.tbChuongTrinhDaoTao.Controls.Add(this.label6);
+            this.tbChuongTrinhDaoTao.Controls.Add(this.pictureBox3);
+            this.tbChuongTrinhDaoTao.Location = new System.Drawing.Point(4, 22);
+            this.tbChuongTrinhDaoTao.Name = "tbChuongTrinhDaoTao";
+            this.tbChuongTrinhDaoTao.Size = new System.Drawing.Size(1084, 475);
+            this.tbChuongTrinhDaoTao.TabIndex = 3;
+            this.tbChuongTrinhDaoTao.Text = "Chương trình đào tạo";
             // 
             // btnXoaCTDT
             // 
@@ -927,6 +877,58 @@
             this.btbThemCTDT.Textcolor = System.Drawing.Color.White;
             this.btbThemCTDT.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
+            // lvCTDT
+            // 
+            this.lvCTDT.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lvCTDT.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.clSTT_CTDT,
+            this.clMaKL,
+            this.clMaMH,
+            this.clHeSoCTDT});
+            this.lvCTDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvCTDT.FullRowSelect = true;
+            this.lvCTDT.GridLines = true;
+            this.lvCTDT.Location = new System.Drawing.Point(210, 73);
+            this.lvCTDT.Name = "lvCTDT";
+            this.lvCTDT.Size = new System.Drawing.Size(674, 266);
+            this.lvCTDT.TabIndex = 13;
+            this.lvCTDT.UseCompatibleStateImageBehavior = false;
+            this.lvCTDT.View = System.Windows.Forms.View.Details;
+            // 
+            // clSTT_CTDT
+            // 
+            this.clSTT_CTDT.Text = "STT";
+            // 
+            // clMaKL
+            // 
+            this.clMaKL.Text = "Mã khối lớp";
+            this.clMaKL.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.clMaKL.Width = 200;
+            // 
+            // clMaMH
+            // 
+            this.clMaMH.Text = "Mã môn học";
+            this.clMaMH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.clMaMH.Width = 300;
+            // 
+            // clHeSoCTDT
+            // 
+            this.clHeSoCTDT.Text = "Hệ số";
+            this.clHeSoCTDT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.clHeSoCTDT.Width = 110;
+            // 
+            // label6
+            // 
+            this.label6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.Location = new System.Drawing.Point(0, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(1084, 52);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Chương trình đào tạo";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -937,6 +939,46 @@
             this.pictureBox3.Size = new System.Drawing.Size(34, 33);
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
+            // 
+            // tbMaMH
+            // 
+            this.tbMaMH.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tbMaMH.Location = new System.Drawing.Point(833, 147);
+            this.tbMaMH.Multiline = true;
+            this.tbMaMH.Name = "tbMaMH";
+            this.tbMaMH.Size = new System.Drawing.Size(222, 22);
+            this.tbMaMH.TabIndex = 11;
+            // 
+            // lbMaMH
+            // 
+            this.lbMaMH.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbMaMH.AutoSize = true;
+            this.lbMaMH.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMaMH.Location = new System.Drawing.Point(712, 147);
+            this.lbMaMH.Name = "lbMaMH";
+            this.lbMaMH.Size = new System.Drawing.Size(107, 22);
+            this.lbMaMH.TabIndex = 9;
+            this.lbMaMH.Text = "Mã môn học";
+            // 
+            // tbTenMH
+            // 
+            this.tbTenMH.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tbTenMH.Location = new System.Drawing.Point(833, 91);
+            this.tbTenMH.Multiline = true;
+            this.tbTenMH.Name = "tbTenMH";
+            this.tbTenMH.Size = new System.Drawing.Size(222, 22);
+            this.tbTenMH.TabIndex = 12;
+            // 
+            // lbTenMH
+            // 
+            this.lbTenMH.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbTenMH.AutoSize = true;
+            this.lbTenMH.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTenMH.Location = new System.Drawing.Point(712, 91);
+            this.lbTenMH.Name = "lbTenMH";
+            this.lbTenMH.Size = new System.Drawing.Size(115, 22);
+            this.lbTenMH.TabIndex = 10;
+            this.lbTenMH.Text = "Tên môn học";
             // 
             // QuanLyMonHoc
             // 
@@ -951,18 +993,19 @@
             this.Load += new System.EventHandler(this.QuanLyMonHoc_Load);
             this.tcQuanLyMonHoc.ResumeLayout(false);
             this.tbDanhSachMonHoc.ResumeLayout(false);
+            this.tbDanhSachMonHoc.PerformLayout();
             this.pnTop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbGuideNhapDiem)).EndInit();
             this.tbBangDiemMon.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.tbHinhThucKiemTra.ResumeLayout(false);
-            this.tbChuongTrinhDaoTao.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbGuideNhapDiem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.tbChuongTrinhDaoTao.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
@@ -1005,7 +1048,6 @@
         private System.Windows.Forms.ColumnHeader clSoThuTu;
         private System.Windows.Forms.ColumnHeader clMaMonHoc;
         private System.Windows.Forms.ColumnHeader clTenMonHoc;
-        private System.Windows.Forms.ColumnHeader clHeSoMonHoc;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton4;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton5;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton6;
@@ -1026,5 +1068,9 @@
         private System.Windows.Forms.ColumnHeader clHeSoCTDT;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox tbMaMH;
+        private System.Windows.Forms.Label lbMaMH;
+        private System.Windows.Forms.TextBox tbTenMH;
+        private System.Windows.Forms.Label lbTenMH;
     }
 }

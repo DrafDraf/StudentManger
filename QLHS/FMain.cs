@@ -117,9 +117,12 @@ namespace QLHS
             LoadFormQuyDinh();
         }
 
+        /// <summary>
+        /// Load form quan ly mon hoc
+        /// </summary>
         void LoadQuanLyMonHoc()
         {
-            QuanLyMonHoc bd = new QuanLyMonHoc() { Dock = DockStyle.Fill, TopLevel = false };
+            QuanLyMonHoc bd = new QuanLyMonHoc() { /*Dock = DockStyle.Fill,*/ TopLevel = false };
             pnBoard.Controls.Clear();
             pnBoard.Controls.Add(bd);
             bd.Show();

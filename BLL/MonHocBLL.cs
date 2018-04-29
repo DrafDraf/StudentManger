@@ -24,5 +24,17 @@ namespace BLL
             MonHocAccess mn = new MonHocAccess();
             return mn.XoaMonHoc(maMH);
         }
+
+        public bool ThemMonHoc(string ma,string ten)
+        {
+            MonHocAccess mh = new MonHocAccess();
+            return mh.ThemMonHoc(ma, ten);
+        }
+
+        public bool SuaMonHoc(string ma, string ten)
+        {
+            MonHocAccess mhac = new MonHocAccess();
+            return mhac.SuaMonHoc(ma, ten);
+        }
     }
 }

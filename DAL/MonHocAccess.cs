@@ -64,5 +64,58 @@ namespace DAL
             }
             
         }
+
+        public bool ThemMonHoc(string ma,string ten)
+        {
+            try
+            {
+                OpenConnection();
+                SqlCommand com = new SqlCommand();
+                com.CommandType = CommandType.Text;
+                com.CommandText = "insert into MonHoc values(@ma,@ten)";
+                com.Connection = conn;
+
+                com.Parameters.Add("@ma", SqlDbType.VarChar).Value = ma;
+                com.Parameters.Add("@ten", SqlDbType.NVarChar).Value = ten;
+
+                int result = com.ExecuteNonQuery();
+
+                CloseConnection();
+                if (result > 0)
+                    return true;
+                return false;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool SuaMonHoc(string ma,string ten)
+        {
+           // try
+           // {
+                OpenConnection();
+                SqlCommand com = new SqlCommand();
+                com.CommandType = CommandType.Text;
+                com.CommandText = "update  MonHoc set TenMonHoc=@Ten where  MaMonHoc=@ma";
+                com.Connection = conn;
+
+                com.Parameters.Add("@ma", SqlDbType.VarChar).Value = ma;
+                com.Parameters.Add("@ten", SqlDbType.NVarChar).Value = ten;
+
+                int result = com.ExecuteNonQuery();
+
+                CloseConnection();
+                if (result > 0)
+                    return true;
+                return false;
+
+          //  }
+          //  catch
+          //  {
+            //    return false;
+          //  }
+        }
     }
 }

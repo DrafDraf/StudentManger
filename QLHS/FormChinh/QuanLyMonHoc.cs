@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
 using DTO;
-using QLHS.FormBoSung;
 
 namespace QLHS.FormChinh
 {
@@ -28,16 +27,17 @@ namespace QLHS.FormChinh
         /// </summary>
         void LoadMonHoc_BangDiemMonHoc()
         {
-            List<MonHoc> listMonHoc = monhoc.GetListMonHoc();
 
-            //load source cac mon hoc len combobox tab-page bang diem mon hic
-            List<string> listTenMH = new List<string>();
-            listTenMH.Add("tat ca cac mon");
-            foreach (MonHoc mon in listMonHoc)
-            {
-                listTenMH.Add(mon.TenMonHoc);
-            }
-            cbDanhSachMonHoc.DataSource = listTenMH;
+                List<MonHoc> listMonHoc = monhoc.GetListMonHoc();
+
+                //load source cac mon hoc len combobox tab-page bang diem mon hic
+                List<string> listTenMH = new List<string>();
+                listTenMH.Add("tat ca cac mon");
+                foreach (MonHoc mon in listMonHoc)
+                {
+                    listTenMH.Add(mon.TenMonHoc);
+                }
+                cbDanhSachMonHoc.DataSource = listTenMH; 
         }
 
         /// <summary>
@@ -109,24 +109,43 @@ namespace QLHS.FormChinh
 
         void QuanLyMonHoc_Load(object sender, EventArgs e)
         {
-            LoadMonHoc_DanhSachMonHoc(); 
+            try
+            {
+                LoadMonHoc_DanhSachMonHoc();
+            }
+            catch
+            {
+                MessageBox.Show("Không thể kết nối tới CSDL,vui lòng cài đặt lại kết nối", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         
 
-
+        /// <summary>
+        /// Load CSDL lên form khi click vào tab-control.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void tcQuanLyMonHoc_Selected(object sender, TabControlEventArgs e)
         {
-            if (e.TabPageIndex == 1)
+            try
             {
-                LoadMonHoc_BangDiemMonHoc();
+                if (e.TabPageIndex == 1)
+                {
+                    LoadMonHoc_BangDiemMonHoc();
+                }
+                else
+                 if (e.TabPageIndex == 2)
+                {
+                    LoadHinhThucKiemtra();
+                }
+                else
+                    LoadChuongTrinhDaoTao();
             }
-            else
-                if (e.TabPageIndex == 2)
+            catch
             {
-                LoadHinhThucKiemtra();
+                MessageBox.Show("Không thể kết nối tới CSDL,vui lòng cài đặt lại kết nối", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
-                LoadChuongTrinhDaoTao();
+
         }
 
         /// <summary>
@@ -136,35 +155,85 @@ namespace QLHS.FormChinh
         /// <param name="e"></param>
         private void btThemMH_Click(object sender, EventArgs e)
         {
-            //open form them mon hoc
-            ThemMonHoc themMH = new ThemMonHoc();
-            themMH.Show();
+            MonHocBLL mhbll = new MonHocBLL();
+            if(mhbll.ThemMonHoc(tbMaMH.Text,tbTenMH.Text)==true)
+            {
+                MessageBox.Show("Thêm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //cap nhat du lieu len giao dien
+                LoadMonHoc_DanhSachMonHoc();
+            }
+            else
+            {
+                MessageBox.Show("Thêm thất bại,Môn học này đã có !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
+        /// <summary>
+        /// sửa môn học đã chọn
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btSuaMH_Click(object sender, EventArgs e)
         {
             if (lvDanhSachMonHoc.SelectedItems.Count > 0)
             {
-                //load form sua truyen thong tin tu selected item qua
+                MonHocBLL mhbll = new MonHocBLL();
+                if (mhbll.SuaMonHoc(tbMaMH.Text, tbTenMH.Text) == true)
+                {
+                    MessageBox.Show("Sửa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //cap nhat du lieu len giao dien
+                    LoadMonHoc_DanhSachMonHoc();
+                }
+                else
+                {
+                    MessageBox.Show("Sửa thất bại,Mã môn học này đang sử dụng !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
                 MessageBox.Show("Bạn phải chọn 1 môn học để sửa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        /// <summary>
+        /// Xóa môn học được click ( mã)
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnXoaMonHoc_Click(object sender, EventArgs e)
         {
             if (lvDanhSachMonHoc.SelectedItems.Count > 0)
             {
                 MonHocBLL mh = new MonHocBLL();
-                ListViewItem lv = lvDanhSachMonHoc.SelectedItems[0];
-                string ma = lv.SubItems[1].Text;
+                string ma = tbMaMH.Text;
+
                 if (mh.XoaMonHoc(ma) == true)
+                {
                     MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //cap nhat du lieu len giao dien
+                    LoadMonHoc_DanhSachMonHoc();
+                } 
                 else
                     MessageBox.Show("Xóa thất bại,Bạn không thể xóa môn học còn đang sử dụng giảng dạy !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
                 MessageBox.Show("Bạn phải chọn 1 môn học để xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        /// <summary>
+        /// load dữ liệu lên texbox khi click vào 1 dòng trên listview
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void lvDanhSachMonHoc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lvDanhSachMonHoc.SelectedItems.Count > 0)
+            {
+                ListViewItem lv = lvDanhSachMonHoc.SelectedItems[0];
+                string ma = lv.SubItems[1].Text;
+                string ten = lv.SubItems[2].Text;
+
+                tbMaMH.Text = ma;
+                tbTenMH.Text = ten;
+            }
         }
     }
 }
