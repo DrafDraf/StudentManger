@@ -28,16 +28,16 @@ namespace QLHS.FormChinh
         void LoadMonHoc_BangDiemMonHoc()
         {
 
-                List<MonHoc> listMonHoc = monhoc.GetListMonHoc();
+            List<MonHoc> listMonHoc = monhoc.GetListMonHoc();
 
-                //load source cac mon hoc len combobox tab-page bang diem mon hic
-                List<string> listTenMH = new List<string>();
-                listTenMH.Add("tat ca cac mon");
-                foreach (MonHoc mon in listMonHoc)
-                {
-                    listTenMH.Add(mon.TenMonHoc);
-                }
-                cbDanhSachMonHoc.DataSource = listTenMH; 
+            //load source cac mon hoc len combobox tab-page bang diem mon hic
+            List<string> listTenMH = new List<string>();
+            listTenMH.Add("tat ca cac mon");
+            foreach (MonHoc mon in listMonHoc)
+            {
+                listTenMH.Add(mon.TenMonHoc);
+            }
+            cbDanhSachMonHoc.DataSource = listTenMH;
         }
 
         /// <summary>
@@ -47,7 +47,7 @@ namespace QLHS.FormChinh
         {
             lvDanhSachMonHoc.Items.Clear();
             List<MonHoc> listMonHoc = monhoc.GetListMonHoc();
-            
+
             int soThuTu = 1;
             foreach (MonHoc mon in listMonHoc)
             {
@@ -71,13 +71,13 @@ namespace QLHS.FormChinh
             List<HinhThucKiemTra> listHinhThucKiemTra = new List<HinhThucKiemTra>();
             listHinhThucKiemTra = htkt.GetAllHinhThucKiemTra();
 
-            int soTT=1;
-            foreach(HinhThucKiemTra hinhThuc in listHinhThucKiemTra)
+            int soTT = 1;
+            foreach (HinhThucKiemTra hinhThuc in listHinhThucKiemTra)
             {
                 ListViewItem lvi = new ListViewItem(soTT + "");
                 lvi.SubItems.Add(hinhThuc.MaHTKT);
                 lvi.SubItems.Add(hinhThuc.TenHTKT);
-                lvi.SubItems.Add(hinhThuc.HeSo+"");
+                lvi.SubItems.Add(hinhThuc.HeSo + "");
 
                 lvHinhThucKT.Items.Add(lvi);
                 soTT++;
@@ -95,12 +95,12 @@ namespace QLHS.FormChinh
             listCTDT = ctdt.GetAllCTDT();
 
             int STT = 1;
-            foreach(ChuongTrinhDaoTao ct in listCTDT)
+            foreach (ChuongTrinhDaoTao ct in listCTDT)
             {
                 ListViewItem lvi = new ListViewItem(STT + "");
                 lvi.SubItems.Add(ct.MaKhoiLop);
                 lvi.SubItems.Add(ct.MaMonHoc);
-                lvi.SubItems.Add(ct.HeSoMon+"");
+                lvi.SubItems.Add(ct.HeSoMon + "");
 
                 lvCTDT.Items.Add(lvi);
                 STT++;
@@ -118,7 +118,7 @@ namespace QLHS.FormChinh
                 MessageBox.Show("Không thể kết nối tới CSDL,vui lòng cài đặt lại kết nối", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        
+
 
         /// <summary>
         /// Load CSDL lên form khi click vào tab-control.
@@ -155,17 +155,23 @@ namespace QLHS.FormChinh
         /// <param name="e"></param>
         private void btThemMH_Click(object sender, EventArgs e)
         {
-            MonHocBLL mhbll = new MonHocBLL();
-            if(mhbll.ThemMonHoc(tbMaMH.Text,tbTenMH.Text)==true)
-            {
-                MessageBox.Show("Thêm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //cap nhat du lieu len giao dien
-                LoadMonHoc_DanhSachMonHoc();
-            }
+            if(string.IsNullOrEmpty(tbMaMH.Text)|| string.IsNullOrEmpty(tbTenMH.Text))
+                MessageBox.Show("Thêm thất bại,phải điền đầy đủ thông tin !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
             {
-                MessageBox.Show("Thêm thất bại,Môn học này đã có !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MonHocBLL mhbll = new MonHocBLL();
+                if (mhbll.ThemMonHoc(tbMaMH.Text, tbTenMH.Text) == true)
+                {
+                    MessageBox.Show("Thêm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //cap nhat du lieu len giao dien
+                    LoadMonHoc_DanhSachMonHoc();
+                }
+                else
+                {
+                    MessageBox.Show("Thêm thất bại,Môn học này đã có !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
+           
         }
 
         /// <summary>
@@ -210,7 +216,7 @@ namespace QLHS.FormChinh
                     MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     //cap nhat du lieu len giao dien
                     LoadMonHoc_DanhSachMonHoc();
-                } 
+                }
                 else
                     MessageBox.Show("Xóa thất bại,Bạn không thể xóa môn học còn đang sử dụng giảng dạy !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -234,6 +240,170 @@ namespace QLHS.FormChinh
                 tbMaMH.Text = ma;
                 tbTenMH.Text = ten;
             }
+        }
+
+        /// <summary>
+        /// thêm hình thức kiểm tra từ texbox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnThemHTKT_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbTenHTKT.Text) || string.IsNullOrEmpty(tbMaHTKT.Text)|| string.IsNullOrEmpty(tbHesoHTKT.Text))
+                MessageBox.Show("Thêm thất bại,phải điền đầy đủ thông tin !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else {
+                HinhThucKiemTraBLL mhbll = new HinhThucKiemTraBLL();
+                if (mhbll.ThemHinhThucKiemTra(tbMaHTKT.Text, tbTenHTKT.Text, Int32.Parse(tbHesoHTKT.Text)) == true)
+                {
+                    MessageBox.Show("Thêm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //cap nhat du lieu len giao dien
+                    LoadHinhThucKiemtra();
+                }
+                else
+                {
+                    MessageBox.Show("Thêm thất bại,Hình thức kiểm tra này đã có !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+           
+        }
+
+        /// <summary>
+        /// đưa thông tin hình thức kiểm tra lên texbox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void lvHinhThucKT_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lvHinhThucKT.SelectedItems.Count > 0)
+            {
+                ListViewItem lv = lvHinhThucKT.SelectedItems[0];
+                string ma = lv.SubItems[1].Text;
+                string ten = lv.SubItems[2].Text;
+                string heso = lv.SubItems[3].Text;
+
+                tbMaHTKT.Text = ma;
+                tbTenHTKT.Text = ten;
+                tbHesoHTKT.Text = heso;
+            }
+        }
+
+        private void btnSuaHTKT_Click(object sender, EventArgs e)
+        {
+            if (lvHinhThucKT.SelectedItems.Count > 0)
+            {
+                HinhThucKiemTraBLL mhbll = new HinhThucKiemTraBLL();
+                if (mhbll.SuaHinhThucKiemTra(tbMaHTKT.Text, tbTenHTKT.Text, Int32.Parse(tbHesoHTKT.Text)) == true)
+                {
+                    MessageBox.Show("Sửa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //cap nhat du lieu len giao dien
+                    LoadHinhThucKiemtra();
+                }
+                else
+                {
+                    MessageBox.Show("Sửa thất bại,Hình thức kiểm tra này đang sử dụng !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+                MessageBox.Show("Bạn phải chọn 1 hình thức kiểm tra  để sửa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnXoaHTKT_Click(object sender, EventArgs e)
+        {
+            if (lvHinhThucKT.SelectedItems.Count > 0)
+            {
+                HinhThucKiemTraBLL mh = new HinhThucKiemTraBLL();
+                string ma = tbMaHTKT.Text;
+
+                if (mh.XoaHinhThucKiemTra(ma) == true)
+                {
+                    MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //cap nhat du lieu len giao dien
+                    LoadMonHoc_DanhSachMonHoc();
+                }
+                else
+                    MessageBox.Show("Xóa thất bại,Bạn không thể hình thức kiểm tra còn đang sử dụng giảng dạy !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+                MessageBox.Show("Bạn phải chọn 1 hình thức kiểm tra để xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+
+        //__________________________________________________________________________________
+        private void lvCTDT_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lvCTDT.SelectedItems.Count > 0)
+            {
+                ListViewItem lv = lvCTDT.SelectedItems[0];
+                string maKhoi = lv.SubItems[1].Text;
+                string MaMon = lv.SubItems[2].Text;
+                string heSo = lv.SubItems[3].Text;
+
+                tbMaKhoiLop_CTDT.Text = maKhoi;
+                tbMaMonHocCTDT.Text = MaMon;
+                tbHeSoCTDT.Text = heSo;
+            }
+        }
+
+        private void btnThemCTDT_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbMaKhoiLop_CTDT.Text) || string.IsNullOrEmpty(tbMaMonHocCTDT.Text) || string.IsNullOrEmpty(tbHeSoCTDT.Text))
+                MessageBox.Show("Thêm thất bại,phải điền đầy đủ thông tin !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else
+            {
+                ChuongTrinhDaoTaoBLL mhbll = new ChuongTrinhDaoTaoBLL();
+                if (mhbll.ThemCTDT(tbMaKhoiLop_CTDT.Text, tbMaMonHocCTDT.Text, Int32.Parse(tbHeSoCTDT.Text)) == true)
+                {
+                    MessageBox.Show("Thêm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //cap nhat du lieu len giao dien
+                    LoadChuongTrinhDaoTao();
+                }
+                else
+                {
+                    MessageBox.Show("Thêm thất bại,Chương trình đào tạo này đã có !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+           
+        }
+
+        private void btnSuaCTDT_Click(object sender, EventArgs e)
+        {
+            if (lvCTDT.SelectedItems.Count > 0)
+            {
+                ChuongTrinhDaoTaoBLL ctdt = new ChuongTrinhDaoTaoBLL();
+                if (ctdt.SuaCTDT(tbMaKhoiLop_CTDT.Text, tbMaMonHocCTDT.Text, Int32.Parse(tbHeSoCTDT.Text)) == true)
+                {
+                    MessageBox.Show("Sửa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //cap nhat du lieu len giao dien
+                    LoadChuongTrinhDaoTao();
+                }
+                else
+                {
+                    MessageBox.Show("Sửa thất bại,Chương trình đào tạo này đang sử dụng !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+                MessageBox.Show("Bạn phải chọn 1 Chương trình đào tạo  để sửa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnXoaCTDT_Click(object sender, EventArgs e)
+        {
+            if (lvCTDT.SelectedItems.Count > 0)
+            {
+                ChuongTrinhDaoTaoBLL ctdt = new ChuongTrinhDaoTaoBLL();
+                string mamon = tbMaKhoiLop_CTDT.Text;
+                string makhoi = tbMaMonHocCTDT.Text;
+
+                if (ctdt.XoaCTDT(makhoi,mamon) == true)
+                {
+                    MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //cap nhat du lieu len giao dien
+                    LoadChuongTrinhDaoTao();
+                }
+                else
+                    MessageBox.Show("Xóa thất bại,Bạn không thể xóa CTDT còn đang sử dụng giảng dạy !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+                MessageBox.Show("Bạn phải chọn 1 Chương trình đào tạo để xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

@@ -39,6 +39,86 @@ namespace DAL
             CloseConnection();
             return listCTDT;
         }
-        
+
+        public bool XoaCTDT(string maKhoi, string maMon)
+        {
+            OpenConnection();
+            SqlCommand com = new SqlCommand();
+            com.CommandType = CommandType.Text;
+            com.CommandText = "delete from ChuongTrinhDaoTao where MaKhoiLop=@makhoi and MaMonHoc=@mamon";
+            com.Parameters.Add("@makhoi", SqlDbType.VarChar).Value = maKhoi;
+            com.Parameters.Add("@makhoi", SqlDbType.VarChar).Value = maMon;
+            com.Connection = conn;
+
+            try
+            {
+                int check = com.ExecuteNonQuery();
+                if (check > 0)
+                    return true;
+                else
+                    return false;
+            }
+            catch
+            {
+                return false;
+            }
+
+        }
+
+        public bool ThemCTDT(string maKhoi, string maMon,int heSo)
+        {
+            try
+            {
+                OpenConnection();
+                SqlCommand com = new SqlCommand();
+                com.CommandType = CommandType.Text;
+                com.CommandText = "insert into ChuongTrinhDaoTao values(@makhoi,@mamon,@heso)";
+                com.Connection = conn;
+
+                com.Parameters.Add("@makhoi", SqlDbType.VarChar).Value = maKhoi;
+                com.Parameters.Add("@mamon", SqlDbType.NVarChar).Value = maMon;
+                com.Parameters.Add("@heso", SqlDbType.NVarChar).Value = heSo;
+
+                int result = com.ExecuteNonQuery();
+
+                CloseConnection();
+                if (result > 0)
+                    return true;
+                return false;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool SuaCTDT(string maKhoi, string maMon, int heSo)
+        {
+            try
+            {
+                OpenConnection();
+            SqlCommand com = new SqlCommand();
+            com.CommandType = CommandType.Text;
+            com.CommandText = "update  ChuongTrinhDaoTao set HeSo=@heso where  MaMonHoc=@mamon and MakhoiLop=@makhoi";
+            com.Connection = conn;
+
+            com.Parameters.Add("@mamon", SqlDbType.VarChar).Value = maMon;
+            com.Parameters.Add("@makhoi", SqlDbType.NVarChar).Value = maKhoi;
+            com.Parameters.Add("@heso", SqlDbType.NVarChar).Value = heSo;
+
+                int result = com.ExecuteNonQuery();
+
+            CloseConnection();
+            if (result > 0)
+                return true;
+            return false;
+
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
     }
 }

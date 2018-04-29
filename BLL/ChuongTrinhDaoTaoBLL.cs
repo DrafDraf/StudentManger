@@ -17,5 +17,23 @@ namespace BLL
             ChuongTrinhDaoTaoAccess acess = new ChuongTrinhDaoTaoAccess();
             return acess.GetAllCTDT();
         }
+
+        public bool ThemCTDT(string khoi,string mon,int heso)
+        {
+            ChuongTrinhDaoTaoAccess ct = new ChuongTrinhDaoTaoAccess();
+            return ct.ThemCTDT(khoi, mon, heso);
+        }
+
+        public bool SuaCTDT(string khoi, string mon, int heso)
+        {
+            ChuongTrinhDaoTaoAccess ct = new ChuongTrinhDaoTaoAccess();
+            return ct.SuaCTDT(khoi, mon, heso);
+        }
+
+        public bool XoaCTDT(string khoi, string mon)
+        {
+            ChuongTrinhDaoTaoAccess ct = new ChuongTrinhDaoTaoAccess();
+            return ct.XoaCTDT(khoi, mon);
+        }
     }
 }

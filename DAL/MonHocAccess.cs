@@ -93,8 +93,8 @@ namespace DAL
 
         public bool SuaMonHoc(string ma,string ten)
         {
-           // try
-           // {
+            try
+            {
                 OpenConnection();
                 SqlCommand com = new SqlCommand();
                 com.CommandType = CommandType.Text;
@@ -111,11 +111,11 @@ namespace DAL
                     return true;
                 return false;
 
-          //  }
-          //  catch
-          //  {
-            //    return false;
-          //  }
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }
