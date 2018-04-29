@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChuongTrinhDaoTaoAccess.cs" />
     <Compile Include="DatabaseAccess.cs" />
     <Compile Include="HinhThucKiemTraAccess.cs" />
     <Compile Include="MonHocAccess.cs" />

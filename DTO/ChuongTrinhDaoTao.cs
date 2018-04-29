@@ -8,9 +8,9 @@ namespace DTO
 {
     public class ChuongTrinhDaoTao
     {
-        string MaKhoiLop;
-		string MaMonHoc ;
-		int HeSoMon ;
+        public string MaKhoiLop;
+		public string MaMonHoc ;
+		public int HeSoMon ;
 
         public ChuongTrinhDaoTao(string kl,string mh,int hs)
         {

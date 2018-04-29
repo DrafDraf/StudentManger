@@ -35,6 +35,7 @@ namespace DAL
                 listHinhThucKiemTra.Add(hinhThuc);
             }
 
+            reader.Close();
             CloseConnection();
             return listHinhThucKiemTra;
         

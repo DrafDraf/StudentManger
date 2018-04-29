@@ -36,8 +36,33 @@ namespace DAL
                 listMonHoc.Add(monHoc);
             }
 
+            reader.Close();
             CloseConnection();
             return listMonHoc;
+        }
+
+        public bool XoaMonHoc(string maMH)
+        {
+            OpenConnection();
+            SqlCommand com = new SqlCommand();
+            com.CommandType = CommandType.Text;
+            com.CommandText = "delete from MonHoc where MaMonHoc=@ma";
+            com.Parameters.Add("@ma", SqlDbType.VarChar).Value = maMH;
+            com.Connection = conn;
+
+            try
+            {
+                int check = com.ExecuteNonQuery();
+                if (check > 0)
+                    return true;
+                else
+                    return false;
+            }
+            catch
+            {
+                return false;
+            }
+            
         }
     }
 }

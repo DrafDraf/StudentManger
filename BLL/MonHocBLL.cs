@@ -13,10 +13,16 @@ namespace BLL
         public MonHocBLL() : base()
         { }
 
-       public List<MonHoc> GetListMonHoc()
+        public List<MonHoc> GetListMonHoc()
         {
             MonHocAccess monHocAccess = new MonHocAccess();
             return monHocAccess.GetAllMonHoc();
+        }
+
+        public bool XoaMonHoc(string maMH)
+        {
+            MonHocAccess mn = new MonHocAccess();
+            return mn.XoaMonHoc(maMH);
         }
     }
 }

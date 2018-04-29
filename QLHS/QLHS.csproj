@@ -60,6 +60,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormBoSung\ThemMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBoSung\ThemMonHoc.Designer.cs">
+      <DependentUpon>ThemMonHoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormChinh\CSDL.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBoSung\ThemMonHoc.resx">
+      <DependentUpon>ThemMonHoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormChinh\CSDL.resx">
       <DependentUpon>CSDL.cs</DependentUpon>
@@ -166,9 +175,7 @@
   <ItemGroup>
     <None Include="Source\home.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="FormBoSung\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Source\home_.png" />
   </ItemGroup>
