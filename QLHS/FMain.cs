@@ -149,5 +149,17 @@ namespace QLHS
             CSDL csdl = new CSDL();
             csdl.ShowDialog();
         }
+        void LoadQuanLyLopHoc()
+        {
+            QuanLyLopHoc lh = new QuanLyLopHoc() {/* Dock = DockStyle.Fill, */TopLevel = false };
+            pnBoard.Controls.Clear();
+            pnBoard.Controls.Add(lh);
+            lh.Show();
+        }
+    
+        private void btnQuanLyLop_Click(object sender, EventArgs e)
+        {
+            LoadQuanLyLopHoc();
+        }
     }
 }
