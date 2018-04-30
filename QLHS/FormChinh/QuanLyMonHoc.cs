@@ -338,24 +338,25 @@ namespace QLHS.FormChinh
                 string MaMon = lv.SubItems[2].Text;
                 string heSo = lv.SubItems[3].Text;
 
-                tbMaKhoiLop_CTDT.Text = maKhoi;
-                tbMaMonHocCTDT.Text = MaMon;
+                cbMaKhoiLop_CTDT.Text = maKhoi;
+                cbMaMonHoc_CTDT.Text = MaMon;
                 tbHeSoCTDT.Text = heSo;
             }
         }
 
         private void btnThemCTDT_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(tbMaKhoiLop_CTDT.Text) || string.IsNullOrEmpty(tbMaMonHocCTDT.Text) || string.IsNullOrEmpty(tbHeSoCTDT.Text))
+            if (string.IsNullOrEmpty(cbMaKhoiLop_CTDT.Text) || string.IsNullOrEmpty(cbMaMonHoc_CTDT.Text) || string.IsNullOrEmpty(tbHeSoCTDT.Text))
                 MessageBox.Show("Thêm thất bại,phải điền đầy đủ thông tin !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
             {
                 ChuongTrinhDaoTaoBLL mhbll = new ChuongTrinhDaoTaoBLL();
-                if (mhbll.ThemCTDT(tbMaKhoiLop_CTDT.Text, tbMaMonHocCTDT.Text, Int32.Parse(tbHeSoCTDT.Text)) == true)
+                if (mhbll.ThemCTDT(cbMaKhoiLop_CTDT.Text, cbMaMonHoc_CTDT.Text, Int32.Parse(tbHeSoCTDT.Text)) == true)
                 {
                     MessageBox.Show("Thêm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     //cap nhat du lieu len giao dien
                     LoadChuongTrinhDaoTao();
+                  //  LoadComboboxMaMonHoc_CTDT();
                 }
                 else
                 {
@@ -369,12 +370,14 @@ namespace QLHS.FormChinh
         {
             if (lvCTDT.SelectedItems.Count > 0)
             {
+    
                 ChuongTrinhDaoTaoBLL ctdt = new ChuongTrinhDaoTaoBLL();
-                if (ctdt.SuaCTDT(tbMaKhoiLop_CTDT.Text, tbMaMonHocCTDT.Text, Int32.Parse(tbHeSoCTDT.Text)) == true)
+                if (ctdt.SuaCTDT(cbMaKhoiLop_CTDT.Text, cbMaMonHoc_CTDT.Text, Int32.Parse(tbHeSoCTDT.Text)) == true)
                 {
                     MessageBox.Show("Sửa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     //cap nhat du lieu len giao dien
                     LoadChuongTrinhDaoTao();
+                 //   LoadComboboxMaMonHoc_CTDT();
                 }
                 else
                 {
@@ -390,20 +393,46 @@ namespace QLHS.FormChinh
             if (lvCTDT.SelectedItems.Count > 0)
             {
                 ChuongTrinhDaoTaoBLL ctdt = new ChuongTrinhDaoTaoBLL();
-                string mamon = tbMaKhoiLop_CTDT.Text;
-                string makhoi = tbMaMonHocCTDT.Text;
+                string makhoi = cbMaKhoiLop_CTDT.Text;
+                string  mamon= cbMaMonHoc_CTDT.Text;
 
                 if (ctdt.XoaCTDT(makhoi,mamon) == true)
                 {
                     MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     //cap nhat du lieu len giao dien
                     LoadChuongTrinhDaoTao();
+                  //  LoadComboboxMaMonHoc_CTDT();
                 }
                 else
                     MessageBox.Show("Xóa thất bại,Bạn không thể xóa CTDT còn đang sử dụng giảng dạy !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
                 MessageBox.Show("Bạn phải chọn 1 Chương trình đào tạo để xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        void LoadComboboxMaMonHoc_CTDT()
+        {
+            List<string> listMaMonHoc_CTDT = new List<string>();
+            MonHocBLL mh = new MonHocBLL();
+            List<MonHoc> listMon = mh.GetListMonHoc();
+
+            foreach (MonHoc mon in listMon)
+            {
+                listMaMonHoc_CTDT.Add(mon.MaMonHoc);
+            }
+
+            cbMaMonHoc_CTDT.DataSource = listMaMonHoc_CTDT;
+        }
+
+        /// <summary>
+        /// load ma mon hoc len combobox chuong trinh dao tao
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void cbMaMonHoc_CTDT_Click(object sender, EventArgs e)
+        {
+            LoadComboboxMaMonHoc_CTDT();
+
         }
     }
 }

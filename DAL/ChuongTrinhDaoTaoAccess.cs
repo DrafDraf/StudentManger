@@ -47,7 +47,7 @@ namespace DAL
             com.CommandType = CommandType.Text;
             com.CommandText = "delete from ChuongTrinhDaoTao where MaKhoiLop=@makhoi and MaMonHoc=@mamon";
             com.Parameters.Add("@makhoi", SqlDbType.VarChar).Value = maKhoi;
-            com.Parameters.Add("@makhoi", SqlDbType.VarChar).Value = maMon;
+            com.Parameters.Add("@mamon", SqlDbType.VarChar).Value = maMon;
             com.Connection = conn;
 
             try
@@ -77,7 +77,7 @@ namespace DAL
 
                 com.Parameters.Add("@makhoi", SqlDbType.VarChar).Value = maKhoi;
                 com.Parameters.Add("@mamon", SqlDbType.NVarChar).Value = maMon;
-                com.Parameters.Add("@heso", SqlDbType.NVarChar).Value = heSo;
+                com.Parameters.Add("@heso", SqlDbType.Int).Value = heSo;
 
                 int result = com.ExecuteNonQuery();
 
@@ -99,12 +99,12 @@ namespace DAL
                 OpenConnection();
             SqlCommand com = new SqlCommand();
             com.CommandType = CommandType.Text;
-            com.CommandText = "update  ChuongTrinhDaoTao set HeSo=@heso where  MaMonHoc=@mamon and MakhoiLop=@makhoi";
+            com.CommandText = "update  ChuongTrinhDaoTao set HeSoMon=@heso where  MaMonHoc=@mamon and MakhoiLop=@makhoi";
             com.Connection = conn;
 
             com.Parameters.Add("@mamon", SqlDbType.VarChar).Value = maMon;
             com.Parameters.Add("@makhoi", SqlDbType.NVarChar).Value = maKhoi;
-            com.Parameters.Add("@heso", SqlDbType.NVarChar).Value = heSo;
+            com.Parameters.Add("@heso", SqlDbType.Int).Value = heSo;
 
                 int result = com.ExecuteNonQuery();
 

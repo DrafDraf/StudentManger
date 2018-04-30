@@ -51,9 +51,7 @@
             this.lvHinhThucKT = new System.Windows.Forms.ListView();
             this.tbHeSoCTDT = new System.Windows.Forms.TextBox();
             this.lbHSCTDT = new System.Windows.Forms.Label();
-            this.tbMaMonHocCTDT = new System.Windows.Forms.TextBox();
             this.lbMaMonHoc = new System.Windows.Forms.Label();
-            this.tbMaKhoiLop_CTDT = new System.Windows.Forms.TextBox();
             this.lbMaKhoiLop = new System.Windows.Forms.Label();
             this.tbChuongTrinhDaoTao = new System.Windows.Forms.TabPage();
             this.btnXoaCTDT = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -100,6 +98,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.listView1 = new System.Windows.Forms.ListView();
             this.clSTT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cbMaMonHoc_CTDT = new System.Windows.Forms.ComboBox();
+            this.cbMaKhoiLop_CTDT = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tbHinhThucKiemTra.SuspendLayout();
             this.tbChuongTrinhDaoTao.SuspendLayout();
@@ -407,15 +407,6 @@
             this.lbHSCTDT.TabIndex = 20;
             this.lbHSCTDT.Text = "Hệ số";
             // 
-            // tbMaMonHocCTDT
-            // 
-            this.tbMaMonHocCTDT.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tbMaMonHocCTDT.Location = new System.Drawing.Point(840, 140);
-            this.tbMaMonHocCTDT.Multiline = true;
-            this.tbMaMonHocCTDT.Name = "tbMaMonHocCTDT";
-            this.tbMaMonHocCTDT.Size = new System.Drawing.Size(222, 22);
-            this.tbMaMonHocCTDT.TabIndex = 24;
-            // 
             // lbMaMonHoc
             // 
             this.lbMaMonHoc.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -427,15 +418,6 @@
             this.lbMaMonHoc.Size = new System.Drawing.Size(107, 22);
             this.lbMaMonHoc.TabIndex = 21;
             this.lbMaMonHoc.Text = "Mã môn học";
-            // 
-            // tbMaKhoiLop_CTDT
-            // 
-            this.tbMaKhoiLop_CTDT.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tbMaKhoiLop_CTDT.Location = new System.Drawing.Point(840, 84);
-            this.tbMaKhoiLop_CTDT.Multiline = true;
-            this.tbMaKhoiLop_CTDT.Name = "tbMaKhoiLop_CTDT";
-            this.tbMaKhoiLop_CTDT.Size = new System.Drawing.Size(222, 22);
-            this.tbMaKhoiLop_CTDT.TabIndex = 25;
             // 
             // lbMaKhoiLop
             // 
@@ -452,11 +434,11 @@
             // tbChuongTrinhDaoTao
             // 
             this.tbChuongTrinhDaoTao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(213)))), ((int)(((byte)(246)))));
+            this.tbChuongTrinhDaoTao.Controls.Add(this.cbMaKhoiLop_CTDT);
+            this.tbChuongTrinhDaoTao.Controls.Add(this.cbMaMonHoc_CTDT);
             this.tbChuongTrinhDaoTao.Controls.Add(this.tbHeSoCTDT);
             this.tbChuongTrinhDaoTao.Controls.Add(this.lbHSCTDT);
-            this.tbChuongTrinhDaoTao.Controls.Add(this.tbMaMonHocCTDT);
             this.tbChuongTrinhDaoTao.Controls.Add(this.lbMaMonHoc);
-            this.tbChuongTrinhDaoTao.Controls.Add(this.tbMaKhoiLop_CTDT);
             this.tbChuongTrinhDaoTao.Controls.Add(this.lbMaKhoiLop);
             this.tbChuongTrinhDaoTao.Controls.Add(this.btnXoaCTDT);
             this.tbChuongTrinhDaoTao.Controls.Add(this.btnSuaCTDT);
@@ -489,7 +471,7 @@
             this.btnXoaCTDT.IconMarginRight = 0;
             this.btnXoaCTDT.IconRightVisible = false;
             this.btnXoaCTDT.IconRightZoom = 0D;
-            this.btnXoaCTDT.IconVisible = false;
+            this.btnXoaCTDT.IconVisible = true;
             this.btnXoaCTDT.IconZoom = 70D;
             this.btnXoaCTDT.IsTab = true;
             this.btnXoaCTDT.Location = new System.Drawing.Point(958, 241);
@@ -525,7 +507,7 @@
             this.btnSuaCTDT.IconMarginRight = 0;
             this.btnSuaCTDT.IconRightVisible = false;
             this.btnSuaCTDT.IconRightZoom = 0D;
-            this.btnSuaCTDT.IconVisible = false;
+            this.btnSuaCTDT.IconVisible = true;
             this.btnSuaCTDT.IconZoom = 70D;
             this.btnSuaCTDT.IsTab = true;
             this.btnSuaCTDT.Location = new System.Drawing.Point(840, 241);
@@ -561,7 +543,7 @@
             this.btnThemCTDT.IconMarginRight = 0;
             this.btnThemCTDT.IconRightVisible = false;
             this.btnThemCTDT.IconRightZoom = 0D;
-            this.btnThemCTDT.IconVisible = false;
+            this.btnThemCTDT.IconVisible = true;
             this.btnThemCTDT.IconZoom = 70D;
             this.btnThemCTDT.IsTab = true;
             this.btnThemCTDT.Location = new System.Drawing.Point(722, 241);
@@ -1140,6 +1122,24 @@
             this.clSTT.Text = "STT";
             this.clSTT.Width = 70;
             // 
+            // cbMaMonHoc_CTDT
+            // 
+            this.cbMaMonHoc_CTDT.FormattingEnabled = true;
+            this.cbMaMonHoc_CTDT.Location = new System.Drawing.Point(840, 140);
+            this.cbMaMonHoc_CTDT.Name = "cbMaMonHoc_CTDT";
+            this.cbMaMonHoc_CTDT.Size = new System.Drawing.Size(222, 21);
+            this.cbMaMonHoc_CTDT.TabIndex = 26;
+            this.cbMaMonHoc_CTDT.Click += new System.EventHandler(this.cbMaMonHoc_CTDT_Click);
+            // 
+            // cbMaKhoiLop_CTDT
+            // 
+            this.cbMaKhoiLop_CTDT.FormattingEnabled = true;
+            this.cbMaKhoiLop_CTDT.Location = new System.Drawing.Point(840, 86);
+            this.cbMaKhoiLop_CTDT.Name = "cbMaKhoiLop_CTDT";
+            this.cbMaKhoiLop_CTDT.Size = new System.Drawing.Size(222, 21);
+            this.cbMaKhoiLop_CTDT.TabIndex = 26;
+            this.cbMaKhoiLop_CTDT.Click += new System.EventHandler(this.cbMaMonHoc_CTDT_Click);
+            // 
             // QuanLyMonHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1197,9 +1197,7 @@
         private System.Windows.Forms.ListView lvHinhThucKT;
         private System.Windows.Forms.TextBox tbHeSoCTDT;
         private System.Windows.Forms.Label lbHSCTDT;
-        private System.Windows.Forms.TextBox tbMaMonHocCTDT;
         private System.Windows.Forms.Label lbMaMonHoc;
-        private System.Windows.Forms.TextBox tbMaKhoiLop_CTDT;
         private System.Windows.Forms.Label lbMaKhoiLop;
         private System.Windows.Forms.TabPage tbChuongTrinhDaoTao;
         private Bunifu.Framework.UI.BunifuFlatButton btnXoaCTDT;
@@ -1246,5 +1244,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader clSTT;
+        private System.Windows.Forms.ComboBox cbMaMonHoc_CTDT;
+        private System.Windows.Forms.ComboBox cbMaKhoiLop_CTDT;
     }
 }
