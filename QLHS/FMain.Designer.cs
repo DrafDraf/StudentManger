@@ -69,7 +69,7 @@
             this.pnTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnTop.Location = new System.Drawing.Point(0, 0);
             this.pnTop.Name = "pnTop";
-            this.pnTop.Size = new System.Drawing.Size(1144, 32);
+            this.pnTop.Size = new System.Drawing.Size(1210, 32);
             this.pnTop.TabIndex = 0;
             // 
             // pbClose
@@ -79,7 +79,7 @@
             this.pbClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbClose.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbClose.InitialImage = null;
-            this.pbClose.Location = new System.Drawing.Point(1118, 3);
+            this.pbClose.Location = new System.Drawing.Point(1184, 3);
             this.pbClose.Name = "pbClose";
             this.pbClose.Size = new System.Drawing.Size(23, 23);
             this.pbClose.TabIndex = 8;
@@ -93,7 +93,7 @@
             this.lbNameSoftWare.ForeColor = System.Drawing.Color.White;
             this.lbNameSoftWare.Location = new System.Drawing.Point(0, 0);
             this.lbNameSoftWare.Name = "lbNameSoftWare";
-            this.lbNameSoftWare.Size = new System.Drawing.Size(1144, 32);
+            this.lbNameSoftWare.Size = new System.Drawing.Size(1210, 32);
             this.lbNameSoftWare.TabIndex = 7;
             this.lbNameSoftWare.Text = "Phần mềm quản lí học sinh";
             this.lbNameSoftWare.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -105,7 +105,7 @@
             this.pnBoard.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.pnBoard.Location = new System.Drawing.Point(0, 84);
             this.pnBoard.Name = "pnBoard";
-            this.pnBoard.Size = new System.Drawing.Size(1094, 505);
+            this.pnBoard.Size = new System.Drawing.Size(1160, 578);
             this.pnBoard.TabIndex = 1;
             // 
             // pnRight
@@ -117,9 +117,9 @@
             this.pnRight.Controls.Add(this.btnUser);
             this.pnRight.Controls.Add(this.btnHome);
             this.pnRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnRight.Location = new System.Drawing.Point(1094, 32);
+            this.pnRight.Location = new System.Drawing.Point(1160, 32);
             this.pnRight.Name = "pnRight";
-            this.pnRight.Size = new System.Drawing.Size(50, 557);
+            this.pnRight.Size = new System.Drawing.Size(50, 633);
             this.pnRight.TabIndex = 2;
             // 
             // btnAdd
@@ -127,9 +127,9 @@
             this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
             this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAdd.Location = new System.Drawing.Point(-1, 242);
+            this.btnAdd.Location = new System.Drawing.Point(-1, 203);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(51, 52);
+            this.btnAdd.Size = new System.Drawing.Size(51, 73);
             this.btnAdd.TabIndex = 13;
             this.btnAdd.UseVisualStyleBackColor = false;
             // 
@@ -138,9 +138,9 @@
             this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.btnDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.BackgroundImage")));
             this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDelete.Location = new System.Drawing.Point(-1, 394);
+            this.btnDelete.Location = new System.Drawing.Point(-1, 414);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(51, 52);
+            this.btnDelete.Size = new System.Drawing.Size(51, 58);
             this.btnDelete.TabIndex = 12;
             this.btnDelete.UseVisualStyleBackColor = false;
             // 
@@ -149,9 +149,9 @@
             this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.btnEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEdit.BackgroundImage")));
             this.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEdit.Location = new System.Drawing.Point(-1, 318);
+            this.btnEdit.Location = new System.Drawing.Point(0, 321);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(51, 52);
+            this.btnEdit.Size = new System.Drawing.Size(51, 65);
             this.btnEdit.TabIndex = 11;
             this.btnEdit.UseVisualStyleBackColor = false;
             // 
@@ -160,9 +160,9 @@
             this.btnUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.btnUser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUser.BackgroundImage")));
             this.btnUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnUser.Location = new System.Drawing.Point(-1, 166);
+            this.btnUser.Location = new System.Drawing.Point(-1, 95);
             this.btnUser.Name = "btnUser";
-            this.btnUser.Size = new System.Drawing.Size(51, 52);
+            this.btnUser.Size = new System.Drawing.Size(51, 76);
             this.btnUser.TabIndex = 10;
             this.btnUser.UseVisualStyleBackColor = false;
             this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
@@ -187,9 +187,9 @@
             this.pnUser.Controls.Add(this.bunifuFlatButton1);
             this.pnUser.Controls.Add(this.bunifuTileButton1);
             this.pnUser.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnUser.Location = new System.Drawing.Point(1094, 32);
+            this.pnUser.Location = new System.Drawing.Point(1160, 32);
             this.pnUser.Name = "pnUser";
-            this.pnUser.Size = new System.Drawing.Size(0, 557);
+            this.pnUser.Size = new System.Drawing.Size(0, 633);
             this.pnUser.TabIndex = 3;
             this.pnUser.MouseLeave += new System.EventHandler(this.pnUser_MouseLeave);
             // 
@@ -337,7 +337,7 @@
             this.pnMenu.Controls.Add(this.btnQuyDinh);
             this.pnMenu.Location = new System.Drawing.Point(0, 32);
             this.pnMenu.Name = "pnMenu";
-            this.pnMenu.Size = new System.Drawing.Size(1094, 52);
+            this.pnMenu.Size = new System.Drawing.Size(1160, 52);
             this.pnMenu.TabIndex = 8;
             // 
             // btnCoSoDuLieu
@@ -367,7 +367,7 @@
             this.btnCoSoDuLieu.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnCoSoDuLieu.OnHoverTextColor = System.Drawing.Color.White;
             this.btnCoSoDuLieu.selected = false;
-            this.btnCoSoDuLieu.Size = new System.Drawing.Size(159, 51);
+            this.btnCoSoDuLieu.Size = new System.Drawing.Size(169, 51);
             this.btnCoSoDuLieu.TabIndex = 6;
             this.btnCoSoDuLieu.Text = "Cơ sở dữ liệu";
             this.btnCoSoDuLieu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -396,13 +396,13 @@
             this.btnGiaoVien.IconVisible = true;
             this.btnGiaoVien.IconZoom = 90D;
             this.btnGiaoVien.IsTab = false;
-            this.btnGiaoVien.Location = new System.Drawing.Point(161, 1);
+            this.btnGiaoVien.Location = new System.Drawing.Point(159, 3);
             this.btnGiaoVien.Name = "btnGiaoVien";
             this.btnGiaoVien.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
             this.btnGiaoVien.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnGiaoVien.OnHoverTextColor = System.Drawing.Color.White;
             this.btnGiaoVien.selected = false;
-            this.btnGiaoVien.Size = new System.Drawing.Size(146, 51);
+            this.btnGiaoVien.Size = new System.Drawing.Size(163, 51);
             this.btnGiaoVien.TabIndex = 5;
             this.btnGiaoVien.Text = "Giáo viên";
             this.btnGiaoVien.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -415,7 +415,7 @@
             this.btnQuanlyMonHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
             this.btnQuanlyMonHoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnQuanlyMonHoc.BorderRadius = 0;
-            this.btnQuanlyMonHoc.ButtonText = "Quản lý      môn học";
+            this.btnQuanlyMonHoc.ButtonText = "Quản lý môn học";
             this.btnQuanlyMonHoc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnQuanlyMonHoc.DisabledColor = System.Drawing.Color.Gray;
             this.btnQuanlyMonHoc.Iconcolor = System.Drawing.Color.Transparent;
@@ -430,15 +430,15 @@
             this.btnQuanlyMonHoc.IconVisible = true;
             this.btnQuanlyMonHoc.IconZoom = 90D;
             this.btnQuanlyMonHoc.IsTab = false;
-            this.btnQuanlyMonHoc.Location = new System.Drawing.Point(311, 1);
+            this.btnQuanlyMonHoc.Location = new System.Drawing.Point(319, 1);
             this.btnQuanlyMonHoc.Name = "btnQuanlyMonHoc";
             this.btnQuanlyMonHoc.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
             this.btnQuanlyMonHoc.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnQuanlyMonHoc.OnHoverTextColor = System.Drawing.Color.White;
             this.btnQuanlyMonHoc.selected = false;
-            this.btnQuanlyMonHoc.Size = new System.Drawing.Size(146, 51);
+            this.btnQuanlyMonHoc.Size = new System.Drawing.Size(164, 51);
             this.btnQuanlyMonHoc.TabIndex = 4;
-            this.btnQuanlyMonHoc.Text = "Quản lý      môn học";
+            this.btnQuanlyMonHoc.Text = "Quản lý môn học";
             this.btnQuanlyMonHoc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnQuanlyMonHoc.Textcolor = System.Drawing.Color.Black;
             this.btnQuanlyMonHoc.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -466,7 +466,7 @@
             this.btnQuanLyLop.IconVisible = true;
             this.btnQuanLyLop.IconZoom = 90D;
             this.btnQuanLyLop.IsTab = false;
-            this.btnQuanLyLop.Location = new System.Drawing.Point(618, 1);
+            this.btnQuanLyLop.Location = new System.Drawing.Point(653, 3);
             this.btnQuanLyLop.Name = "btnQuanLyLop";
             this.btnQuanLyLop.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
             this.btnQuanLyLop.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -502,13 +502,13 @@
             this.btnTimKiem.IconVisible = true;
             this.btnTimKiem.IconZoom = 90D;
             this.btnTimKiem.IsTab = false;
-            this.btnTimKiem.Location = new System.Drawing.Point(463, 1);
+            this.btnTimKiem.Location = new System.Drawing.Point(503, 3);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
             this.btnTimKiem.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnTimKiem.OnHoverTextColor = System.Drawing.Color.White;
             this.btnTimKiem.selected = false;
-            this.btnTimKiem.Size = new System.Drawing.Size(137, 51);
+            this.btnTimKiem.Size = new System.Drawing.Size(154, 51);
             this.btnTimKiem.TabIndex = 2;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -538,7 +538,7 @@
             this.btnLapBaoCao.IconVisible = true;
             this.btnLapBaoCao.IconZoom = 90D;
             this.btnLapBaoCao.IsTab = false;
-            this.btnLapBaoCao.Location = new System.Drawing.Point(774, 1);
+            this.btnLapBaoCao.Location = new System.Drawing.Point(826, 1);
             this.btnLapBaoCao.Name = "btnLapBaoCao";
             this.btnLapBaoCao.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
             this.btnLapBaoCao.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -559,7 +559,7 @@
             this.btnQuyDinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
             this.btnQuyDinh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnQuyDinh.BorderRadius = 0;
-            this.btnQuyDinh.ButtonText = "Thay đổi   quy định";
+            this.btnQuyDinh.ButtonText = "Thay đổi quy định";
             this.btnQuyDinh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnQuyDinh.DisabledColor = System.Drawing.Color.Gray;
             this.btnQuyDinh.Iconcolor = System.Drawing.Color.Transparent;
@@ -574,7 +574,7 @@
             this.btnQuyDinh.IconVisible = true;
             this.btnQuyDinh.IconZoom = 90D;
             this.btnQuyDinh.IsTab = false;
-            this.btnQuyDinh.Location = new System.Drawing.Point(939, 1);
+            this.btnQuyDinh.Location = new System.Drawing.Point(998, 0);
             this.btnQuyDinh.Name = "btnQuyDinh";
             this.btnQuyDinh.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(230)))), ((int)(((byte)(229)))));
             this.btnQuyDinh.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -582,7 +582,7 @@
             this.btnQuyDinh.selected = false;
             this.btnQuyDinh.Size = new System.Drawing.Size(155, 51);
             this.btnQuyDinh.TabIndex = 0;
-            this.btnQuyDinh.Text = "Thay đổi   quy định";
+            this.btnQuyDinh.Text = "Thay đổi quy định";
             this.btnQuyDinh.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnQuyDinh.Textcolor = System.Drawing.Color.Black;
             this.btnQuyDinh.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -592,7 +592,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1144, 589);
+            this.ClientSize = new System.Drawing.Size(1210, 665);
             this.ControlBox = false;
             this.Controls.Add(this.pnMenu);
             this.Controls.Add(this.pnUser);
