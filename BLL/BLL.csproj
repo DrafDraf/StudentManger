@@ -43,7 +43,6 @@
   <ItemGroup>
     <Compile Include="ChuongTrinhDaoTaoBLL.cs" />
     <Compile Include="DatabaseBLL.cs" />
-    <Compile Include="DShocsinhBLL.cs" />
     <Compile Include="HinhThucKiemTraBLL.cs" />
     <Compile Include="MonHocBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
