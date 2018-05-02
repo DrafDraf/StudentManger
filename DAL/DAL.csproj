@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="ChuongTrinhDaoTaoAccess.cs" />
     <Compile Include="DatabaseAccess.cs" />
+    <Compile Include="DShocsinhAccess.cs" />
     <Compile Include="HinhThucKiemTraAccess.cs" />
     <Compile Include="MonHocAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

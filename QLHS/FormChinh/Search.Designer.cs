@@ -59,6 +59,14 @@
             this.lbTen = new System.Windows.Forms.Label();
             this.pbGuideSearch = new System.Windows.Forms.PictureBox();
             this.btnSearch = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
             this.pnListSearch.SuspendLayout();
             this.gbListSearch.SuspendLayout();
             this.pnDetailSearch.SuspendLayout();
@@ -184,6 +192,14 @@
             // gbDetailSearch
             // 
             this.gbDetailSearch.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.gbDetailSearch.Controls.Add(this.textBox8);
+            this.gbDetailSearch.Controls.Add(this.textBox7);
+            this.gbDetailSearch.Controls.Add(this.textBox6);
+            this.gbDetailSearch.Controls.Add(this.textBox5);
+            this.gbDetailSearch.Controls.Add(this.textBox4);
+            this.gbDetailSearch.Controls.Add(this.textBox3);
+            this.gbDetailSearch.Controls.Add(this.textBox2);
+            this.gbDetailSearch.Controls.Add(this.textBox1);
             this.gbDetailSearch.Controls.Add(this.lbEmail_);
             this.gbDetailSearch.Controls.Add(this.lbDC_);
             this.gbDetailSearch.Controls.Add(this.lbGT_);
@@ -213,7 +229,7 @@
             // 
             this.lbEmail_.AutoSize = true;
             this.lbEmail_.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbEmail_.Location = new System.Drawing.Point(118, 293);
+            this.lbEmail_.Location = new System.Drawing.Point(118, 281);
             this.lbEmail_.Name = "lbEmail_";
             this.lbEmail_.Size = new System.Drawing.Size(14, 21);
             this.lbEmail_.TabIndex = 15;
@@ -223,7 +239,7 @@
             // 
             this.lbDC_.AutoSize = true;
             this.lbDC_.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbDC_.Location = new System.Drawing.Point(118, 263);
+            this.lbDC_.Location = new System.Drawing.Point(118, 242);
             this.lbDC_.Name = "lbDC_";
             this.lbDC_.Size = new System.Drawing.Size(14, 21);
             this.lbDC_.TabIndex = 14;
@@ -233,7 +249,7 @@
             // 
             this.lbGT_.AutoSize = true;
             this.lbGT_.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbGT_.Location = new System.Drawing.Point(118, 227);
+            this.lbGT_.Location = new System.Drawing.Point(118, 208);
             this.lbGT_.Name = "lbGT_";
             this.lbGT_.Size = new System.Drawing.Size(14, 21);
             this.lbGT_.TabIndex = 13;
@@ -243,7 +259,7 @@
             // 
             this.lbNS_.AutoSize = true;
             this.lbNS_.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbNS_.Location = new System.Drawing.Point(118, 194);
+            this.lbNS_.Location = new System.Drawing.Point(118, 176);
             this.lbNS_.Name = "lbNS_";
             this.lbNS_.Size = new System.Drawing.Size(14, 21);
             this.lbNS_.TabIndex = 12;
@@ -253,7 +269,7 @@
             // 
             this.lbDTB2_.AutoSize = true;
             this.lbDTB2_.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbDTB2_.Location = new System.Drawing.Point(118, 161);
+            this.lbDTB2_.Location = new System.Drawing.Point(118, 143);
             this.lbDTB2_.Name = "lbDTB2_";
             this.lbDTB2_.Size = new System.Drawing.Size(14, 21);
             this.lbDTB2_.TabIndex = 11;
@@ -263,7 +279,7 @@
             // 
             this.lbDTB1_.AutoSize = true;
             this.lbDTB1_.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbDTB1_.Location = new System.Drawing.Point(118, 128);
+            this.lbDTB1_.Location = new System.Drawing.Point(118, 107);
             this.lbDTB1_.Name = "lbDTB1_";
             this.lbDTB1_.Size = new System.Drawing.Size(14, 21);
             this.lbDTB1_.TabIndex = 10;
@@ -273,7 +289,7 @@
             // 
             this.lbLop_.AutoSize = true;
             this.lbLop_.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbLop_.Location = new System.Drawing.Point(118, 95);
+            this.lbLop_.Location = new System.Drawing.Point(118, 73);
             this.lbLop_.Name = "lbLop_";
             this.lbLop_.Size = new System.Drawing.Size(14, 21);
             this.lbLop_.TabIndex = 9;
@@ -283,7 +299,7 @@
             // 
             this.lbTen_.AutoSize = true;
             this.lbTen_.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbTen_.Location = new System.Drawing.Point(118, 62);
+            this.lbTen_.Location = new System.Drawing.Point(118, 42);
             this.lbTen_.Name = "lbTen_";
             this.lbTen_.Size = new System.Drawing.Size(14, 21);
             this.lbTen_.TabIndex = 8;
@@ -293,7 +309,7 @@
             // 
             this.lbEmail.AutoSize = true;
             this.lbEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbEmail.Location = new System.Drawing.Point(5, 293);
+            this.lbEmail.Location = new System.Drawing.Point(6, 281);
             this.lbEmail.Name = "lbEmail";
             this.lbEmail.Size = new System.Drawing.Size(56, 21);
             this.lbEmail.TabIndex = 7;
@@ -303,7 +319,7 @@
             // 
             this.lbDiaChi.AutoSize = true;
             this.lbDiaChi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbDiaChi.Location = new System.Drawing.Point(5, 260);
+            this.lbDiaChi.Location = new System.Drawing.Point(6, 242);
             this.lbDiaChi.Name = "lbDiaChi";
             this.lbDiaChi.Size = new System.Drawing.Size(70, 21);
             this.lbDiaChi.TabIndex = 6;
@@ -313,7 +329,7 @@
             // 
             this.lbGT.AutoSize = true;
             this.lbGT.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbGT.Location = new System.Drawing.Point(5, 227);
+            this.lbGT.Location = new System.Drawing.Point(3, 208);
             this.lbGT.Name = "lbGT";
             this.lbGT.Size = new System.Drawing.Size(88, 21);
             this.lbGT.TabIndex = 5;
@@ -323,7 +339,7 @@
             // 
             this.lbNS.AutoSize = true;
             this.lbNS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbNS.Location = new System.Drawing.Point(5, 194);
+            this.lbNS.Location = new System.Drawing.Point(3, 176);
             this.lbNS.Name = "lbNS";
             this.lbNS.Size = new System.Drawing.Size(92, 21);
             this.lbNS.TabIndex = 4;
@@ -333,7 +349,7 @@
             // 
             this.lbTBhk2.AutoSize = true;
             this.lbTBhk2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbTBhk2.Location = new System.Drawing.Point(5, 161);
+            this.lbTBhk2.Location = new System.Drawing.Point(-7, 143);
             this.lbTBhk2.Name = "lbTBhk2";
             this.lbTBhk2.Size = new System.Drawing.Size(119, 21);
             this.lbTBhk2.TabIndex = 3;
@@ -343,7 +359,7 @@
             // 
             this.lbTBhk1.AutoSize = true;
             this.lbTBhk1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbTBhk1.Location = new System.Drawing.Point(5, 128);
+            this.lbTBhk1.Location = new System.Drawing.Point(0, 107);
             this.lbTBhk1.Name = "lbTBhk1";
             this.lbTBhk1.Size = new System.Drawing.Size(124, 21);
             this.lbTBhk1.TabIndex = 2;
@@ -353,7 +369,7 @@
             // 
             this.lbLop.AutoSize = true;
             this.lbLop.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbLop.Location = new System.Drawing.Point(5, 95);
+            this.lbLop.Location = new System.Drawing.Point(3, 70);
             this.lbLop.Name = "lbLop";
             this.lbLop.Size = new System.Drawing.Size(56, 21);
             this.lbLop.TabIndex = 1;
@@ -365,7 +381,7 @@
             this.lbTen.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lbTen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbTen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbTen.Location = new System.Drawing.Point(5, 62);
+            this.lbTen.Location = new System.Drawing.Point(-1, 37);
             this.lbTen.Name = "lbTen";
             this.lbTen.Size = new System.Drawing.Size(94, 21);
             this.lbTen.TabIndex = 0;
@@ -419,6 +435,62 @@
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSearch.Textcolor = System.Drawing.Color.White;
             this.btnSearch.TextFont = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(138, 34);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(163, 29);
+            this.textBox1.TabIndex = 16;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(138, 70);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(163, 29);
+            this.textBox2.TabIndex = 17;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(138, 107);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(163, 29);
+            this.textBox3.TabIndex = 18;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(138, 143);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(163, 29);
+            this.textBox4.TabIndex = 19;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(138, 178);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(163, 29);
+            this.textBox5.TabIndex = 20;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(138, 213);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(163, 29);
+            this.textBox6.TabIndex = 21;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(138, 248);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(163, 29);
+            this.textBox7.TabIndex = 22;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(138, 283);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(163, 29);
+            this.textBox8.TabIndex = 23;
             // 
             // Search
             // 
@@ -478,5 +550,13 @@
         private System.Windows.Forms.ColumnHeader TB1;
         private System.Windows.Forms.ColumnHeader TB2;
         private System.Windows.Forms.ListView listViewResult;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
