@@ -45,7 +45,11 @@
     <Compile Include="DatabaseBLL.cs" />
     <Compile Include="DShocsinhBLL.cs" />
     <Compile Include="HinhThucKiemTraBLL.cs" />
+    <Compile Include="HocKyBLL.cs" />
+    <Compile Include="KhoiLopBLL.cs" />
+    <Compile Include="LopBLL.cs" />
     <Compile Include="MonHocBLL.cs" />
+    <Compile Include="NamHocBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

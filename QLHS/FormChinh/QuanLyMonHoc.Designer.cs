@@ -54,6 +54,8 @@
             this.lbMaMonHoc = new System.Windows.Forms.Label();
             this.lbMaKhoiLop = new System.Windows.Forms.Label();
             this.tbChuongTrinhDaoTao = new System.Windows.Forms.TabPage();
+            this.cbMaKhoiLop_CTDT = new System.Windows.Forms.ComboBox();
+            this.cbMaMonHoc_CTDT = new System.Windows.Forms.ComboBox();
             this.btnXoaCTDT = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnSuaCTDT = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnThemCTDT = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -98,8 +100,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.listView1 = new System.Windows.Forms.ListView();
             this.clSTT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cbMaMonHoc_CTDT = new System.Windows.Forms.ComboBox();
-            this.cbMaKhoiLop_CTDT = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tbHinhThucKiemTra.SuspendLayout();
             this.tbChuongTrinhDaoTao.SuspendLayout();
@@ -451,6 +451,25 @@
             this.tbChuongTrinhDaoTao.Size = new System.Drawing.Size(1084, 475);
             this.tbChuongTrinhDaoTao.TabIndex = 3;
             this.tbChuongTrinhDaoTao.Text = "Chương trình đào tạo";
+            // 
+            // cbMaKhoiLop_CTDT
+            // 
+            this.cbMaKhoiLop_CTDT.FormattingEnabled = true;
+            this.cbMaKhoiLop_CTDT.Location = new System.Drawing.Point(840, 86);
+            this.cbMaKhoiLop_CTDT.Name = "cbMaKhoiLop_CTDT";
+            this.cbMaKhoiLop_CTDT.Size = new System.Drawing.Size(222, 21);
+            this.cbMaKhoiLop_CTDT.TabIndex = 26;
+            this.cbMaKhoiLop_CTDT.Click += new System.EventHandler(this.cbMaMonHoc_CTDT_Click);
+            // 
+            // cbMaMonHoc_CTDT
+            // 
+            this.cbMaMonHoc_CTDT.FormattingEnabled = true;
+            this.cbMaMonHoc_CTDT.Location = new System.Drawing.Point(840, 140);
+            this.cbMaMonHoc_CTDT.Name = "cbMaMonHoc_CTDT";
+            this.cbMaMonHoc_CTDT.Size = new System.Drawing.Size(222, 21);
+            this.cbMaMonHoc_CTDT.TabIndex = 26;
+            this.cbMaMonHoc_CTDT.SelectedIndexChanged += new System.EventHandler(this.cbMaMonHoc_CTDT_SelectedIndexChanged);
+            this.cbMaMonHoc_CTDT.Click += new System.EventHandler(this.cbMaMonHoc_CTDT_Click);
             // 
             // btnXoaCTDT
             // 
@@ -1121,24 +1140,6 @@
             // 
             this.clSTT.Text = "STT";
             this.clSTT.Width = 70;
-            // 
-            // cbMaMonHoc_CTDT
-            // 
-            this.cbMaMonHoc_CTDT.FormattingEnabled = true;
-            this.cbMaMonHoc_CTDT.Location = new System.Drawing.Point(840, 140);
-            this.cbMaMonHoc_CTDT.Name = "cbMaMonHoc_CTDT";
-            this.cbMaMonHoc_CTDT.Size = new System.Drawing.Size(222, 21);
-            this.cbMaMonHoc_CTDT.TabIndex = 26;
-            this.cbMaMonHoc_CTDT.Click += new System.EventHandler(this.cbMaMonHoc_CTDT_Click);
-            // 
-            // cbMaKhoiLop_CTDT
-            // 
-            this.cbMaKhoiLop_CTDT.FormattingEnabled = true;
-            this.cbMaKhoiLop_CTDT.Location = new System.Drawing.Point(840, 86);
-            this.cbMaKhoiLop_CTDT.Name = "cbMaKhoiLop_CTDT";
-            this.cbMaKhoiLop_CTDT.Size = new System.Drawing.Size(222, 21);
-            this.cbMaKhoiLop_CTDT.TabIndex = 26;
-            this.cbMaKhoiLop_CTDT.Click += new System.EventHandler(this.cbMaMonHoc_CTDT_Click);
             // 
             // QuanLyMonHoc
             // 
