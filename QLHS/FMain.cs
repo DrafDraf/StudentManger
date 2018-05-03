@@ -151,7 +151,7 @@ namespace QLHS
         }
         void LoadQuanLyLopHoc()
         {
-            QuanLyLopHoc lh = new QuanLyLopHoc() {/* Dock = DockStyle.Fill, */TopLevel = false };
+            QuanLyLopHoc lh = new QuanLyLopHoc() { /*Dock = DockStyle.Fill,*/ TopLevel = true };
             pnBoard.Controls.Clear();
             pnBoard.Controls.Add(lh);
             lh.Show();

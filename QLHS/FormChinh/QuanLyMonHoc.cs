@@ -434,5 +434,10 @@ namespace QLHS.FormChinh
             LoadComboboxMaMonHoc_CTDT();
 
         }
+
+        private void cbMaMonHoc_CTDT_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

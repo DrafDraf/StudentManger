@@ -44,8 +44,13 @@
   <ItemGroup>
     <Compile Include="ChuongTrinhDaoTaoAccess.cs" />
     <Compile Include="DatabaseAccess.cs" />
+    <Compile Include="DShocsinhAccess.cs" />
     <Compile Include="HinhThucKiemTraAccess.cs" />
+    <Compile Include="HocKyAccess.cs" />
+    <Compile Include="KhoiLopAccess.cs" />
+    <Compile Include="LopAccess.cs" />
     <Compile Include="MonHocAccess.cs" />
+    <Compile Include="NamHocAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
